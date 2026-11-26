@@ -1,0 +1,275 @@
+{
+  "fixture": {
+    "layer": "/layers.0/mlp/up_proj/Linear",
+    "input_shape": [
+      268,
+      1024
+    ],
+    "output_width": 3584,
+    "source_image_sha256": "6221fe776e94e4abf9e1a14200489dcb41e30ac62c222b7d4ac6b6e70f50e7f6",
+    "quantized_weights": {
+      "external_offset": 7998596,
+      "external_sizes": [
+        1835030,
+        229376,
+        0,
+        0
+      ],
+      "quant": {
+        "type": 1,
+        "useInt32": false,
+        "quantScale": 1.0,
+        "scaleIn": 0.0,
+        "scaleOut": 0.0,
+        "aMaxOrBits": 4,
+        "aMin": 1,
+        "readType": 57344,
+        "has_scaleInt": false,
+        "shapeInt32": false,
+        "weightSize": 0,
+        "scaleStorage": "FP16"
+      }
+    },
+    "files": {
+      "up_proj.mnn": "14f8e47534d33ea145beea7ac52bbdb4ae07dbf56adec7393eac61f5234294d0",
+      "up_proj.mnn.weight": "2916626fd9061f3ba5243cd4a7a8c7e18fabadaad3ed0e7d034da0bef52e14ef",
+      "input.f32": "f909bb4216c596cae567434facddbffb9d83fde4b1bba7ee78062ee5039a03ff",
+      "reference-bf16-weights.f32": "ea4457715b5ae7cf6ca3d1193965cf582ce1484f539941e857cd7de4d5178500"
+    }
+  },
+  "timed_scope": "MNN onForward through host output readMap, after five warmups for each shape",
+  "by_rows": {
+    "1": {
+      "cpu": {
+        "median_us": 85.896,
+        "p95_us": 263.608,
+        "median_us_per_row": 85.896,
+        "samples": 60,
+        "round_medians_us": [
+          246.89600000000002,
+          54.6875
+        ],
+        "max_relative_l2_vs_original_bf16_matmul": 0.11506138925316219,
+        "max_relative_l2_vs_dequantized_q4_matmul": 0.03672243751340112
+      },
+      "opencl": {
+        "median_us": 976.354,
+        "p95_us": 1116.0770499999999,
+        "median_us_per_row": 976.354,
+        "samples": 60,
+        "round_medians_us": [
+          955.6455,
+          1015.0005
+        ],
+        "max_relative_l2_vs_original_bf16_matmul": 0.10910813127057845,
+        "max_relative_l2_vs_dequantized_q4_matmul": 0.0008577453970370232
+      },
+      "cpu_vs_opencl_relative_l2": [
+        0.03659917237579068,
+        0.03659917237579068
+      ]
+    },
+    "8": {
+      "cpu": {
+        "median_us": 506.625,
+        "p95_us": 593.4395499999999,
+        "median_us_per_row": 63.328125,
+        "samples": 60,
+        "round_medians_us": [
+          583.0419999999999,
+          299.8335
+        ],
+        "max_relative_l2_vs_original_bf16_matmul": 0.10933714447341726,
+        "max_relative_l2_vs_dequantized_q4_matmul": 0.04039943642999603
+      },
+      "opencl": {
+        "median_us": 3072.8545,
+        "p95_us": 3177.16905,
+        "median_us_per_row": 384.1068125,
+        "samples": 60,
+        "round_medians_us": [
+          3072.8545,
+          3067.0209999999997
+        ],
+        "max_relative_l2_vs_original_bf16_matmul": 0.1009760565295935,
+        "max_relative_l2_vs_dequantized_q4_matmul": 0.0008204582727964881
+      },
+      "cpu_vs_opencl_relative_l2": [
+        0.04034752143946315,
+        0.04034752143946315
+      ]
+    },
+    "32": {
+      "cpu": {
+        "median_us": 1151.2085000000002,
+        "p95_us": 1934.6982499999997,
+        "median_us_per_row": 35.975265625000006,
+        "samples": 60,
+        "round_medians_us": [
+          1141.438,
+          1155.438
+        ],
+        "max_relative_l2_vs_original_bf16_matmul": 0.10648385554853679,
+        "max_relative_l2_vs_dequantized_q4_matmul": 0.03451364399368062
+      },
+      "opencl": {
+        "median_us": 6214.834000000001,
+        "p95_us": 6485.5156,
+        "median_us_per_row": 194.21356250000002,
+        "samples": 60,
+        "round_medians_us": [
+          6425.7095,
+          3151.3125
+        ],
+        "max_relative_l2_vs_original_bf16_matmul": 0.10078309843803147,
+        "max_relative_l2_vs_dequantized_q4_matmul": 0.004900150568617217
+      },
+      "cpu_vs_opencl_relative_l2": [
+        0.03480649458971055,
+        0.03480649458971055
+      ]
+    },
+    "128": {
+      "cpu": {
+        "median_us": 5682.98,
+        "p95_us": 5784.72805,
+        "median_us_per_row": 44.39828125,
+        "samples": 60,
+        "round_medians_us": [
+          5671.022,
+          5744.5215
+        ],
+        "max_relative_l2_vs_original_bf16_matmul": 0.09711216371545225,
+        "max_relative_l2_vs_dequantized_q4_matmul": 0.02490167719209751
+      },
+      "opencl": {
+        "median_us": 8390.833999999999,
+        "p95_us": 20281.45265,
+        "median_us_per_row": 65.55339062499999,
+        "samples": 60,
+        "round_medians_us": [
+          8380.7505,
+          8454.1055
+        ],
+        "max_relative_l2_vs_original_bf16_matmul": 0.09395159104164633,
+        "max_relative_l2_vs_dequantized_q4_matmul": 0.004820839722514773
+      },
+      "cpu_vs_opencl_relative_l2": [
+        0.025338807879460263,
+        0.025338807879460263
+      ]
+    },
+    "268": {
+      "cpu": {
+        "median_us": 10616.23,
+        "p95_us": 12750.5882,
+        "median_us_per_row": 39.612798507462685,
+        "samples": 60,
+        "round_medians_us": [
+          10458.4385,
+          11729.6675
+        ],
+        "max_relative_l2_vs_original_bf16_matmul": 0.09475323317234949,
+        "max_relative_l2_vs_dequantized_q4_matmul": 0.022437319233384937
+      },
+      "opencl": {
+        "median_us": 17482.21,
+        "p95_us": 18504.67734999997,
+        "median_us_per_row": 65.23212686567165,
+        "samples": 60,
+        "round_medians_us": [
+          17405.939,
+          17516.335
+        ],
+        "max_relative_l2_vs_original_bf16_matmul": 0.09216307360513602,
+        "max_relative_l2_vs_dequantized_q4_matmul": 0.004813475946291638
+      },
+      "cpu_vs_opencl_relative_l2": [
+        0.02292506617154879,
+        0.02292506617154879
+      ]
+    }
+  },
+  "board_runs": {
+    "cpu": [
+      {
+        "process_wall_ms": 816.3046650006436,
+        "peak_process_rss_kib": 25844,
+        "opened_mali_device": false,
+        "peak_sampled_gpu_load_percent": 0
+      },
+      {
+        "process_wall_ms": 822.4971659983566,
+        "peak_process_rss_kib": 24476,
+        "opened_mali_device": false,
+        "peak_sampled_gpu_load_percent": 0
+      }
+    ],
+    "opencl": [
+      {
+        "process_wall_ms": 13940.001525001207,
+        "peak_process_rss_kib": 185616,
+        "opened_mali_device": true,
+        "peak_sampled_gpu_load_percent": 100
+      },
+      {
+        "process_wall_ms": 14742.166605999955,
+        "peak_process_rss_kib": 177556,
+        "opened_mali_device": true,
+        "peak_sampled_gpu_load_percent": 100
+      }
+    ]
+  },
+  "single_row_tuning": {
+    "opencl": {
+      "median_us": 962.6455000000001,
+      "p95_us": 1121.0357499999998,
+      "median_us_per_row": 962.6455000000001,
+      "samples": 60,
+      "round_medians_us": [
+        1018.9380000000001,
+        904.8955
+      ],
+      "processes": [
+        {
+          "process_wall_ms": 715.5776969993894,
+          "peak_process_rss_kib": 69520,
+          "opened_mali_device": true,
+          "peak_sampled_gpu_load_percent": 2
+        },
+        {
+          "process_wall_ms": 713.1931130006706,
+          "peak_process_rss_kib": 69912,
+          "opened_mali_device": true,
+          "peak_sampled_gpu_load_percent": 13
+        }
+      ],
+      "max_relative_l2_vs_default_opencl": 0.0
+    },
+    "opencl-heavy": {
+      "median_us": 981.021,
+      "p95_us": 1203.5187499999997,
+      "median_us_per_row": 981.021,
+      "samples": 60,
+      "round_medians_us": [
+        940.9169999999999,
+        1004.0625
+      ],
+      "processes": [
+        {
+          "process_wall_ms": 716.7303639998863,
+          "peak_process_rss_kib": 69556,
+          "opened_mali_device": true,
+          "peak_sampled_gpu_load_percent": 4
+        },
+        {
+          "process_wall_ms": 710.4124470006354,
+          "peak_process_rss_kib": 69784,
+          "opened_mali_device": true,
+          "peak_sampled_gpu_load_percent": 3
+        }
+      ],
+      "max_relative_l2_vs_default_opencl": 0.0
+    }
+  }
+}

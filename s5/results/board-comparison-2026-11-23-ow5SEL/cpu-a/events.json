@@ -1,0 +1,10 @@
+[
+  {
+    "seconds_from_start": 1.689726045000043,
+    "message": "clip_encode: copying image 1/1 to input buffer (nx=448, ny=448)"
+  },
+  {
+    "seconds_from_start": 38.80708160800009,
+    "message": "clip_encode: output embedding shape [1024, 196, 1]"
+  }
+]

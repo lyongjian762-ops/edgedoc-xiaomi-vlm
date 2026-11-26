@@ -1,0 +1,15 @@
+{
+  "command": [
+    "sh",
+    "/path/to/board-run/run_pipeline.sh",
+    "/path/to/board-run",
+    "/path/to/board-run/npu",
+    "cpu"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 7612.70730599972,
+  "peak_process_rss_kib": 882836,
+  "minimum_board_mem_available_kib": 2676672,
+  "opened_mali_device": false
+}

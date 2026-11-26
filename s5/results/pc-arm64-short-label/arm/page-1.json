@@ -1,0 +1,58 @@
+{
+  "chunks": [
+    {
+      "next_position": 4,
+      "position_span": 4,
+      "start_position": 0,
+      "tokens": 4,
+      "type": "text"
+    },
+    {
+      "embedding_dtype": "float32",
+      "embedding_shape": [
+        160,
+        1024
+      ],
+      "first_txyz": [
+        4,
+        4,
+        4,
+        0
+      ],
+      "last_txyz": [
+        4,
+        23,
+        11,
+        0
+      ],
+      "next_position": 24,
+      "position_span": 20,
+      "start_position": 4,
+      "tokens": 160,
+      "type": "image"
+    },
+    {
+      "next_position": 92,
+      "position_span": 68,
+      "start_position": 24,
+      "tokens": 68,
+      "type": "text"
+    }
+  ],
+  "finish_reason": "eog",
+  "generated_content_tokens": 22,
+  "image": "../examples/edge_xiaomi_ocr/a0/samples/chinese-label.png",
+  "incomplete_utf8_tail_bytes": 0,
+  "input_rgb_shape": [
+    256,
+    640,
+    3
+  ],
+  "max_tokens": 64,
+  "memory_pos_max_after_reset": -1,
+  "memory_pos_max_before_reset": -1,
+  "mrope": true,
+  "next_position_after_prefill": 92,
+  "prompt_tokens": 232,
+  "request_ms": 322485.597758
+}

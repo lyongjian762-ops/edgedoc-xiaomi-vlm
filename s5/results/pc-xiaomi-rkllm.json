@@ -1,0 +1,11 @@
+{
+  "checkpoint": "xiaomi-ocr-0-bbd8cf8",
+  "target_platform": "rk3588",
+  "quantization": "w8a8",
+  "calibration_samples": 3,
+  "context_limit": 4096,
+  "load_seconds": 17.671551790999956,
+  "build_seconds": 130.608246797,
+  "export_seconds": 21.627505358000008,
+  "rkllm_bytes": 1300331444
+}

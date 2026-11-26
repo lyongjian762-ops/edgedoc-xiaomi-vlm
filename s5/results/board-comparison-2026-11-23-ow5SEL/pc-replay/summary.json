@@ -1,0 +1,18 @@
+{
+  "pc_replay": "WSL x86_64, S1 CPU executable",
+  "image_rgb_shape": [
+    448,
+    448,
+    3
+  ],
+  "image_features_shape": [
+    196,
+    1024
+  ],
+  "prompt_tokens": 268,
+  "generated_content_tokens": 98,
+  "finish_reason": "eog",
+  "output_matches_pc_reference": true,
+  "invalid_image_exit": 1,
+  "invalid_image_has_page_output": false
+}

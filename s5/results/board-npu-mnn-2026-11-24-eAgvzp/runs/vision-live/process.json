@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/path/to/board-run/npu/imgenc",
+    "/path/to/board-run/npu/xiaomi_vision_rk3588.rknn",
+    "/path/to/board-run/npu/vision-input.png",
+    "3"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 2515.1941690000967,
+  "peak_process_rss_kib": 252320,
+  "minimum_board_mem_available_kib": 3158912,
+  "opened_mali_device": false
+}

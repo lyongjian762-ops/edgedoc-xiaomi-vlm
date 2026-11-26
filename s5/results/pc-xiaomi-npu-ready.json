@@ -1,0 +1,79 @@
+{
+  "stage_directory_in_wsl": "/home/runner/.cache/edgedoc-xiaomi-vlm/board-xiaomi-npu-448",
+  "target_soc": "rk3588 family",
+  "official_checkpoint_revision": "bbd8cf8d21f256b3644b44cb860f3a7cecb93c30",
+  "official_model_safetensors_sha256": "d4551e9f6127ac9e35cff7b4f7a72a90410e03e6c8676a36f0e2b7eaeb5d5348",
+  "vision_compiler_version": "2.3.2",
+  "language_compiler_version": "1.3.1",
+  "fixed_input": {
+    "layout": "NHWC",
+    "dtype": "uint8",
+    "shape": [
+      1,
+      448,
+      448,
+      3
+    ]
+  },
+  "vision_output_shape": [
+    196,
+    1024
+  ],
+  "runtime_startup_verification": "demo and imgenc printed usage in QEMU with Debian 12 ARM64 user libraries",
+  "pc_reference_text": "official BF16 and S1 GGUF outputs byte-identical on the staged PNG with matching prompt",
+  "board_status": "awaiting connection; board execution unverified",
+  "files": {
+    "demo": {
+      "sha256": "53db851d63ed678041a6e7f21cc8a4ecdc53075fdc9c9bca02f5f4ba1c3e111d",
+      "bytes": 7777840,
+      "highest_glibc_symbol_version": "GLIBC_2.34",
+      "highest_glibcxx_symbol_version": "GLIBCXX_3.4.30"
+    },
+    "imgenc": {
+      "sha256": "30723bae42782b0139cdb888547b83493047a8e75a965fc96ba941991ae17869",
+      "bytes": 7040592,
+      "highest_glibc_symbol_version": "GLIBC_2.34",
+      "highest_glibcxx_symbol_version": "GLIBCXX_3.4.21"
+    },
+    "lib/librknnrt.so": {
+      "sha256": "d31fc19c85b85f6091b2bd0f6af9d962d5264a4e410bfb536402ec92bac738e8",
+      "bytes": 7726232,
+      "highest_glibc_symbol_version": "GLIBC_2.17",
+      "highest_glibcxx_symbol_version": "GLIBCXX_3.4.22"
+    },
+    "lib/librkllmrt.so": {
+      "sha256": "f25e9b099db08aaacd0a3ac62b4697d3951d6ae61ae41ea09f6702cfa89eb32c",
+      "bytes": 7674816,
+      "highest_glibc_symbol_version": "GLIBC_2.29",
+      "highest_glibcxx_symbol_version": "GLIBCXX_3.4.26"
+    },
+    "run_xiaomi_npu_once.sh": {
+      "sha256": "c916f8d72b44a65220184600ebcd165d46f363b83d5ba8d6d9071d158c73d822",
+      "bytes": 410
+    },
+    "vision-input.png": {
+      "sha256": "6221fe776e94e4abf9e1a14200489dcb41e30ac62c222b7d4ac6b6e70f50e7f6",
+      "bytes": 69396
+    },
+    "ocr_prompt.txt": {
+      "sha256": "8238ac451b7addf90df9413ea929d040f1d98d32caef00d2ec91cb3509c24715",
+      "bytes": 310
+    },
+    "expected.md": {
+      "sha256": "938ec6517469e808590fca283ab769018001320bf9926f63a2ee7e3e9a53e079",
+      "bytes": 359
+    },
+    "reference.npy": {
+      "sha256": "1b973770a5d74b5991ab4212a1c0d78676e70647bccaa1a1167da35b3289dd47",
+      "bytes": 802944
+    },
+    "xiaomi_vision_rk3588.rknn": {
+      "sha256": "568e86405d26a601c62787dc0b321e3e2f3a6894a397a9726c93dd049ab6c438",
+      "bytes": 218819963
+    },
+    "xiaomi_ocr_0_w8a8_rk3588.rkllm": {
+      "sha256": "2b7f0daf7bcf2d3efd19d67810d9859bdb7f72ac660aaedb457aedb10857f922",
+      "bytes": 1300331444
+    }
+  }
+}

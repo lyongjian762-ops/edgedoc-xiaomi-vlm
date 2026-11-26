@@ -1,0 +1,18 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "4-7",
+    "/path/to/board-run/mnn_image_replay",
+    "/path/to/board-run/model/opencl.json",
+    "/path/to/board-run/request.json",
+    "/path/to/board-run/vision-live/img_vec.bin",
+    "."
+  ],
+  "returncode": -7,
+  "timed_out": false,
+  "process_wall_ms": 1125.2306129999852,
+  "peak_process_rss_kib": 883196,
+  "minimum_board_mem_available_kib": 2565420,
+  "opened_mali_device": false
+}

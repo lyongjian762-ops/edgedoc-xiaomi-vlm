@@ -1,0 +1,13 @@
+{
+  "returncode": 0,
+  "command": [
+    "taskset",
+    "-c",
+    "4-7",
+    "./compare_qkv",
+    "qkv_tile32.cl",
+    "operands",
+    "measured/tile32"
+  ],
+  "benchmark_peak_rss_kib": 100632
+}

@@ -1,0 +1,10 @@
+{
+  "output_shape": [
+    196,
+    1024
+  ],
+  "cosine_similarity": 0.998959152858082,
+  "cosine_threshold": 0.999,
+  "max_abs_error": 0.37006664276123047,
+  "rmse": 0.005780326286888617
+}

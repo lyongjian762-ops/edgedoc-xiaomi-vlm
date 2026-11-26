@@ -1,0 +1,21 @@
+{
+  "command": [
+    "stdbuf",
+    "-oL",
+    "-eL",
+    "taskset",
+    "-c",
+    "4-7",
+    "/path/to/board-run/mnn_image_replay",
+    "/path/to/board-run/model-replay/cpu.json",
+    "/path/to/board-run/request.json",
+    "/path/to/board-run/vision-live/img_vec.bin",
+    "."
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 5841.155462000643,
+  "peak_process_rss_kib": 882820,
+  "minimum_board_mem_available_kib": 2576980,
+  "opened_mali_device": false
+}

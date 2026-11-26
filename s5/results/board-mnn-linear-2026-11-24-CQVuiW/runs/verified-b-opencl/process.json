@@ -1,0 +1,21 @@
+{
+  "command": [
+    "stdbuf",
+    "-oL",
+    "-eL",
+    "taskset",
+    "-c",
+    "4-7",
+    "/path/to/board-run/mnn_linear_bench_packed",
+    "opencl",
+    "/path/to/board-run/operands/up_proj.mnn",
+    "/path/to/board-run/operands/input.f32",
+    "reverse"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 14742.166605999955,
+  "peak_process_rss_kib": 177556,
+  "minimum_board_mem_available_kib": 3300240,
+  "opened_mali_device": true
+}

@@ -1,0 +1,108 @@
+{
+  "session_date_asia_shanghai": "2026-11-23",
+  "board": {
+    "device_tree_model": "Embedfire LubanCat-4 V1",
+    "soc": "RK3588S",
+    "arch": "aarch64",
+    "os": "Debian GNU/Linux 12",
+    "kernel": "6.1.99-rk3588",
+    "glibc": "2.36",
+    "memory_kib": 3991612,
+    "root_filesystem": "/dev/mmcblk1p3 ext4 on SD",
+    "disk_free_gib_approx": 38,
+    "swap_kib": 0,
+    "npu_render_device": "/dev/dri/renderD129",
+    "rknpu_driver": "0.9.8",
+    "rkllm_runtime": "1.3.1",
+    "rknn_runtime": "2.3.2",
+    "board_wall_clock_initial": "2026-04-28T03:50:06+08:00"
+  },
+  "run_directory_on_board": "/path/to/board-run",
+  "cpu_original": {
+    "wall_seconds": 208.10181873200003,
+    "peak_rss_kib": 1023368,
+    "exit_status": 0,
+    "request_ms": 196641.290654,
+    "input_w_h": [
+      1100,
+      790
+    ],
+    "prompt_tokens": 922,
+    "generated_content_tokens": 98,
+    "finish_reason": "eog",
+    "byte_identical_to_pc_original": true,
+    "samples": 104,
+    "peak_sampled_millicelsius_by_zone": {
+      "soc-thermal": 83153,
+      "bigcore0-thermal": 90333,
+      "bigcore1-thermal": 90333,
+      "littlecore-thermal": 85000,
+      "center-thermal": 80384,
+      "gpu-thermal": 77615,
+      "npu-thermal": 80384
+    },
+    "lowest_sampled_available_memory_kib": 3300804
+  },
+  "rknn_small": {
+    "initial_nchw": {
+      "values": 128,
+      "max_abs_error": 0.6861680746078491,
+      "abs_error_limit": 0.003,
+      "passed": false
+    },
+    "verified_nhwc": {
+      "values": 128,
+      "max_abs_error": 0.0003553633921509203,
+      "abs_error_limit": 0.003,
+      "passed": true
+    }
+  },
+  "rknn_vision_448": {
+    "output_shape": [
+      196,
+      1024
+    ],
+    "cosine_similarity": 0.998959152858082,
+    "cosine_threshold": 0.999,
+    "max_abs_error": 0.37006664276123047,
+    "rmse": 0.005780326286888617,
+    "passes_existing_threshold": false,
+    "first_encoder_ms": 851.46,
+    "repeat_encoder_ms": 765.58,
+    "repeat_dump_identical": true,
+    "dump_sha256": "a55427cedd4084e61b0912955d795e41be09017b0172516c468ccca999f72b47"
+  },
+  "npu_ocr_448": {
+    "wall_seconds": 12.61059762100001,
+    "peak_rss_kib": 1359184,
+    "exit_status": 0,
+    "input_w_h": [
+      448,
+      448
+    ],
+    "model_quantization": "W8A8",
+    "vision_encoder_ms": 802.86,
+    "rkllm_model_load_ms": 2158.38,
+    "key_fields": {
+      "WX-1049-28": true,
+      "2026-11-17": true,
+      "36套": true,
+      "16:40": true,
+      "保留签字页": true
+    },
+    "byte_identical_to_pc_fixed": true,
+    "samples": 13,
+    "peak_sampled_millicelsius_by_zone": {
+      "soc-thermal": 53615,
+      "bigcore0-thermal": 57307,
+      "bigcore1-thermal": 57307,
+      "littlecore-thermal": 54538,
+      "center-thermal": 53615,
+      "gpu-thermal": 51769,
+      "npu-thermal": 52692
+    },
+    "lowest_sampled_available_memory_kib": 2461376
+  },
+  "cpu_smoke_archive_sha256": "9ea16170c565d766fd4771224fc83f001bfe8b6396e5b3451c284d4912a465cc",
+  "repacked_smoke_archive_with_nhwc_fix_sha256": "78be315a1b2e2d21764c766e9bf7a335b8b18e44ba9b04d216dc31d90f93705f"
+}

@@ -1,0 +1,4 @@
+E RKNN: [16:34:14.514] Not support core mask: 7, fallback to single core auto mode
+E RKNN: [16:34:14.514] NN Compiler/Model Version is 0.0.0 now
+E RKNN: [16:34:14.514] rknn_set_core_mask: failed to set core mask: 7
+set RKNN MatMul core mask failed (-1)

@@ -1,0 +1,264 @@
+{
+  "image_dimensions": [
+    448,
+    448
+  ],
+  "visual_embedding": [
+    196,
+    1024
+  ],
+  "visual_embedding_bytes": 802816,
+  "visual_embedding_sha256": "a55427cedd4084e61b0912955d795e41be09017b0172516c468ccca999f72b47",
+  "model_origin": "Xiaomi-OCR-0 bbd8cf8d21f256b3644b44cb860f3a7cecb93c30",
+  "mnn_revision": "d407447ed56c4121a11ccbd266dc184ca1ead0c2",
+  "mnn_quant_weight_bits": 4,
+  "mnn_quant_block": 64,
+  "generated_ocr_sha256": "938ec6517469e808590fca283ab769018001320bf9926f63a2ee7e3e9a53e079",
+  "pipelines": {
+    "rkllm": {
+      "runs": [
+        {
+          "run": "pipeline-rkllm",
+          "process_wall_ms": 13543.876152999474,
+          "peak_process_rss_kib": 1357796,
+          "minimum_board_mem_available_kib": 2039604,
+          "opened_mali_device": false,
+          "max_sampled_gpu_load_percent": 0
+        },
+        {
+          "run": "pipeline-rkllm-2",
+          "process_wall_ms": 12648.767312000018,
+          "peak_process_rss_kib": 1356972,
+          "minimum_board_mem_available_kib": 2015324,
+          "opened_mali_device": false,
+          "max_sampled_gpu_load_percent": 0
+        }
+      ],
+      "medians": {
+        "process_wall_ms": 13096.321732499746
+      }
+    },
+    "mnn-cpu": {
+      "runs": [
+        {
+          "run": "pipeline-mnn-cpu",
+          "backend": "cpu",
+          "decode_ms": 2675.46,
+          "decode_tokens_per_sec": 36.629215163000005,
+          "finish_reason": "eog",
+          "first_text_ms": 1943.85557,
+          "generated_tokens": 98,
+          "model_load_ms": 1091.799276,
+          "prefill_ms": 1942.934,
+          "prompt_tokens": 268,
+          "request_ms": 4650.786467,
+          "status": 1,
+          "process_wall_ms": 7612.70730599972,
+          "peak_process_rss_kib": 882836,
+          "minimum_board_mem_available_kib": 2676672,
+          "opened_mali_device": false,
+          "max_sampled_gpu_load_percent": 0
+        },
+        {
+          "run": "pipeline-mnn-cpu-2",
+          "backend": "cpu",
+          "decode_ms": 2584.731,
+          "decode_tokens_per_sec": 37.91497064878318,
+          "finish_reason": "eog",
+          "first_text_ms": 1925.009527,
+          "generated_tokens": 98,
+          "model_load_ms": 1141.33349,
+          "prefill_ms": 1924.102,
+          "prompt_tokens": 268,
+          "request_ms": 4542.252331,
+          "status": 1,
+          "process_wall_ms": 7401.639534999958,
+          "peak_process_rss_kib": 882756,
+          "minimum_board_mem_available_kib": 2531292,
+          "opened_mali_device": false,
+          "max_sampled_gpu_load_percent": 0
+        }
+      ],
+      "medians": {
+        "process_wall_ms": 7507.173420499839,
+        "model_load_ms": 1116.5663829999999,
+        "request_ms": 4596.519399,
+        "first_text_ms": 1934.4325485,
+        "prefill_ms": 1933.518,
+        "decode_ms": 2630.0955000000004,
+        "decode_tokens_per_sec": 37.2720929058916
+      }
+    },
+    "mnn-opencl": {
+      "runs": [
+        {
+          "run": "pipeline-mnn-opencl",
+          "backend": "opencl",
+          "decode_ms": 4762.141,
+          "decode_tokens_per_sec": 20.578979076847997,
+          "finish_reason": "eog",
+          "first_text_ms": 1946.52932,
+          "generated_tokens": 98,
+          "model_load_ms": 997.724808,
+          "prefill_ms": 1944.457,
+          "prompt_tokens": 268,
+          "request_ms": 6873.548607,
+          "status": 1,
+          "process_wall_ms": 9565.410502999839,
+          "peak_process_rss_kib": 687264,
+          "minimum_board_mem_available_kib": 2765104,
+          "opened_mali_device": true,
+          "max_sampled_gpu_load_percent": 100
+        },
+        {
+          "run": "pipeline-mnn-opencl-2",
+          "backend": "opencl",
+          "decode_ms": 4064.595,
+          "decode_tokens_per_sec": 24.11064324981948,
+          "finish_reason": "eog",
+          "first_text_ms": 2074.327917,
+          "generated_tokens": 98,
+          "model_load_ms": 1131.822781,
+          "prefill_ms": 2072.184,
+          "prompt_tokens": 268,
+          "request_ms": 6267.425005,
+          "status": 1,
+          "process_wall_ms": 9297.713476000354,
+          "peak_process_rss_kib": 687052,
+          "minimum_board_mem_available_kib": 2764136,
+          "opened_mali_device": true,
+          "max_sampled_gpu_load_percent": 100
+        }
+      ],
+      "medians": {
+        "process_wall_ms": 9431.561989500096,
+        "model_load_ms": 1064.7737945000001,
+        "request_ms": 6570.486806,
+        "first_text_ms": 2010.4286185,
+        "prefill_ms": 2008.3205000000003,
+        "decode_ms": 4413.3679999999995,
+        "decode_tokens_per_sec": 22.344811163333738
+      }
+    }
+  },
+  "language_only": {
+    "opencl_first_no_mnn_cache": {
+      "run": "fixed-opencl",
+      "backend": "opencl",
+      "decode_ms": 6755.256,
+      "decode_tokens_per_sec": 14.507222228143537,
+      "finish_reason": "eog",
+      "first_text_ms": 38503.083411,
+      "generated_tokens": 98,
+      "model_load_ms": 1473.786773,
+      "prefill_ms": 38499.168,
+      "prompt_tokens": 268,
+      "request_ms": 45371.878434,
+      "status": 1,
+      "process_wall_ms": 47071.22943700051,
+      "peak_process_rss_kib": 777792,
+      "minimum_board_mem_available_kib": 2691700,
+      "opened_mali_device": true,
+      "max_sampled_gpu_load_percent": 100
+    },
+    "opencl_replay_from_cache": [
+      {
+        "run": "cached-opencl-1",
+        "backend": "opencl",
+        "decode_ms": 4270.156,
+        "decode_tokens_per_sec": 22.94998121848476,
+        "finish_reason": "eog",
+        "first_text_ms": 2286.236146,
+        "generated_tokens": 98,
+        "model_load_ms": 963.09068,
+        "prefill_ms": 2283.853,
+        "prompt_tokens": 268,
+        "request_ms": 6716.569841,
+        "status": 1,
+        "process_wall_ms": 7827.493285999481,
+        "peak_process_rss_kib": 687476,
+        "minimum_board_mem_available_kib": 2763728,
+        "opened_mali_device": true,
+        "max_sampled_gpu_load_percent": 100
+      },
+      {
+        "run": "cached-opencl-2",
+        "backend": "opencl",
+        "decode_ms": 4320.568,
+        "decode_tokens_per_sec": 22.682202895545217,
+        "finish_reason": "eog",
+        "first_text_ms": 1930.984194,
+        "generated_tokens": 98,
+        "model_load_ms": 1131.652363,
+        "prefill_ms": 1927.961,
+        "prompt_tokens": 268,
+        "request_ms": 6364.465056,
+        "status": 1,
+        "process_wall_ms": 7718.398942999556,
+        "peak_process_rss_kib": 687772,
+        "minimum_board_mem_available_kib": 2763740,
+        "opened_mali_device": true,
+        "max_sampled_gpu_load_percent": 100
+      }
+    ],
+    "cpu_replay": [
+      {
+        "run": "fixed-cpu",
+        "backend": "cpu",
+        "decode_ms": 2723.484,
+        "decode_tokens_per_sec": 35.98332136337133,
+        "finish_reason": "eog",
+        "first_text_ms": 1958.228322,
+        "generated_tokens": 98,
+        "model_load_ms": 1030.286645,
+        "prefill_ms": 1957.35,
+        "prompt_tokens": 268,
+        "request_ms": 4714.303015,
+        "status": 1,
+        "process_wall_ms": 5841.155462000643,
+        "peak_process_rss_kib": 882820,
+        "minimum_board_mem_available_kib": 2576980,
+        "opened_mali_device": false,
+        "max_sampled_gpu_load_percent": 0
+      },
+      {
+        "run": "recheck-cpu-1",
+        "backend": "cpu",
+        "decode_ms": 2914.422,
+        "decode_tokens_per_sec": 33.62587847607519,
+        "finish_reason": "eog",
+        "first_text_ms": 1890.65469,
+        "generated_tokens": 98,
+        "model_load_ms": 961.62443,
+        "prefill_ms": 1889.623,
+        "prompt_tokens": 268,
+        "request_ms": 4837.274653,
+        "status": 1,
+        "process_wall_ms": 5857.621297000151,
+        "peak_process_rss_kib": 883004,
+        "minimum_board_mem_available_kib": 2565588,
+        "opened_mali_device": false,
+        "max_sampled_gpu_load_percent": 0
+      },
+      {
+        "run": "recheck-cpu-2",
+        "backend": "cpu",
+        "decode_ms": 2885.011,
+        "decode_tokens_per_sec": 33.96867464283498,
+        "finish_reason": "eog",
+        "first_text_ms": 1854.330519,
+        "generated_tokens": 98,
+        "model_load_ms": 1066.956733,
+        "prefill_ms": 1853.465,
+        "prompt_tokens": 268,
+        "request_ms": 4772.054771,
+        "status": 1,
+        "process_wall_ms": 5941.347137999401,
+        "peak_process_rss_kib": 883044,
+        "minimum_board_mem_available_kib": 2598508,
+        "opened_mali_device": false,
+        "max_sampled_gpu_load_percent": 0
+      }
+    ]
+  }
+}

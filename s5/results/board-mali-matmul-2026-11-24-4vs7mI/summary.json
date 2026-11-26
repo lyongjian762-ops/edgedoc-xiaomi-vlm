@@ -1,0 +1,93 @@
+{
+  "qkv_layer": "model.visual.blocks.0.attn.qkv",
+  "dimensions_mkn": [
+    784,
+    768,
+    2304
+  ],
+  "operation_count": 2774532096,
+  "three_tensor_bytes": 11968512,
+  "measured_pairs": 15,
+  "timing_ms": {
+    "cpu_ms": {
+      "median": 23.167377,
+      "min": 21.822794,
+      "max": 44.172754,
+      "p95": 43.6369334
+    },
+    "gpu_wall_ms": {
+      "median": 72.701132,
+      "min": 72.093008,
+      "max": 73.886758,
+      "p95": 73.74766170000001
+    },
+    "gpu_upload_ms": {
+      "median": 0.167416,
+      "min": 0.12075,
+      "max": 0.189584,
+      "p95": 0.189584
+    },
+    "gpu_kernel_ms": {
+      "median": 70.779462,
+      "min": 70.634045,
+      "max": 71.038672,
+      "p95": 71.0219203
+    },
+    "gpu_readback_ms": {
+      "median": 1.026084,
+      "min": 0.737916,
+      "max": 1.694875,
+      "p95": 1.694875
+    }
+  },
+  "gpu_wall_over_cpu": 3.1380821402440167,
+  "correctness": {
+    "passed": true,
+    "thresholds": {
+      "max_abs": 0.001,
+      "relative_l2": 1e-05
+    },
+    "errors": {
+      "cpu_vs_pytorch": {
+        "max_abs": 3.814697265625e-06,
+        "relative_l2": 1.9340208660760275e-07
+      },
+      "gpu_vs_pytorch": {
+        "max_abs": 1.1444091796875e-05,
+        "relative_l2": 4.605187469037379e-07
+      },
+      "gpu_vs_cpu": {
+        "max_abs": 1.1444091796875e-05,
+        "relative_l2": 4.2616850439689125e-07
+      }
+    }
+  },
+  "resources": {
+    "before_board_mem_available_kib": 3404272,
+    "minimum_board_mem_available_kib": 3367216,
+    "after_board_mem_available_kib": 3405376,
+    "max_soc_c": 49.0,
+    "max_gpu_c": 48.076,
+    "process": {
+      "returncode": 0,
+      "command": [
+        "taskset",
+        "-c",
+        "4-7",
+        "./compare_qkv",
+        "qkv.cl",
+        "operands",
+        "board"
+      ],
+      "benchmark_peak_rss_kib": 94812
+    }
+  },
+  "runtime_log": [
+    "arm_release_ver: g13p0-01eac0, rk_so_ver: 6",
+    "OpenCL device: Mali-G610 r0p0",
+    "OpenCL initialization and build ms: 55.24",
+    "OpenCL buffer allocation and one-time weight upload ms: 1.40438",
+    "OpenBLAS OpenBLAS 0.3.13 NO_LAPACKE DYNAMIC_ARCH NO_AFFINITY armv8 MAX_THREADS=64, core armv8, configured threads 4",
+    "CPU one-time operand conversion ms: 6.53683"
+  ]
+}

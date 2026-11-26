@@ -1,0 +1,11 @@
+=== demo ===
+GLIBCXX_3.4.22
+GLIBC_2.29
+Usage: ./demo image_path img_encoder_model_path audio_path aud_encoder_model_path llm_model_path max_new_tokens max_context_len rknn_core_num platform   platform: rk3588 | rk3576 | rk3562 | rv1126b
+=== imgenc ===
+GLIBCXX_3.4.21
+GLIBC_2.29
+Usage:
+=== rknn_board_smoke ===
+GLIBC_2.17
+Usage: rknn_board_smoke <conv_bn_rk3588.rknn>

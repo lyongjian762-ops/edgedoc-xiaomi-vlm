@@ -1,0 +1,6 @@
+{
+  "values": 128,
+  "max_abs_error": 0.6861680746078491,
+  "abs_error_limit": 0.003,
+  "passed": false
+}

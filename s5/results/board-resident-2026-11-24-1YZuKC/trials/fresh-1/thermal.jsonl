@@ -1,0 +1,9 @@
+{"elapsed_seconds": 0.004252500000006876, "bigcore1-thermal": 35153, "soc-thermal": 35153, "gpu-thermal": 33307, "littlecore-thermal": 35153, "bigcore0-thermal": 35153, "npu-thermal": 34230, "center-thermal": 33307}
+{"elapsed_seconds": 1.006165808999981, "bigcore1-thermal": 37000, "soc-thermal": 36076, "gpu-thermal": 35153, "littlecore-thermal": 36076, "bigcore0-thermal": 37000, "npu-thermal": 35153, "center-thermal": 35153}
+{"elapsed_seconds": 2.0098177439999745, "bigcore1-thermal": 38846, "soc-thermal": 37000, "gpu-thermal": 36076, "littlecore-thermal": 37923, "bigcore0-thermal": 38846, "npu-thermal": 37000, "center-thermal": 37923}
+{"elapsed_seconds": 3.012863968999966, "bigcore1-thermal": 37923, "soc-thermal": 37923, "gpu-thermal": 37000, "littlecore-thermal": 37923, "bigcore0-thermal": 37923, "npu-thermal": 37000, "center-thermal": 37923}
+{"elapsed_seconds": 4.015914444999964, "bigcore1-thermal": 47153, "soc-thermal": 43461, "gpu-thermal": 39769, "littlecore-thermal": 44384, "bigcore0-thermal": 46230, "npu-thermal": 40692, "center-thermal": 41615}
+{"elapsed_seconds": 5.019252838, "bigcore1-thermal": 46230, "soc-thermal": 44384, "gpu-thermal": 41615, "littlecore-thermal": 45307, "bigcore0-thermal": 45307, "npu-thermal": 42538, "center-thermal": 42538}
+{"elapsed_seconds": 6.023376854999981, "bigcore1-thermal": 45307, "soc-thermal": 43461, "gpu-thermal": 42538, "littlecore-thermal": 44384, "bigcore0-thermal": 45307, "npu-thermal": 43461, "center-thermal": 43461}
+{"elapsed_seconds": 7.0268847890000075, "bigcore1-thermal": 45307, "soc-thermal": 44384, "gpu-thermal": 42538, "littlecore-thermal": 44384, "bigcore0-thermal": 45307, "npu-thermal": 43461, "center-thermal": 44384}
+{"elapsed_seconds": 8.029984264999996, "bigcore1-thermal": 45307, "soc-thermal": 44384, "gpu-thermal": 42538, "littlecore-thermal": 44384, "bigcore0-thermal": 45307, "npu-thermal": 43461, "center-thermal": 43461}

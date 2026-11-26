@@ -1,0 +1,343 @@
+{
+  "cases": {
+    "single": {
+      "command": [
+        "/home/runner/.cache/edgedoc-xiaomi-vlm/s1-build/edgedoc_cli",
+        "--model",
+        "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+        "--mmproj",
+        "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+        "--prompt-file",
+        "s1/ocr_prompt.txt",
+        "--output-dir",
+        "./s1/results/pc-cpu-acceptance/single",
+        "--image",
+        "s0/samples/zh-notice.png"
+      ],
+      "exit_code": 0,
+      "position_warning_count": 16
+    },
+    "sequence": {
+      "command": [
+        "/home/runner/.cache/edgedoc-xiaomi-vlm/s1-build/edgedoc_cli",
+        "--model",
+        "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+        "--mmproj",
+        "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+        "--prompt-file",
+        "s1/ocr_prompt.txt",
+        "--output-dir",
+        "./s1/results/pc-cpu-acceptance/sequence",
+        "--image",
+        "s0/samples/zh-notice.png",
+        "--image",
+        "s0/samples/en-service.png",
+        "--image",
+        "s0/samples/zh-notice.png",
+        "--image",
+        "s0/samples/mixed-inventory.png"
+      ],
+      "exit_code": 0,
+      "position_warning_count": 64
+    },
+    "limited": {
+      "command": [
+        "/home/runner/.cache/edgedoc-xiaomi-vlm/s1-build/edgedoc_cli",
+        "--model",
+        "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+        "--mmproj",
+        "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+        "--prompt-file",
+        "s1/ocr_prompt.txt",
+        "--output-dir",
+        "./s1/results/pc-cpu-acceptance/limited",
+        "--max-tokens",
+        "2",
+        "--image",
+        "s0/samples/zh-notice.png"
+      ],
+      "exit_code": 2,
+      "position_warning_count": 16
+    },
+    "corrupt": {
+      "command": [
+        "/home/runner/.cache/edgedoc-xiaomi-vlm/s1-build/edgedoc_cli",
+        "--model",
+        "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+        "--mmproj",
+        "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+        "--prompt-file",
+        "s1/ocr_prompt.txt",
+        "--output-dir",
+        "./s1/results/pc-cpu-acceptance/corrupt",
+        "--image",
+        "./s1/results/pc-cpu-acceptance/corrupt.png"
+      ],
+      "exit_code": 1,
+      "position_warning_count": 0
+    },
+    "over_budget": {
+      "command": [
+        "/home/runner/.cache/edgedoc-xiaomi-vlm/s1-build/edgedoc_cli",
+        "--model",
+        "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+        "--mmproj",
+        "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+        "--prompt-file",
+        "s1/ocr_prompt.txt",
+        "--output-dir",
+        "./s1/results/pc-cpu-acceptance/over_budget",
+        "--max-tokens",
+        "3500",
+        "--image",
+        "s0/samples/zh-notice.png"
+      ],
+      "exit_code": 1,
+      "position_warning_count": 0
+    }
+  },
+  "sequence_names": [
+    "zh-notice",
+    "en-service",
+    "zh-notice",
+    "mixed-inventory"
+  ],
+  "sequence": [
+    {
+      "chunks": [
+        {
+          "next_position": 4,
+          "position_span": 4,
+          "start_position": 0,
+          "tokens": 4,
+          "type": "text"
+        },
+        {
+          "embedding_dtype": "float32",
+          "embedding_shape": [
+            850,
+            1024
+          ],
+          "first_txyz": [
+            4,
+            4,
+            4,
+            0
+          ],
+          "last_txyz": [
+            4,
+            37,
+            28,
+            0
+          ],
+          "next_position": 38,
+          "position_span": 34,
+          "start_position": 4,
+          "tokens": 850,
+          "type": "image"
+        },
+        {
+          "next_position": 106,
+          "position_span": 68,
+          "start_position": 38,
+          "tokens": 68,
+          "type": "text"
+        }
+      ],
+      "finish_reason": "eog",
+      "generated_content_tokens": 98,
+      "image": "s0/samples/zh-notice.png",
+      "incomplete_utf8_tail_bytes": 0,
+      "input_rgb_shape": [
+        790,
+        1100,
+        3
+      ],
+      "max_tokens": 512,
+      "memory_pos_max_after_reset": -1,
+      "memory_pos_max_before_reset": -1,
+      "mrope": true,
+      "next_position_after_prefill": 106,
+      "prompt_tokens": 922,
+      "request_ms": 13952.346974
+    },
+    {
+      "chunks": [
+        {
+          "next_position": 4,
+          "position_span": 4,
+          "start_position": 0,
+          "tokens": 4,
+          "type": "text"
+        },
+        {
+          "embedding_dtype": "float32",
+          "embedding_shape": [
+            850,
+            1024
+          ],
+          "first_txyz": [
+            4,
+            4,
+            4,
+            0
+          ],
+          "last_txyz": [
+            4,
+            37,
+            28,
+            0
+          ],
+          "next_position": 38,
+          "position_span": 34,
+          "start_position": 4,
+          "tokens": 850,
+          "type": "image"
+        },
+        {
+          "next_position": 106,
+          "position_span": 68,
+          "start_position": 38,
+          "tokens": 68,
+          "type": "text"
+        }
+      ],
+      "finish_reason": "eog",
+      "generated_content_tokens": 90,
+      "image": "s0/samples/en-service.png",
+      "incomplete_utf8_tail_bytes": 0,
+      "input_rgb_shape": [
+        800,
+        1100,
+        3
+      ],
+      "max_tokens": 512,
+      "memory_pos_max_after_reset": -1,
+      "memory_pos_max_before_reset": 203,
+      "mrope": true,
+      "next_position_after_prefill": 106,
+      "prompt_tokens": 922,
+      "request_ms": 14605.209367
+    },
+    {
+      "chunks": [
+        {
+          "next_position": 4,
+          "position_span": 4,
+          "start_position": 0,
+          "tokens": 4,
+          "type": "text"
+        },
+        {
+          "embedding_dtype": "float32",
+          "embedding_shape": [
+            850,
+            1024
+          ],
+          "first_txyz": [
+            4,
+            4,
+            4,
+            0
+          ],
+          "last_txyz": [
+            4,
+            37,
+            28,
+            0
+          ],
+          "next_position": 38,
+          "position_span": 34,
+          "start_position": 4,
+          "tokens": 850,
+          "type": "image"
+        },
+        {
+          "next_position": 106,
+          "position_span": 68,
+          "start_position": 38,
+          "tokens": 68,
+          "type": "text"
+        }
+      ],
+      "finish_reason": "eog",
+      "generated_content_tokens": 98,
+      "image": "s0/samples/zh-notice.png",
+      "incomplete_utf8_tail_bytes": 0,
+      "input_rgb_shape": [
+        790,
+        1100,
+        3
+      ],
+      "max_tokens": 512,
+      "memory_pos_max_after_reset": -1,
+      "memory_pos_max_before_reset": 195,
+      "mrope": true,
+      "next_position_after_prefill": 106,
+      "prompt_tokens": 922,
+      "request_ms": 15644.09896
+    },
+    {
+      "chunks": [
+        {
+          "next_position": 4,
+          "position_span": 4,
+          "start_position": 0,
+          "tokens": 4,
+          "type": "text"
+        },
+        {
+          "embedding_dtype": "float32",
+          "embedding_shape": [
+            850,
+            1024
+          ],
+          "first_txyz": [
+            4,
+            4,
+            4,
+            0
+          ],
+          "last_txyz": [
+            4,
+            37,
+            28,
+            0
+          ],
+          "next_position": 38,
+          "position_span": 34,
+          "start_position": 4,
+          "tokens": 850,
+          "type": "image"
+        },
+        {
+          "next_position": 106,
+          "position_span": 68,
+          "start_position": 38,
+          "tokens": 68,
+          "type": "text"
+        }
+      ],
+      "finish_reason": "eog",
+      "generated_content_tokens": 107,
+      "image": "s0/samples/mixed-inventory.png",
+      "incomplete_utf8_tail_bytes": 0,
+      "input_rgb_shape": [
+        815,
+        1100,
+        3
+      ],
+      "max_tokens": 512,
+      "memory_pos_max_after_reset": -1,
+      "memory_pos_max_before_reset": 203,
+      "mrope": true,
+      "next_position_after_prefill": 106,
+      "prompt_tokens": 922,
+      "request_ms": 14445.259245
+    }
+  ],
+  "distinct_pages_exact_match_s0": 3,
+  "a_b_a_exact_match_fresh_a": true,
+  "matching_s0_key_field_checks": 17,
+  "limited_output": "## "
+}

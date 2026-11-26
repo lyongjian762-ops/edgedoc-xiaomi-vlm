@@ -1,0 +1,12 @@
+{
+  "wall_seconds": 81.29788971000005,
+  "exit_status": 0,
+  "peak_child_rss_kib_so_far": 1358556,
+  "input_files": [
+    "cord-068-dev.png",
+    "omni-en-single-dev.png",
+    "omni-mixed-single-dev.png",
+    "omni-zh-double-dev.png",
+    "omni-zh-single-dev.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "backend": "CPU",
+  "batch": 256,
+  "context": 4096,
+  "images": [
+    "s0/samples/zh-notice.png"
+  ],
+  "micro_batch": 128,
+  "mmproj": "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+  "model": "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+  "prompt": "Extract all information from the main body of the document image and represent it in markdown format, ignoring headers and footers. Tables should be expressed in OTSL format, formulas in the document should be represented using LATEX format, and the parsing should be organized according to the reading order.",
+  "runtime_commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+  "sampler": "greedy",
+  "threads": 4
+}

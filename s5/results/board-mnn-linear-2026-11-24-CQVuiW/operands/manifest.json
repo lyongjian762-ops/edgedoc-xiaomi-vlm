@@ -1,0 +1,38 @@
+{
+  "layer": "/layers.0/mlp/up_proj/Linear",
+  "input_shape": [
+    268,
+    1024
+  ],
+  "output_width": 3584,
+  "source_image_sha256": "6221fe776e94e4abf9e1a14200489dcb41e30ac62c222b7d4ac6b6e70f50e7f6",
+  "quantized_weights": {
+    "external_offset": 7998596,
+    "external_sizes": [
+      1835030,
+      229376,
+      0,
+      0
+    ],
+    "quant": {
+      "type": 1,
+      "useInt32": false,
+      "quantScale": 1.0,
+      "scaleIn": 0.0,
+      "scaleOut": 0.0,
+      "aMaxOrBits": 4,
+      "aMin": 1,
+      "readType": 57344,
+      "has_scaleInt": false,
+      "shapeInt32": false,
+      "weightSize": 0,
+      "scaleStorage": "FP16"
+    }
+  },
+  "files": {
+    "up_proj.mnn": "14f8e47534d33ea145beea7ac52bbdb4ae07dbf56adec7393eac61f5234294d0",
+    "up_proj.mnn.weight": "2916626fd9061f3ba5243cd4a7a8c7e18fabadaad3ed0e7d034da0bef52e14ef",
+    "input.f32": "f909bb4216c596cae567434facddbffb9d83fde4b1bba7ee78062ee5039a03ff",
+    "reference-bf16-weights.f32": "ea4457715b5ae7cf6ca3d1193965cf582ce1484f539941e857cd7de4d5178500"
+  }
+}

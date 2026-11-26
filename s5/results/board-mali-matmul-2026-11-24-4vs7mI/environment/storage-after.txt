@@ -1,0 +1,6 @@
+Filesystem       1B-blocks       Used   Available Use% Mounted on
+/dev/mmcblk0p3 30550761472 6713532416 22530846720  23% /
+52203410	.
+4747437	operands
+18068600	lib
+14457875	board

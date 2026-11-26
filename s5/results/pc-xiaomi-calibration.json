@@ -1,0 +1,62 @@
+[
+  {
+    "image": "s0/samples/zh-notice.png",
+    "embeddings": [
+      1,
+      268,
+      1024
+    ],
+    "position_ids": [
+      3,
+      1,
+      268
+    ],
+    "grid_thw": [
+      [
+        1,
+        28,
+        28
+      ]
+    ]
+  },
+  {
+    "image": "s0/samples/en-service.png",
+    "embeddings": [
+      1,
+      268,
+      1024
+    ],
+    "position_ids": [
+      3,
+      1,
+      268
+    ],
+    "grid_thw": [
+      [
+        1,
+        28,
+        28
+      ]
+    ]
+  },
+  {
+    "image": "s0/samples/mixed-inventory.png",
+    "embeddings": [
+      1,
+      268,
+      1024
+    ],
+    "position_ids": [
+      3,
+      1,
+      268
+    ],
+    "grid_thw": [
+      [
+        1,
+        28,
+        28
+      ]
+    ]
+  }
+]

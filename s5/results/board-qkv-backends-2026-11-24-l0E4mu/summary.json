@@ -1,0 +1,635 @@
+{
+  "layer": "model.visual.blocks.0.attn.qkv",
+  "dimensions_mkn": [
+    784,
+    768,
+    2304
+  ],
+  "operand_hashes": {
+    "x.f16": "bc96652dbc3a115178186129ce94506aa94bccc3574c445450122f88f37fdbab",
+    "w_transposed.f16": "3ad4c73193610baad1303bbdd83f4f59242ed918bdc30a69b40bfac84b80e11a",
+    "reference.f32": "997e688ca2c9c9959404c1cb2c80e8d643489eadeec145e9cf0b03dde3b7f54c"
+  },
+  "measurements_per_backend": 30,
+  "correctness_thresholds": {
+    "max_abs": 0.001,
+    "relative_l2": 1e-05
+  },
+  "correctness_passed": true,
+  "cpu_baseline": "OpenBLAS four Cortex-A76 cores, paired with tile16",
+  "backends": {
+    "tile16": {
+      "timing_ms": {
+        "cpu_ms": {
+          "median": 23.296877000000002,
+          "min": 21.798002,
+          "max": 44.269171,
+          "p95": 44.16170865
+        },
+        "gpu_wall_ms": {
+          "median": 72.6619035,
+          "min": 72.143174,
+          "max": 73.825215,
+          "p95": 73.67305280000001
+        },
+        "gpu_upload_ms": {
+          "median": 0.1672705,
+          "min": 0.119875,
+          "max": 0.203291,
+          "p95": 0.19551844999999998
+        },
+        "gpu_kernel_ms": {
+          "median": 70.7801055,
+          "min": 70.659502,
+          "max": 71.094254,
+          "p95": 71.002653
+        },
+        "gpu_readback_ms": {
+          "median": 1.0383334999999998,
+          "min": 0.738791,
+          "max": 1.701291,
+          "p95": 1.6972516
+        }
+      },
+      "bitwise_equal_between_rounds": {
+        "cpu.f32": true,
+        "gpu.f32": true
+      },
+      "rounds": {
+        "round-a": {
+          "timing_ms": {
+            "cpu_ms": {
+              "median": 23.302419,
+              "min": 21.798002,
+              "max": 44.269171,
+              "p95": 44.1413629
+            },
+            "gpu_wall_ms": {
+              "median": 72.663216,
+              "min": 72.143174,
+              "max": 73.560091,
+              "p95": 73.5047616
+            },
+            "gpu_upload_ms": {
+              "median": 0.165083,
+              "min": 0.119875,
+              "max": 0.203291,
+              "p95": 0.1994123
+            },
+            "gpu_kernel_ms": {
+              "median": 70.76238,
+              "min": 70.672453,
+              "max": 71.094254,
+              "p95": 71.0280158
+            },
+            "gpu_readback_ms": {
+              "median": 1.021709,
+              "min": 0.738791,
+              "max": 1.698958,
+              "p95": 1.6963036
+            }
+          },
+          "correctness": {
+            "cpu.f32": {
+              "max_abs": 3.814697265625e-06,
+              "relative_l2": 1.934020866075964e-07,
+              "passed": true,
+              "sha256": "048ee0c92621791cd73dd3c81a32727d6fe6e33aa7dca18914482abf430bc20e"
+            },
+            "gpu.f32": {
+              "max_abs": 1.1444091796875e-05,
+              "relative_l2": 4.6051874690372275e-07,
+              "passed": true,
+              "sha256": "aec96f8de908b05c3433bf8d4bae3c92ea654a5886cdcc255a25727f47c74382"
+            }
+          },
+          "benchmark_peak_rss_kib": 98024,
+          "minimum_board_mem_available_kib": 3366100,
+          "max_soc_c": 49.923,
+          "max_gpu_c": 49.0,
+          "runtime_log": [
+            "arm_release_ver: g13p0-01eac0, rk_so_ver: 6",
+            "OpenCL device: Mali-G610 r0p0",
+            "OpenCL initialization and build ms: 55.3971",
+            "OpenBLAS OpenBLAS 0.3.13 NO_LAPACKE DYNAMIC_ARCH NO_AFFINITY armv8 MAX_THREADS=64, core armv8, configured threads 4",
+            "CPU one-time operand conversion ms: 6.40296",
+            "OpenCL buffer allocation and one-time weight upload ms: 1.51258",
+            "First GPU request ms: 200.925"
+          ]
+        },
+        "round-b": {
+          "timing_ms": {
+            "cpu_ms": {
+              "median": 23.291335,
+              "min": 21.93071,
+              "max": 44.223171,
+              "p95": 43.288029099999996
+            },
+            "gpu_wall_ms": {
+              "median": 72.660591,
+              "min": 72.201215,
+              "max": 73.825215,
+              "p95": 73.73001500000001
+            },
+            "gpu_upload_ms": {
+              "median": 0.169458,
+              "min": 0.123667,
+              "max": 0.191625,
+              "p95": 0.1906044
+            },
+            "gpu_kernel_ms": {
+              "median": 70.789503,
+              "min": 70.659502,
+              "max": 71.005128,
+              "p95": 70.8995169
+            },
+            "gpu_readback_ms": {
+              "median": 1.040958,
+              "min": 0.748125,
+              "max": 1.701291,
+              "p95": 1.6965954
+            }
+          },
+          "correctness": {
+            "cpu.f32": {
+              "max_abs": 3.814697265625e-06,
+              "relative_l2": 1.934020866075964e-07,
+              "passed": true,
+              "sha256": "048ee0c92621791cd73dd3c81a32727d6fe6e33aa7dca18914482abf430bc20e"
+            },
+            "gpu.f32": {
+              "max_abs": 1.1444091796875e-05,
+              "relative_l2": 4.6051874690372275e-07,
+              "passed": true,
+              "sha256": "aec96f8de908b05c3433bf8d4bae3c92ea654a5886cdcc255a25727f47c74382"
+            }
+          },
+          "benchmark_peak_rss_kib": 98352,
+          "minimum_board_mem_available_kib": 3365196,
+          "max_soc_c": 55.461,
+          "max_gpu_c": 53.615,
+          "runtime_log": [
+            "arm_release_ver: g13p0-01eac0, rk_so_ver: 6",
+            "OpenCL device: Mali-G610 r0p0",
+            "OpenCL initialization and build ms: 55.1069",
+            "OpenBLAS OpenBLAS 0.3.13 NO_LAPACKE DYNAMIC_ARCH NO_AFFINITY armv8 MAX_THREADS=64, core armv8, configured threads 4",
+            "CPU one-time operand conversion ms: 6.43592",
+            "OpenCL buffer allocation and one-time weight upload ms: 1.54379",
+            "First GPU request ms: 161.319"
+          ]
+        }
+      }
+    },
+    "tile32": {
+      "timing_ms": {
+        "cpu_ms": {
+          "median": 37.599129000000005,
+          "min": 21.818127,
+          "max": 44.231962,
+          "p95": 44.14382725
+        },
+        "gpu_wall_ms": {
+          "median": 91.7004885,
+          "min": 91.181426,
+          "max": 93.103218,
+          "p95": 92.663384
+        },
+        "gpu_upload_ms": {
+          "median": 0.188562,
+          "min": 0.116083,
+          "max": 0.382666,
+          "p95": 0.3412065499999999
+        },
+        "gpu_kernel_ms": {
+          "median": 89.413625,
+          "min": 89.150292,
+          "max": 89.576712,
+          "p95": 89.54622355
+        },
+        "gpu_readback_ms": {
+          "median": 1.3539165,
+          "min": 0.660625,
+          "max": 2.01075,
+          "p95": 1.8636475499999992
+        }
+      },
+      "bitwise_equal_between_rounds": {
+        "cpu.f32": true,
+        "gpu.f32": true
+      },
+      "rounds": {
+        "round-a": {
+          "timing_ms": {
+            "cpu_ms": {
+              "median": 37.217879,
+              "min": 23.046627,
+              "max": 44.093296,
+              "p95": 42.797596
+            },
+            "gpu_wall_ms": {
+              "median": 91.378009,
+              "min": 91.235967,
+              "max": 92.470176,
+              "p95": 92.4672885
+            },
+            "gpu_upload_ms": {
+              "median": 0.187833,
+              "min": 0.116083,
+              "max": 0.382666,
+              "p95": 0.2671085999999998
+            },
+            "gpu_kernel_ms": {
+              "median": 89.382291,
+              "min": 89.150292,
+              "max": 89.531626,
+              "p95": 89.5063434
+            },
+            "gpu_readback_ms": {
+              "median": 1.043,
+              "min": 0.660625,
+              "max": 1.722,
+              "p95": 1.7156706
+            }
+          },
+          "correctness": {
+            "cpu.f32": {
+              "max_abs": 3.814697265625e-06,
+              "relative_l2": 1.934020866075964e-07,
+              "passed": true,
+              "sha256": "048ee0c92621791cd73dd3c81a32727d6fe6e33aa7dca18914482abf430bc20e"
+            },
+            "gpu.f32": {
+              "max_abs": 1.1444091796875e-05,
+              "relative_l2": 4.6051874690372275e-07,
+              "passed": true,
+              "sha256": "aec96f8de908b05c3433bf8d4bae3c92ea654a5886cdcc255a25727f47c74382"
+            }
+          },
+          "benchmark_peak_rss_kib": 100632,
+          "minimum_board_mem_available_kib": 3367168,
+          "max_soc_c": 52.692,
+          "max_gpu_c": 51.769,
+          "runtime_log": [
+            "arm_release_ver: g13p0-01eac0, rk_so_ver: 6",
+            "OpenCL device: Mali-G610 r0p0",
+            "OpenCL initialization and build ms: 50.4391",
+            "OpenBLAS OpenBLAS 0.3.13 NO_LAPACKE DYNAMIC_ARCH NO_AFFINITY armv8 MAX_THREADS=64, core armv8, configured threads 4",
+            "CPU one-time operand conversion ms: 6.405",
+            "OpenCL buffer allocation and one-time weight upload ms: 1.52308",
+            "First GPU request ms: 264.267"
+          ]
+        },
+        "round-b": {
+          "timing_ms": {
+            "cpu_ms": {
+              "median": 38.748213,
+              "min": 21.818127,
+              "max": 44.231962,
+              "p95": 44.199208299999995
+            },
+            "gpu_wall_ms": {
+              "median": 92.140426,
+              "min": 91.181426,
+              "max": 93.103218,
+              "p95": 92.85045919999999
+            },
+            "gpu_upload_ms": {
+              "median": 0.189875,
+              "min": 0.125708,
+              "max": 0.357875,
+              "p95": 0.33194629999999997
+            },
+            "gpu_kernel_ms": {
+              "median": 89.425459,
+              "min": 89.277708,
+              "max": 89.576712,
+              "p95": 89.56373049999999
+            },
+            "gpu_readback_ms": {
+              "median": 1.680583,
+              "min": 1.016167,
+              "max": 2.01075,
+              "p95": 1.9889036999999998
+            }
+          },
+          "correctness": {
+            "cpu.f32": {
+              "max_abs": 3.814697265625e-06,
+              "relative_l2": 1.934020866075964e-07,
+              "passed": true,
+              "sha256": "048ee0c92621791cd73dd3c81a32727d6fe6e33aa7dca18914482abf430bc20e"
+            },
+            "gpu.f32": {
+              "max_abs": 1.1444091796875e-05,
+              "relative_l2": 4.6051874690372275e-07,
+              "passed": true,
+              "sha256": "aec96f8de908b05c3433bf8d4bae3c92ea654a5886cdcc255a25727f47c74382"
+            }
+          },
+          "benchmark_peak_rss_kib": 100416,
+          "minimum_board_mem_available_kib": 3366320,
+          "max_soc_c": 51.769,
+          "max_gpu_c": 51.769,
+          "runtime_log": [
+            "arm_release_ver: g13p0-01eac0, rk_so_ver: 6",
+            "OpenCL device: Mali-G610 r0p0",
+            "OpenCL initialization and build ms: 65.9893",
+            "OpenBLAS OpenBLAS 0.3.13 NO_LAPACKE DYNAMIC_ARCH NO_AFFINITY armv8 MAX_THREADS=64, core armv8, configured threads 4",
+            "CPU one-time operand conversion ms: 6.38458",
+            "OpenCL buffer allocation and one-time weight upload ms: 1.56158",
+            "First GPU request ms: 263.824"
+          ]
+        }
+      }
+    },
+    "clblast": {
+      "timing_ms": {
+        "cpu_ms": {
+          "median": 26.578419,
+          "min": 22.131378,
+          "max": 45.366129,
+          "p95": 43.97706055
+        },
+        "gpu_wall_ms": {
+          "median": 46.5663375,
+          "min": 45.662755,
+          "max": 134.214097,
+          "p95": 96.50836754999978
+        },
+        "gpu_upload_ms": {
+          "median": 0.359042,
+          "min": 0.21525,
+          "max": 0.720417,
+          "p95": 0.70692745
+        },
+        "gpu_kernel_ms": {
+          "median": 44.4740625,
+          "min": 44.191292,
+          "max": 129.098958,
+          "p95": 92.49011424999978
+        },
+        "gpu_readback_ms": {
+          "median": 1.0174795,
+          "min": 0.65275,
+          "max": 2.012792,
+          "p95": 1.95266525
+        }
+      },
+      "bitwise_equal_between_rounds": {
+        "cpu.f32": true,
+        "gpu.f32": true
+      },
+      "rounds": {
+        "round-a": {
+          "timing_ms": {
+            "cpu_ms": {
+              "median": 25.957752,
+              "min": 22.131378,
+              "max": 45.366129,
+              "p95": 44.3700878
+            },
+            "gpu_wall_ms": {
+              "median": 45.950046,
+              "min": 45.662755,
+              "max": 51.541005,
+              "p95": 50.9332006
+            },
+            "gpu_upload_ms": {
+              "median": 0.27125,
+              "min": 0.21525,
+              "max": 0.720417,
+              "p95": 0.706942
+            },
+            "gpu_kernel_ms": {
+              "median": 44.324292,
+              "min": 44.209958,
+              "max": 47.967208,
+              "p95": 47.651157999999995
+            },
+            "gpu_readback_ms": {
+              "median": 0.739666,
+              "min": 0.65625,
+              "max": 1.917417,
+              "p95": 1.9104751
+            }
+          },
+          "correctness": {
+            "cpu.f32": {
+              "max_abs": 3.814697265625e-06,
+              "relative_l2": 1.934020866075964e-07,
+              "passed": true,
+              "sha256": "048ee0c92621791cd73dd3c81a32727d6fe6e33aa7dca18914482abf430bc20e"
+            },
+            "gpu.f32": {
+              "max_abs": 1.1444091796875e-05,
+              "relative_l2": 4.6051874690372275e-07,
+              "passed": true,
+              "sha256": "aec96f8de908b05c3433bf8d4bae3c92ea654a5886cdcc255a25727f47c74382"
+            }
+          },
+          "benchmark_peak_rss_kib": 132248,
+          "minimum_board_mem_available_kib": 3348328,
+          "max_soc_c": 53.615,
+          "max_gpu_c": 50.846,
+          "runtime_log": [
+            "arm_release_ver: g13p0-01eac0, rk_so_ver: 6",
+            "OpenCL device: Mali-G610 r0p0",
+            "Mali backend: CLBlast FP32 SGEMM",
+            "OpenCL initialization and build ms: 8.44888",
+            "OpenBLAS OpenBLAS 0.3.13 NO_LAPACKE DYNAMIC_ARCH NO_AFFINITY armv8 MAX_THREADS=64, core armv8, configured threads 4",
+            "CPU one-time operand conversion ms: 6.63017",
+            "OpenCL buffer allocation and one-time weight upload ms: 2.68071",
+            "First GPU request ms: 1764.31"
+          ]
+        },
+        "round-b": {
+          "timing_ms": {
+            "cpu_ms": {
+              "median": 26.799127,
+              "min": 23.154544,
+              "max": 44.004754,
+              "p95": 39.21561649999999
+            },
+            "gpu_wall_ms": {
+              "median": 46.574797,
+              "min": 45.812671,
+              "max": 134.214097,
+              "p95": 133.5741213
+            },
+            "gpu_upload_ms": {
+              "median": 0.360208,
+              "min": 0.223417,
+              "max": 0.707584,
+              "p95": 0.7065627
+            },
+            "gpu_kernel_ms": {
+              "median": 44.550042,
+              "min": 44.191292,
+              "max": 129.098958,
+              "p95": 128.90960800000002
+            },
+            "gpu_readback_ms": {
+              "median": 1.022291,
+              "min": 0.65275,
+              "max": 2.012792,
+              "p95": 1.9897214
+            }
+          },
+          "correctness": {
+            "cpu.f32": {
+              "max_abs": 3.814697265625e-06,
+              "relative_l2": 1.934020866075964e-07,
+              "passed": true,
+              "sha256": "048ee0c92621791cd73dd3c81a32727d6fe6e33aa7dca18914482abf430bc20e"
+            },
+            "gpu.f32": {
+              "max_abs": 1.1444091796875e-05,
+              "relative_l2": 4.6051874690372275e-07,
+              "passed": true,
+              "sha256": "aec96f8de908b05c3433bf8d4bae3c92ea654a5886cdcc255a25727f47c74382"
+            }
+          },
+          "benchmark_peak_rss_kib": 132764,
+          "minimum_board_mem_available_kib": 3348440,
+          "max_soc_c": 51.769,
+          "max_gpu_c": 49.0,
+          "runtime_log": [
+            "arm_release_ver: g13p0-01eac0, rk_so_ver: 6",
+            "OpenCL device: Mali-G610 r0p0",
+            "Mali backend: CLBlast FP32 SGEMM",
+            "OpenCL initialization and build ms: 8.127",
+            "OpenBLAS OpenBLAS 0.3.13 NO_LAPACKE DYNAMIC_ARCH NO_AFFINITY armv8 MAX_THREADS=64, core armv8, configured threads 4",
+            "CPU one-time operand conversion ms: 6.79292",
+            "OpenCL buffer allocation and one-time weight upload ms: 2.59263",
+            "First GPU request ms: 1749.97"
+          ]
+        }
+      }
+    },
+    "npu-core0": {
+      "timing_ms": {
+        "npu_wall_ms": {
+          "median": 12.893021999999998,
+          "min": 6.566001,
+          "max": 13.861001,
+          "p95": 13.71654505
+        },
+        "npu_upload_ms": {
+          "median": 0.3635625,
+          "min": 0.168584,
+          "max": 0.4725,
+          "p95": 0.4510329999999999
+        },
+        "npu_run_ms": {
+          "median": 10.409479999999999,
+          "min": 5.356167,
+          "max": 10.851168,
+          "p95": 10.76855345
+        },
+        "npu_readback_ms": {
+          "median": 2.1215840000000004,
+          "min": 0.989917,
+          "max": 2.567834,
+          "p95": 2.5522878
+        }
+      },
+      "bitwise_equal_between_rounds": {
+        "npu.f32": true
+      },
+      "rounds": {
+        "round-a": {
+          "timing_ms": {
+            "npu_wall_ms": {
+              "median": 7.351751,
+              "min": 6.566001,
+              "max": 13.71446,
+              "p95": 13.3012269
+            },
+            "npu_upload_ms": {
+              "median": 0.268917,
+              "min": 0.168584,
+              "max": 0.4725,
+              "p95": 0.4410588
+            },
+            "npu_run_ms": {
+              "median": 5.668542,
+              "min": 5.356167,
+              "max": 10.694543,
+              "p95": 10.603076100000001
+            },
+            "npu_readback_ms": {
+              "median": 1.312792,
+              "min": 0.989917,
+              "max": 2.546834,
+              "p95": 2.4135126999999996
+            }
+          },
+          "correctness": {
+            "npu.f32": {
+              "max_abs": 3.814697265625e-06,
+              "relative_l2": 1.5498909781283796e-07,
+              "passed": true,
+              "sha256": "32d532cbb2837e15fc83d6c62164af5155575188467b0b979ff5ca9f170b2ff2"
+            }
+          },
+          "benchmark_peak_rss_kib": 24336,
+          "minimum_board_mem_available_kib": 3379152,
+          "max_soc_c": 40.692,
+          "max_gpu_c": 40.692,
+          "runtime_log": [
+            "NPU core mask: 1, B layout native, A and C row-major",
+            "NPU buffer sizes bytes: A=1204224, B=3538944, C=7225344",
+            "NPU initialization and one-time weight packing ms: 20.5651",
+            "First NPU request ms: 13.7092"
+          ]
+        },
+        "round-b": {
+          "timing_ms": {
+            "npu_wall_ms": {
+              "median": 13.017668,
+              "min": 12.750793,
+              "max": 13.861001,
+              "p95": 13.761076000000001
+            },
+            "npu_upload_ms": {
+              "median": 0.375667,
+              "min": 0.347375,
+              "max": 0.465208,
+              "p95": 0.44315799999999994
+            },
+            "npu_run_ms": {
+              "median": 10.502917,
+              "min": 10.318001,
+              "max": 10.851168,
+              "p95": 10.793797399999999
+            },
+            "npu_readback_ms": {
+              "median": 2.135584,
+              "min": 2.046625,
+              "max": 2.567834,
+              "p95": 2.5600752
+            }
+          },
+          "correctness": {
+            "npu.f32": {
+              "max_abs": 3.814697265625e-06,
+              "relative_l2": 1.5498909781283796e-07,
+              "passed": true,
+              "sha256": "32d532cbb2837e15fc83d6c62164af5155575188467b0b979ff5ca9f170b2ff2"
+            }
+          },
+          "benchmark_peak_rss_kib": 24380,
+          "minimum_board_mem_available_kib": 3379208,
+          "max_soc_c": 39.769,
+          "max_gpu_c": 38.846,
+          "runtime_log": [
+            "NPU core mask: 1, B layout native, A and C row-major",
+            "NPU buffer sizes bytes: A=1204224, B=3538944, C=7225344",
+            "NPU initialization and one-time weight packing ms: 20.743",
+            "First NPU request ms: 13.1025"
+          ]
+        }
+      }
+    }
+  }
+}

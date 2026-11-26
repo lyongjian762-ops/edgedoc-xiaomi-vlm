@@ -1,0 +1,11 @@
+{
+  "wall_seconds": 29.85692641600008,
+  "exit_status": 3,
+  "peak_child_rss_kib_so_far": 1358764,
+  "input_files": [
+    "cord-068-dev.png",
+    "omni-zh-single-dev.png",
+    "invalid.png",
+    "cord-068-dev.png"
+  ]
+}

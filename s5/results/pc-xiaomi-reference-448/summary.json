@@ -1,0 +1,19 @@
+{
+  "backend": "PyTorch CPU, official BF16 checkpoint",
+  "image_size": [
+    448,
+    448
+  ],
+  "image_sha256": "6221fe776e94e4abf9e1a14200489dcb41e30ac62c222b7d4ac6b6e70f50e7f6",
+  "input_tokens": 268,
+  "generated_tokens_including_eos": 99,
+  "eos": true,
+  "seconds": 115.549454384,
+  "key_fields": {
+    "WX-1049-28": true,
+    "2026-11-17": true,
+    "36 套": true,
+    "16:40": true,
+    "保留签字页": true
+  }
+}

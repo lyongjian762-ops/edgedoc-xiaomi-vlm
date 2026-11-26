@@ -1,0 +1,42 @@
+warning: no usable GPU found, --gpu-layers option will be ignored
+warning: one possible reason is that llama.cpp was compiled without GPU support
+warning: consult docs/build.md for compilation instructions
+0.00.004.470 I srv  llama_server: initializing ...
+0.00.004.507 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.004.746 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.011.305 I srv    load_model: loading model '/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf'
+0.05.494.311 I cmn          init: llama threadpool init, n_threads = 4
+0.05.545.000 W load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+0.05.545.029 W load_hparams: if you encounter problems with accuracy, try adding --image-min-tokens 1024
+0.05.545.029 W load_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+
+0.06.909.981 I srv    load_model: loaded multimodal model, '/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf'
+0.06.965.289 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+0.06.970.494 I srv  server_run_i: model loaded
+0.06.970.545 I srv  server_on_li: listening on http://127.0.0.1:37273
+0.07.094.940 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+0.07.095.069 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+0.13.647.173 W find_slot: non-consecutive token position 4 after 3 for sequence 0 with 128 new tokens
+0.13.647.205 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+0.13.647.377 W find_slot: non-consecutive token position 4 after 3 for sequence 0 with 128 new tokens
+0.14.225.957 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+0.14.822.803 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+0.14.822.833 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+0.14.822.991 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+0.15.406.190 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+0.16.003.829 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+0.16.003.861 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+0.16.004.004 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+0.16.624.154 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 128 new tokens
+0.17.231.364 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 82 new tokens
+0.17.231.467 W find_slot: non-consecutive token position 4 after 4 for sequence 0 with 82 new tokens
+0.17.635.897 W find_slot: non-consecutive token position 101 after 4 for sequence 0 with 64 new tokens
+0.17.635.974 W find_slot: non-consecutive token position 101 after 4 for sequence 0 with 64 new tokens
+0.17.998.590 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    918, progress = 1.00, t =  10.90 s / 84.19 tokens per second
+0.21.139.267 I slot print_timing: id  0 | task 0 | prompt eval time =   10977.92 ms /   922 tokens (   11.91 ms per token,    83.99 tokens per second)
+0.21.139.297 I slot print_timing: id  0 | task 0 |        eval time =    3066.24 ms /    99 tokens (   31.29 ms per token,    31.96 tokens per second)
+0.21.139.298 I slot print_timing: id  0 | task 0 |       total time =   14044.16 ms /  1021 tokens
+0.21.139.306 I slot print_timing: id  0 | task 0 |    graphs reused =        100
+0.21.139.307 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+0.21.139.381 I slot      release: id  0 | task 0 | stop processing: n_tokens = 1020, truncated = 0
+0.21.144.907 I srv    operator(): operator(): cleaning up before exit...

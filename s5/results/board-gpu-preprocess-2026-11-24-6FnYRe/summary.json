@@ -1,0 +1,200 @@
+{
+  "test_date_asia_shanghai": "2026-11-24",
+  "board": "LubanCat-4, RK3588S, eMMC Debian 11, Linux 5.10.160",
+  "board_directory": "/path/to/board-run",
+  "cpu": "OpenCV 4.5.1 resize INTER_LINEAR_EXACT then BGR to RGB",
+  "gpu": "Mali-G610, OpenCL 1.2 fused fixed-point bilinear resize and BGR to RGB",
+  "output_wh": [
+    448,
+    448
+  ],
+  "source_decode": "CPU OpenCV imread, shared and timed independently",
+  "method": "Five original dev images, 5 warmups per image, 30 alternating paired repeats per round. Timing excludes PNG output and OpenCL initialization and per-size setup, which are reported separately.",
+  "gpu_wall_boundary": "Before enqueueing input write through the blocking output read, including command dispatch and device/host synchronization.",
+  "reference_images": [
+    {
+      "id": "cord-068-dev",
+      "source_path": "dev/cord-068/image.jpg",
+      "image": "cord-068-dev.jpg",
+      "width": 576,
+      "height": 864,
+      "sha256": "08d23ffe096d1d9a0d3bbfabb226065fb5690e97792672193e386a213cabdf1a"
+    },
+    {
+      "id": "omni-en-single-dev",
+      "source_path": "dev/omni-en-single/image.jpg",
+      "image": "omni-en-single-dev.jpg",
+      "width": 1750,
+      "height": 2200,
+      "sha256": "89be6fd5ec9747a2a56b62a1f4e83a22191f72efa725724fd9e068ff64885697"
+    },
+    {
+      "id": "omni-mixed-single-dev",
+      "source_path": "dev/omni-mixed-single/image.jpg",
+      "image": "omni-mixed-single-dev.jpg",
+      "width": 1334,
+      "height": 2033,
+      "sha256": "531f507ae0260bd9a2f25f4827236199ada0b6883f4b1380aafc52c4e8839d9b"
+    },
+    {
+      "id": "omni-zh-double-dev",
+      "source_path": "dev/omni-zh-double/image.jpg",
+      "image": "omni-zh-double-dev.jpg",
+      "width": 1205,
+      "height": 1701,
+      "sha256": "12199db5e87f81417d8319779e9a235bd6134bc1a0f8ea9362268c6b6769b5d5"
+    },
+    {
+      "id": "omni-zh-single-dev",
+      "source_path": "dev/omni-zh-single/image.jpg",
+      "image": "omni-zh-single-dev.jpg",
+      "width": 1500,
+      "height": 2167,
+      "sha256": "9c5655a8d5ea96a6e67996982011a47e43d775acf155b13d46598219b296a024"
+    }
+  ],
+  "configurations": [
+    {
+      "opencv_configured_threads": 8,
+      "rounds": [
+        "run-a",
+        "run-b"
+      ],
+      "opencl_initialization_ms": {
+        "run-a": 170.154,
+        "run-b": 43.4502
+      },
+      "aggregate": {
+        "pairs": 300,
+        "cpu_median_ms": 5.10621,
+        "gpu_upload_execute_read_median_ms": 4.433775000000001,
+        "gpu_kernel_median_ms": 0.515011,
+        "gpu_with_resolution_setup_median_ms": 4.7534375,
+        "input_decode_median_ms": 35.48355,
+        "cpu_over_gpu_wall_speed_ratio": 1.1516619584890977
+      },
+      "per_image": {
+        "cord-068-dev": {
+          "pairs": 60,
+          "cpu_median_ms": 4.324540000000001,
+          "gpu_upload_execute_read_median_ms": 1.539565,
+          "gpu_kernel_median_ms": 0.49029999999999996,
+          "gpu_with_resolution_setup_median_ms": 2.411061,
+          "input_decode_median_ms": 60.831875,
+          "cpu_over_gpu_wall_speed_ratio": 2.8089362904456783
+        },
+        "omni-en-single-dev": {
+          "pairs": 60,
+          "cpu_median_ms": 5.102125,
+          "gpu_upload_execute_read_median_ms": 4.7374,
+          "gpu_kernel_median_ms": 0.49437,
+          "gpu_with_resolution_setup_median_ms": 8.1916475,
+          "input_decode_median_ms": 78.4872,
+          "cpu_over_gpu_wall_speed_ratio": 1.0769884324735086
+        },
+        "omni-mixed-single-dev": {
+          "pairs": 60,
+          "cpu_median_ms": 5.395085,
+          "gpu_upload_execute_read_median_ms": 4.668229999999999,
+          "gpu_kernel_median_ms": 0.545409,
+          "gpu_with_resolution_setup_median_ms": 8.973415,
+          "input_decode_median_ms": 23.92755,
+          "cpu_over_gpu_wall_speed_ratio": 1.155702482525497
+        },
+        "omni-zh-double-dev": {
+          "pairs": 60,
+          "cpu_median_ms": 5.17869,
+          "gpu_upload_execute_read_median_ms": 3.83717,
+          "gpu_kernel_median_ms": 0.510651,
+          "gpu_with_resolution_setup_median_ms": 3.9046890000000003,
+          "input_decode_median_ms": 40.62405,
+          "cpu_over_gpu_wall_speed_ratio": 1.3496118232968568
+        },
+        "omni-zh-single-dev": {
+          "pairs": 60,
+          "cpu_median_ms": 5.650125,
+          "gpu_upload_execute_read_median_ms": 5.499375000000001,
+          "gpu_kernel_median_ms": 0.6253394999999999,
+          "gpu_with_resolution_setup_median_ms": 8.595900499999999,
+          "input_decode_median_ms": 30.1914,
+          "cpu_over_gpu_wall_speed_ratio": 1.0274122059324922
+        }
+      }
+    },
+    {
+      "opencv_configured_threads": 1,
+      "rounds": [
+        "single-a",
+        "single-b"
+      ],
+      "opencl_initialization_ms": {
+        "single-a": 43.5018,
+        "single-b": 43.1833
+      },
+      "aggregate": {
+        "pairs": 300,
+        "cpu_median_ms": 8.10775,
+        "gpu_upload_execute_read_median_ms": 4.642395,
+        "gpu_kernel_median_ms": 0.5404565,
+        "gpu_with_resolution_setup_median_ms": 4.860561499999999,
+        "input_decode_median_ms": 30.1294,
+        "cpu_over_gpu_wall_speed_ratio": 1.746458455172384
+      },
+      "per_image": {
+        "cord-068-dev": {
+          "pairs": 60,
+          "cpu_median_ms": 6.322895,
+          "gpu_upload_execute_read_median_ms": 1.58623,
+          "gpu_kernel_median_ms": 0.4904455,
+          "gpu_with_resolution_setup_median_ms": 1.7424179999999998,
+          "input_decode_median_ms": 7.94004,
+          "cpu_over_gpu_wall_speed_ratio": 3.986114876152891
+        },
+        "omni-en-single-dev": {
+          "pairs": 60,
+          "cpu_median_ms": 10.303899999999999,
+          "gpu_upload_execute_read_median_ms": 6.106335,
+          "gpu_kernel_median_ms": 0.6988865,
+          "gpu_with_resolution_setup_median_ms": 6.3554185,
+          "input_decode_median_ms": 79.1614,
+          "cpu_over_gpu_wall_speed_ratio": 1.6874115160730618
+        },
+        "omni-mixed-single-dev": {
+          "pairs": 60,
+          "cpu_median_ms": 8.429459999999999,
+          "gpu_upload_execute_read_median_ms": 4.642395,
+          "gpu_kernel_median_ms": 0.5404565,
+          "gpu_with_resolution_setup_median_ms": 4.860561499999999,
+          "input_decode_median_ms": 24.64145,
+          "cpu_over_gpu_wall_speed_ratio": 1.815756737632192
+        },
+        "omni-zh-double-dev": {
+          "pairs": 60,
+          "cpu_median_ms": 7.7287300000000005,
+          "gpu_upload_execute_read_median_ms": 3.82954,
+          "gpu_kernel_median_ms": 0.508993,
+          "gpu_with_resolution_setup_median_ms": 3.894915,
+          "input_decode_median_ms": 40.809200000000004,
+          "cpu_over_gpu_wall_speed_ratio": 2.0181875629971224
+        },
+        "omni-zh-single-dev": {
+          "pairs": 60,
+          "cpu_median_ms": 9.12708,
+          "gpu_upload_execute_read_median_ms": 5.11875,
+          "gpu_kernel_median_ms": 0.6170914999999999,
+          "gpu_with_resolution_setup_median_ms": 5.461417,
+          "input_decode_median_ms": 30.1294,
+          "cpu_over_gpu_wall_speed_ratio": 1.7830681318681316
+        }
+      }
+    }
+  ],
+  "pixel_validation": {
+    "byte_identical_png_outputs": true,
+    "max_scalar_difference": 0
+  },
+  "receipt_ocr_validation": {
+    "same_markdown_bytes": true,
+    "output_sha256": "679f36dc5c87f87bf21ebd12e87cad98e2e6e66c5bb28f4aa1b6f6a424d3568b"
+  }
+}

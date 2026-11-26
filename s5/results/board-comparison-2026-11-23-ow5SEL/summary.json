@@ -1,0 +1,123 @@
+{
+  "test_date_asia_shanghai": "2026-11-23",
+  "board": "LubanCat-4 V1 RK3588S, eMMC Debian 11, Linux 5.10.160",
+  "board_test_path": "/path/to/board-run/compare-2026-11-23.ow5SEL",
+  "image_wh": [
+    448,
+    448
+  ],
+  "image_sha256": "6221fe776e94e4abf9e1a14200489dcb41e30ac62c222b7d4ac6b6e70f50e7f6",
+  "prompt_sha256": "8238ac451b7addf90df9413ea929d040f1d98d32caef00d2ec91cb3509c24715",
+  "identical_to_pc_bf16_all_four_runs": true,
+  "context_limit": 4096,
+  "output_limit": 512,
+  "prompt_tokens": 268,
+  "generated_content_tokens": 98,
+  "measurement": "Two fresh processes per backend, order NPU, CPU, CPU, NPU; timer before spawn through exit; OS page cache kept; SoC <=45 C at launch.",
+  "cpu_configuration": "4 threads, portable armv8-a, llama.cpp Q4_K_M language and BF16 mmproj",
+  "npu_configuration": "RKNN FP16 visual inference, RKLLM W8A8, 3 NPU cores",
+  "cpu_vision_boundary": "host monotonic timestamps of mtmd clip_encode copy-input and output-shape stderr lines",
+  "npu_vision_boundary": "timing around run_imgenc from vendor demo",
+  "cpu_runs": [
+    {
+      "wall_seconds": 51.77058903500006,
+      "exit_status": 0,
+      "initial_soc_millicelsius": 43461,
+      "max_sampled_temp_millicelsius": 83153,
+      "fan_pwm_values": [
+        100,
+        150,
+        200,
+        255
+      ],
+      "request_seconds": 50.041562737,
+      "outside_request_seconds": 1.7290262980000577,
+      "vision_log_interval_seconds": 37.11735556300005
+    },
+    {
+      "wall_seconds": 51.51163121699983,
+      "exit_status": 0,
+      "initial_soc_millicelsius": 44384,
+      "max_sampled_temp_millicelsius": 85888,
+      "fan_pwm_values": [
+        100,
+        150,
+        200,
+        255
+      ],
+      "request_seconds": 50.14085658,
+      "outside_request_seconds": 1.3707746369998333,
+      "vision_log_interval_seconds": 37.186063486999956
+    }
+  ],
+  "npu_runs": [
+    {
+      "wall_seconds": 12.89519200399991,
+      "exit_status": 0,
+      "initial_soc_millicelsius": 38846,
+      "max_sampled_temp_millicelsius": 52692,
+      "fan_pwm_values": [
+        0,
+        100
+      ],
+      "vision_encoder_seconds": 0.75559,
+      "language_load_seconds": 1.83259,
+      "vision_load_seconds": 0.35910000000000003,
+      "total_reported_load_seconds": 2.19169,
+      "prefill_seconds": 2.55062,
+      "prefill_tokens_per_second": 105.07,
+      "generate_seconds": 6.2200500000000005,
+      "generate_tokens_per_second": 15.76
+    },
+    {
+      "wall_seconds": 13.364587675999928,
+      "exit_status": 0,
+      "initial_soc_millicelsius": 44384,
+      "max_sampled_temp_millicelsius": 61000,
+      "fan_pwm_values": [
+        100,
+        150
+      ],
+      "vision_encoder_seconds": 0.75393,
+      "language_load_seconds": 2.27571,
+      "vision_load_seconds": 0.37717,
+      "total_reported_load_seconds": 2.65288,
+      "prefill_seconds": 2.61031,
+      "prefill_tokens_per_second": 102.67,
+      "generate_seconds": 6.192609999999999,
+      "generate_tokens_per_second": 15.83
+    }
+  ],
+  "cpu_median": {
+    "wall_seconds": 51.641110125999944,
+    "request_seconds": 50.0912096585,
+    "outside_request_seconds": 1.5499004674999455,
+    "vision_log_interval_seconds": 37.151709525
+  },
+  "npu_median": {
+    "wall_seconds": 13.129889839999919,
+    "vision_encoder_seconds": 0.75476,
+    "language_load_seconds": 2.05415,
+    "vision_load_seconds": 0.368135,
+    "total_reported_load_seconds": 2.422285,
+    "prefill_seconds": 2.5804650000000002,
+    "prefill_tokens_per_second": 103.87,
+    "generate_seconds": 6.2063299999999995,
+    "generate_tokens_per_second": 15.795
+  },
+  "wall_speed_ratio_cpu_over_npu": 3.9330954604566783,
+  "gpu": {
+    "opencl": {
+      "device": "Mali-G610 r0p0",
+      "version": "OpenCL 3.0 v1.g13p0-01eac0.68603db295fbf2c59ac6b927fdfb1c32",
+      "fp16_extension": true,
+      "vector_add_values": 1024,
+      "max_abs_error": 0.0
+    },
+    "vulkan": {
+      "system_icd_files": [],
+      "create_instance_status": -9,
+      "devices": []
+    }
+  }
+}

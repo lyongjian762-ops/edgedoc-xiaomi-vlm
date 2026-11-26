@@ -1,0 +1,20 @@
+{
+  "command": [
+    "stdbuf",
+    "-oL",
+    "-eL",
+    "taskset",
+    "-c",
+    "4-7",
+    "/path/to/board-run/llm_demo",
+    "/path/to/board-run/model/cpu.json",
+    "/path/to/board-run/smoke.txt",
+    "6"
+  ],
+  "returncode": -7,
+  "timed_out": false,
+  "process_wall_ms": 1124.4891540000026,
+  "peak_process_rss_kib": 882124,
+  "minimum_board_mem_available_kib": 2578820,
+  "opened_mali_device": false
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "sh",
+    "/path/to/board-run/run_pipeline.sh",
+    "/path/to/board-run",
+    "/path/to/board-run/npu",
+    "opencl",
+    "/path/to/board-run/fixed-opencl/mnn_cachefile.bin"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 9297.713476000354,
+  "peak_process_rss_kib": 687052,
+  "minimum_board_mem_available_kib": 2764136,
+  "opened_mali_device": true
+}

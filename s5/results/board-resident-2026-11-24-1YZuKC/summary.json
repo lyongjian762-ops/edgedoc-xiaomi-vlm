@@ -1,0 +1,239 @@
+{
+  "experiment_date_asia_shanghai": "2026-11-24",
+  "board": "LubanCat 4 V1, RK3588S, eMMC Debian 11, Linux 5.10.160",
+  "rknpu_driver": "0.9.8",
+  "rknn_runtime": "2.3.2",
+  "rkllm_runtime": "1.3.1",
+  "dataset": "ocr-eval-mini dev only",
+  "image_resolution": [
+    448,
+    448
+  ],
+  "preprocessing": "Pillow RGB conversion and bicubic resize to the fixed square input",
+  "wall_boundary": "Before launching a process through exit, including model init, document processing, output writes and teardown. External cooling waits excluded.",
+  "fresh_batch_seconds": 94.01288582200016,
+  "resident_batch_seconds": 81.29788971000005,
+  "saved_seconds": 12.714996112000108,
+  "saved_percent": 13.524737594029524,
+  "fresh_model_initializations": 5,
+  "resident_model_initializations": 1,
+  "fresh_model_load_seconds": 12.442019374,
+  "resident_model_load_seconds": 2.487042499,
+  "fresh_requests_seconds": 76.17607681899999,
+  "resident_requests_seconds": 77.894671743,
+  "fresh_first_visible_text_median_ms": 3402.644716,
+  "resident_first_visible_text_median_ms": 3433.290762,
+  "sample_max_temperature_millicelsius": {
+    "fresh-1": 47153,
+    "fresh-2": 52692,
+    "fresh-3": 56384,
+    "fresh-4": 57307,
+    "fresh-5": 57307,
+    "resident": 67461,
+    "state-check": 64692
+  },
+  "reference_vendor_demo_receipt_same_output": true,
+  "state_test": {
+    "order": [
+      "cord-068-dev",
+      "omni-zh-single-dev",
+      "invalid.png",
+      "cord-068-dev"
+    ],
+    "a_and_b_same_as_independent": true,
+    "bad_image_status_logged": true,
+    "bad_image_wrote_ocr_text": false
+  },
+  "page_results": [
+    {
+      "id": "cord-068-dev",
+      "matched_byte_for_byte": true,
+      "output_sha256": "0272e5efcccd5bc1832a1f769e85ec094080bd763c6e242bb305d401162bae4a",
+      "fresh": {
+        "status": "ok",
+        "read_rgb_ms": 5.849668,
+        "vision_ms": 749.7747,
+        "first_text_ms": 3500.22731,
+        "language_ms": 5098.165178,
+        "request_ms": 5853.79363,
+        "generate": {
+          "ms": 2353.27,
+          "tokens": 38
+        },
+        "prefill": {
+          "ms": 2729.35,
+          "tokens": 268
+        }
+      },
+      "resident": {
+        "status": "ok",
+        "read_rgb_ms": 5.645792,
+        "vision_ms": 751.546868,
+        "first_text_ms": 3433.290762,
+        "language_ms": 5029.698047,
+        "request_ms": 5786.895373,
+        "generate": {
+          "ms": 2355.33,
+          "tokens": 38
+        },
+        "prefill": {
+          "ms": 2646.57,
+          "tokens": 268
+        }
+      },
+      "reached_token_limit": false
+    },
+    {
+      "id": "omni-en-single-dev",
+      "matched_byte_for_byte": true,
+      "output_sha256": "78aace7a53e988c5a8d8f77f72db1e4d06da4042683ecde8bdde4dee55883653",
+      "fresh": {
+        "status": "ok",
+        "read_rgb_ms": 3.254125,
+        "vision_ms": 775.528244,
+        "first_text_ms": 3402.644716,
+        "language_ms": 17194.960728,
+        "request_ms": 17973.748639,
+        "generate": {
+          "ms": 14543.36,
+          "tokens": 243
+        },
+        "prefill": {
+          "ms": 2608.01,
+          "tokens": 268
+        }
+      },
+      "resident": {
+        "status": "ok",
+        "read_rgb_ms": 10.812667,
+        "vision_ms": 759.372493,
+        "first_text_ms": 3303.543373,
+        "language_ms": 17882.320755,
+        "request_ms": 18652.507082,
+        "generate": {
+          "ms": 15315.48,
+          "tokens": 243
+        },
+        "prefill": {
+          "ms": 2526.99,
+          "tokens": 268
+        }
+      },
+      "reached_token_limit": false
+    },
+    {
+      "id": "omni-mixed-single-dev",
+      "matched_byte_for_byte": true,
+      "output_sha256": "b2855d69102b6ab16d026ee2dd63936c0e7e1f55921164dd9e6a35d8a1fc13cc",
+      "fresh": {
+        "status": "ok",
+        "read_rgb_ms": 3.622792,
+        "vision_ms": 789.569454,
+        "first_text_ms": 3495.873351,
+        "language_ms": 10121.702726,
+        "request_ms": 10914.900513,
+        "generate": {
+          "ms": 7407.26,
+          "tokens": 122
+        },
+        "prefill": {
+          "ms": 2675.51,
+          "tokens": 268
+        }
+      },
+      "resident": {
+        "status": "ok",
+        "read_rgb_ms": 7.68871,
+        "vision_ms": 765.222869,
+        "first_text_ms": 3563.397733,
+        "language_ms": 10291.507743,
+        "request_ms": 11064.421654,
+        "generate": {
+          "ms": 7484.18,
+          "tokens": 122
+        },
+        "prefill": {
+          "ms": 2780.55,
+          "tokens": 268
+        }
+      },
+      "reached_token_limit": false
+    },
+    {
+      "id": "omni-zh-double-dev",
+      "matched_byte_for_byte": true,
+      "output_sha256": "0d8b680c660955a3203e2180f68455ff3c5079ce57c0b5280b58ca6080edd2b2",
+      "fresh": {
+        "status": "ok",
+        "read_rgb_ms": 4.578583,
+        "vision_ms": 749.8582,
+        "first_text_ms": 3310.608999,
+        "language_ms": 26263.555639,
+        "request_ms": 27017.997964,
+        "generate": {
+          "ms": 23659.1,
+          "tokens": 389
+        },
+        "prefill": {
+          "ms": 2533.96,
+          "tokens": 268
+        }
+      },
+      "resident": {
+        "status": "ok",
+        "read_rgb_ms": 7.581126,
+        "vision_ms": 764.408576,
+        "first_text_ms": 3653.9677,
+        "language_ms": 27363.411041,
+        "request_ms": 28135.403368,
+        "generate": {
+          "ms": 24426.21,
+          "tokens": 389
+        },
+        "prefill": {
+          "ms": 2870.24,
+          "tokens": 268
+        }
+      },
+      "reached_token_limit": false
+    },
+    {
+      "id": "omni-zh-single-dev",
+      "matched_byte_for_byte": true,
+      "output_sha256": "7bb5de3a9d7f0db2eaabb186ffff363e0d3927ad964f03bf21029fc359e2f8e5",
+      "fresh": {
+        "status": "ok",
+        "read_rgb_ms": 7.298084,
+        "vision_ms": 752.235659,
+        "first_text_ms": 3341.097127,
+        "language_ms": 13656.09708,
+        "request_ms": 14415.636073,
+        "generate": {
+          "ms": 11057.29,
+          "tokens": 179
+        },
+        "prefill": {
+          "ms": 2551.52,
+          "tokens": 268
+        }
+      },
+      "resident": {
+        "status": "ok",
+        "read_rgb_ms": 13.087502,
+        "vision_ms": 765.467868,
+        "first_text_ms": 3392.137716,
+        "language_ms": 13476.886854,
+        "request_ms": 14255.444266,
+        "generate": {
+          "ms": 10839.88,
+          "tokens": 179
+        },
+        "prefill": {
+          "ms": 2602.09,
+          "tokens": 268
+        }
+      },
+      "reached_token_limit": false
+    }
+  ]
+}

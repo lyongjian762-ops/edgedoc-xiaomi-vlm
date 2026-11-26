@@ -1,0 +1,8 @@
+arm_release_ver: g13p0-01eac0, rk_so_ver: 6
+OpenCL device: Mali-G610 r0p0
+Mali backend: CLBlast FP32 SGEMM
+OpenCL initialization and build ms: 8.23288
+OpenBLAS OpenBLAS 0.3.13 NO_LAPACKE DYNAMIC_ARCH NO_AFFINITY armv8 MAX_THREADS=64, core armv8, configured threads 4
+CPU one-time operand conversion ms: 6.6045
+OpenCL buffer allocation and one-time weight upload ms: 2.62208
+First GPU request ms: 1761.02

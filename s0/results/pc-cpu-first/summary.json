@@ -1,0 +1,85 @@
+{
+  "server_version": "version: 0.8.0-dev (build 1, commit 8642541)\nbuilt with GNU 13.3.0 for Linux x86_64",
+  "server_command": [
+    "/home/runner/.cache/xiaomi-ocr-a0/build/bin/llama-server",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "37273",
+    "--alias",
+    "xiaomi-ocr-0",
+    "--model",
+    "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+    "--mmproj",
+    "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+    "--device",
+    "none",
+    "--n-gpu-layers",
+    "0",
+    "--no-mmproj-offload",
+    "--threads",
+    "4",
+    "--threads-batch",
+    "4",
+    "--ctx-size",
+    "4096",
+    "--batch-size",
+    "256",
+    "--ubatch-size",
+    "128",
+    "--parallel",
+    "1",
+    "--jinja",
+    "--no-cache-prompt",
+    "--no-context-shift"
+  ],
+  "assets": {
+    "Xiaomi-OCR-0.Q4_K_M.gguf": {
+      "path": "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+      "sha256": "1e497ff06b91a3d822c543066df3e9ef69c62c5423be09d739dfa1db55630d3a",
+      "bytes": 529297664
+    },
+    "Xiaomi-OCR-0.mmproj-bf16.gguf": {
+      "path": "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+      "sha256": "634d6bc95781ebf4a3f06570a59859fa5082d488db540fd474bc6b4061aec90e",
+      "bytes": 207346624
+    }
+  },
+  "pages": [
+    {
+      "id": "zh-notice",
+      "input_sha256": "b7dea4f4bdfb6305ba69175dd7da50e171749074c6bfbca4de4073e3a0f31339",
+      "request_ms": 14096.1,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 99,
+        "prompt_tokens": 922,
+        "total_tokens": 1021,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "server_timings": {
+        "cache_n": 0,
+        "prompt_n": 922,
+        "prompt_ms": 10977.919,
+        "prompt_per_token_ms": 11.906636659436009,
+        "prompt_per_second": 83.98677381387128,
+        "predicted_n": 99,
+        "predicted_ms": 3066.238,
+        "predicted_per_token_ms": 31.288142857142855,
+        "predicted_per_second": 31.96098932959542
+      },
+      "normalized_text_match": true,
+      "fields": {
+        "WX-1049-28": true,
+        "2026-11-17": true,
+        "36 套": true,
+        "16:40": true,
+        "保留签字页": true
+      },
+      "passed": true
+    }
+  ],
+  "startup_until_ready_ms": 7044.6
+}

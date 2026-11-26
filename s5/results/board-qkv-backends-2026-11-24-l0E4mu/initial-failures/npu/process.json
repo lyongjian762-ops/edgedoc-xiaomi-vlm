@@ -1,0 +1,13 @@
+{
+  "returncode": 1,
+  "command": [
+    "taskset",
+    "-c",
+    "4-7",
+    "./compare_npu",
+    "operands",
+    "measured/npu",
+    "7"
+  ],
+  "benchmark_peak_rss_kib": 19736
+}

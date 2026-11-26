@@ -1,0 +1,14 @@
+{
+  "opencl": {
+    "device": "Mali-G610 r0p0",
+    "version": "OpenCL 3.0 v1.g13p0-01eac0.68603db295fbf2c59ac6b927fdfb1c32",
+    "fp16_extension": true,
+    "vector_add_values": 1024,
+    "max_abs_error": 0.0
+  },
+  "vulkan": {
+    "system_icd_files": [],
+    "create_instance_status": -9,
+    "devices": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "sh",
+    "-c",
+    "cp \"$1\" ./mnn_cachefile.bin && shift && exec \"$@\"",
+    "sh",
+    "/path/to/board-run/fixed-opencl/mnn_cachefile.bin",
+    "stdbuf",
+    "-oL",
+    "-eL",
+    "taskset",
+    "-c",
+    "4-7",
+    "/path/to/board-run/mnn_image_replay",
+    "/path/to/board-run/model-replay/opencl.json",
+    "/path/to/board-run/request.json",
+    "/path/to/board-run/vision-live/img_vec.bin",
+    "."
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 7827.493285999481,
+  "peak_process_rss_kib": 687476,
+  "minimum_board_mem_available_kib": 2763728,
+  "opened_mali_device": true
+}

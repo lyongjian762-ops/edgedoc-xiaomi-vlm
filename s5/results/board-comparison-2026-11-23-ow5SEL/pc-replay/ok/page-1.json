@@ -1,0 +1,58 @@
+{
+  "chunks": [
+    {
+      "next_position": 4,
+      "position_span": 4,
+      "start_position": 0,
+      "tokens": 4,
+      "type": "text"
+    },
+    {
+      "embedding_dtype": "float32",
+      "embedding_shape": [
+        196,
+        1024
+      ],
+      "first_txyz": [
+        4,
+        4,
+        4,
+        0
+      ],
+      "last_txyz": [
+        4,
+        17,
+        17,
+        0
+      ],
+      "next_position": 18,
+      "position_span": 14,
+      "start_position": 4,
+      "tokens": 196,
+      "type": "image"
+    },
+    {
+      "next_position": 86,
+      "position_span": 68,
+      "start_position": 18,
+      "tokens": 68,
+      "type": "text"
+    }
+  ],
+  "finish_reason": "eog",
+  "generated_content_tokens": 98,
+  "image": "s5/results/board-comparison-2026-11-23-ow5SEL/input/vision-input.png",
+  "incomplete_utf8_tail_bytes": 0,
+  "input_rgb_shape": [
+    448,
+    448,
+    3
+  ],
+  "max_tokens": 512,
+  "memory_pos_max_after_reset": -1,
+  "memory_pos_max_before_reset": -1,
+  "mrope": true,
+  "next_position_after_prefill": 86,
+  "prompt_tokens": 268,
+  "request_ms": 5365.328205
+}

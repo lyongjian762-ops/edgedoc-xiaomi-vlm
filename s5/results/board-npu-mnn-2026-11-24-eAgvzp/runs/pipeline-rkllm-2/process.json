@@ -1,0 +1,12 @@
+{
+  "command": [
+    "sh",
+    "/path/to/board-run/npu/run_xiaomi_npu_once.sh"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 12648.767312000018,
+  "peak_process_rss_kib": 1356972,
+  "minimum_board_mem_available_kib": 2015324,
+  "opened_mali_device": false
+}

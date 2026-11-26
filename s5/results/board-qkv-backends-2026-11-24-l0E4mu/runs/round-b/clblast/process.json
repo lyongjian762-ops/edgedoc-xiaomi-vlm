@@ -1,0 +1,13 @@
+{
+  "returncode": 0,
+  "command": [
+    "taskset",
+    "-c",
+    "4-7",
+    "./compare_qkv",
+    "--clblast",
+    "operands",
+    "recheck/clblast"
+  ],
+  "benchmark_peak_rss_kib": 132764
+}

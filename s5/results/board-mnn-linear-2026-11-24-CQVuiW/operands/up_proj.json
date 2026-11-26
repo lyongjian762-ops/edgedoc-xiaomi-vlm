@@ -1,0 +1,85 @@
+{
+  "bizCode": "MNNTest",
+  "sourceType": "ONNX",
+  "usage": "INFERENCE",
+  "tensorNumber": 2,
+  "tensorName": [
+    "input",
+    "output"
+  ],
+  "outputName": [
+    "output"
+  ],
+  "oplists": [
+    {
+      "type": "Input",
+      "main_type": "Input",
+      "name": "input",
+      "outputIndexes": [
+        0
+      ],
+      "main": {
+        "dims": [
+          1,
+          1024,
+          1,
+          1
+        ],
+        "dtype": "DT_FLOAT",
+        "dformat": "NC4HW4"
+      }
+    },
+    {
+      "inputIndexes": [
+        0
+      ],
+      "main_type": "Convolution2D",
+      "main": {
+        "common": {
+          "padX": 0,
+          "padY": 0,
+          "kernelX": 1,
+          "kernelY": 1,
+          "strideX": 1,
+          "strideY": 1,
+          "dilateX": 1,
+          "dilateY": 1,
+          "padMode": "CAFFE",
+          "group": 1,
+          "outputCount": 3584,
+          "inputCount": 1024,
+          "relu": false,
+          "relu6": false,
+          "hasOutputShape": false
+        },
+        "quanParameter": {
+          "type": 1,
+          "useInt32": false,
+          "quantScale": 1.0,
+          "scaleIn": 0.0,
+          "scaleOut": 0.0,
+          "aMaxOrBits": 4,
+          "aMin": 1,
+          "readType": 57344,
+          "has_scaleInt": false,
+          "shapeInt32": false,
+          "weightSize": 0,
+          "scaleStorage": "FP16"
+        },
+        "external": [
+          0,
+          1835030,
+          229376,
+          0,
+          0
+        ]
+      },
+      "name": "/layers.0/mlp/up_proj/Linear",
+      "outputIndexes": [
+        1
+      ],
+      "type": "Convolution",
+      "defaultDimentionFormat": "NHWC"
+    }
+  ]
+}

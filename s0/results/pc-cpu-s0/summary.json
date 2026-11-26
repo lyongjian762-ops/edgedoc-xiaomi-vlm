@@ -1,0 +1,155 @@
+{
+  "server_version": "version: 0.8.0-dev (build 1, commit 8642541)\nbuilt with GNU 13.3.0 for Linux x86_64",
+  "server_command": [
+    "/home/runner/.cache/xiaomi-ocr-a0/build/bin/llama-server",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "35159",
+    "--alias",
+    "xiaomi-ocr-0",
+    "--model",
+    "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+    "--mmproj",
+    "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+    "--device",
+    "none",
+    "--n-gpu-layers",
+    "0",
+    "--no-mmproj-offload",
+    "--threads",
+    "4",
+    "--threads-batch",
+    "4",
+    "--ctx-size",
+    "4096",
+    "--batch-size",
+    "256",
+    "--ubatch-size",
+    "128",
+    "--parallel",
+    "1",
+    "--jinja",
+    "--no-cache-prompt",
+    "--no-context-shift"
+  ],
+  "assets": {
+    "Xiaomi-OCR-0.Q4_K_M.gguf": {
+      "path": "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+      "sha256": "1e497ff06b91a3d822c543066df3e9ef69c62c5423be09d739dfa1db55630d3a",
+      "bytes": 529297664
+    },
+    "Xiaomi-OCR-0.mmproj-bf16.gguf": {
+      "path": "/path/to/workspace/output/xiaomi_ocr_setup/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+      "sha256": "634d6bc95781ebf4a3f06570a59859fa5082d488db540fd474bc6b4061aec90e",
+      "bytes": 207346624
+    }
+  },
+  "pages": [
+    {
+      "id": "zh-notice",
+      "input_sha256": "b7dea4f4bdfb6305ba69175dd7da50e171749074c6bfbca4de4073e3a0f31339",
+      "request_ms": 14480.2,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 99,
+        "prompt_tokens": 922,
+        "total_tokens": 1021,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "server_timings": {
+        "cache_n": 0,
+        "prompt_n": 922,
+        "prompt_ms": 10922.955,
+        "prompt_per_token_ms": 11.847022776572668,
+        "prompt_per_second": 84.40939287949094,
+        "predicted_n": 99,
+        "predicted_ms": 3514.692,
+        "predicted_per_token_ms": 35.86420408163265,
+        "predicted_per_second": 27.88295532012478
+      },
+      "normalized_text_match": true,
+      "fields": {
+        "WX-1049-28": true,
+        "2026-11-17": true,
+        "36 套": true,
+        "16:40": true,
+        "保留签字页": true
+      },
+      "passed": true
+    },
+    {
+      "id": "en-service",
+      "input_sha256": "56a86c752cfb641c43ec6c78ae970800fb1a167306b5096db644775157079428",
+      "request_ms": 13876.4,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 91,
+        "prompt_tokens": 922,
+        "total_tokens": 1013,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "server_timings": {
+        "cache_n": 0,
+        "prompt_n": 922,
+        "prompt_ms": 11061.319,
+        "prompt_per_token_ms": 11.99709219088937,
+        "prompt_per_second": 83.3535313464877,
+        "predicted_n": 91,
+        "predicted_ms": 2702.931,
+        "predicted_per_token_ms": 30.032566666666668,
+        "predicted_per_second": 33.297187386581456
+      },
+      "normalized_text_match": true,
+      "fields": {
+        "SR-2087-54": true,
+        "Bench 04": true,
+        "17 units": true,
+        "23.6 C": true,
+        "November 21, 2026": true
+      },
+      "passed": true
+    },
+    {
+      "id": "mixed-inventory",
+      "input_sha256": "d1ff659e144227c0417418025afd5e684edd9ead8a91eb7bba858039bdff8ce5",
+      "request_ms": 13968.9,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 108,
+        "prompt_tokens": 922,
+        "total_tokens": 1030,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "server_timings": {
+        "cache_n": 0,
+        "prompt_n": 922,
+        "prompt_ms": 10781.254,
+        "prompt_per_token_ms": 11.693334056399133,
+        "prompt_per_second": 85.51880885099264,
+        "predicted_n": 108,
+        "predicted_ms": 3091.919,
+        "predicted_per_token_ms": 28.896439252336446,
+        "predicted_per_second": 34.60633994616289
+      },
+      "normalized_text_match": true,
+      "fields": {
+        "INV-5086-09": true,
+        "B-07": true,
+        "48 件": true,
+        "24 件": true,
+        "A06-1809": true,
+        "B08-1089": true,
+        "15:20": true
+      },
+      "passed": true
+    }
+  ],
+  "startup_until_ready_ms": 7044.9
+}

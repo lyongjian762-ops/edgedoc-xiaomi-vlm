@@ -1,0 +1,7 @@
+config path is /path/to/board-run/model/cpu.json
+CPU Group: [ 0  1  2  3 ], 408000 - 1800000
+CPU Group: [ 6  7 ], 408000 - 2304000
+CPU Group: [ 4  5 ], 408000 - 2304000
+The device supports: i8sdot:1, fp16:1, i8mm: 0, sve2: 0, sme2: 0
+main, 276, cost time: 1931.350952 ms
+Prepare for tuning opt Begin
