@@ -1,0 +1,19 @@
+Linux 5.10.160 aarch64
+PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+               total        used        free      shared  buff/cache   available
+Mem:            3902         550         570           6        2781        3306
+Swap:              0           0           0
+/dev/mmcblk0p3
+37000
+dmc_ondemand
+528000000
+1848000000
+simple_ondemand
+300000000
+1000000000
+82cd9605c2304d053fa5baa1fc7b43116754ba35d86b51c83071504958bc6991  /home/cat/ai/edgedoc-xiaomi-vlm/s5-lm-head-2026-11-26.Ue2nidO0/operands/lm_head.mnn.weight
+515a189a5487e4d95d328f1eb8d8bff9782b057bf2c707b7668f91ae9eb7c31c  /home/cat/ai/edgedoc-xiaomi-vlm/s5-lm-head-2026-11-26.Ue2nidO0/operands/input.f32
+9e1b0e5d97691489e671dcf1f2e9f28d00b815f0815f0538a604357db86e95fa  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/libMNN.so

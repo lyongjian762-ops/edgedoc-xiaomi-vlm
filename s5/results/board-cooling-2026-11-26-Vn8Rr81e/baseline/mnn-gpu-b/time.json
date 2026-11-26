@@ -1,0 +1,15 @@
+{
+  "command": [
+    "sh",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/run_pipeline.sh",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/npu",
+    "opencl",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/fixed-opencl/mnn_cachefile.bin"
+  ],
+  "initial_soc_millicelsius": 42538,
+  "wall_seconds": 9.002253403999987,
+  "exit_status": 0,
+  "cooldown_to_45c": true,
+  "output_matches_reference": true
+}

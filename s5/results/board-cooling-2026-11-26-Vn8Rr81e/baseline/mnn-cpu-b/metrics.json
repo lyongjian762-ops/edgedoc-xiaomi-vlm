@@ -1,0 +1,13 @@
+{
+  "backend": "cpu",
+  "decode_ms": 2545.919,
+  "decode_tokens_per_sec": 38.49297640655496,
+  "finish_reason": "eog",
+  "first_text_ms": 1959.609072,
+  "generated_tokens": 98,
+  "model_load_ms": 1013.597185,
+  "prefill_ms": 1958.753,
+  "prompt_tokens": 268,
+  "request_ms": 4536.066956,
+  "status": 1
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "4-7",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-batch-bandwidth-2026-11-26.HejYdFnl/read_bandwidth",
+    "opencl"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 725.9350310000627,
+  "peak_process_rss_kib": 307736,
+  "minimum_board_mem_available_kib": 3174864,
+  "opened_mali_device": true
+}

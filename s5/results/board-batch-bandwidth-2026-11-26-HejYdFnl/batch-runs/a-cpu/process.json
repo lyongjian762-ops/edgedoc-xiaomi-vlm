@@ -1,0 +1,19 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "4-7",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-batch-bandwidth-2026-11-26.HejYdFnl/mnn_lm_head_batch_bench",
+    "cpu",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-lm-head-2026-11-26.Ue2nidO0/operands/lm_head.mnn",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-lm-head-2026-11-26.Ue2nidO0/operands/input.f32",
+    "forward",
+    "batch"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 2363.344319999669,
+  "peak_process_rss_kib": 510348,
+  "minimum_board_mem_available_kib": 2957460,
+  "opened_mali_device": false
+}

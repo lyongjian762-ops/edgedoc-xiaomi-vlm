@@ -1,0 +1,19 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "4-7",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-decode-profile-2026-11-26.xXFBJ3io/mnn_image_replay_profile",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/model-replay/cpu.json",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/request.json",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/archive_img_vec.bin",
+    ".",
+    "--profile-decode"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 6491.040569000006,
+  "peak_process_rss_kib": 882696,
+  "minimum_board_mem_available_kib": 2643704,
+  "opened_mali_device": false
+}

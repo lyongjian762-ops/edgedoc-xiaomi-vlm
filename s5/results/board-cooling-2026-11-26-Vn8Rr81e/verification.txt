@@ -1,0 +1,47 @@
+Xiaomi-OCR-0.Q4_K_M.gguf: OK
+Xiaomi-OCR-0.mmproj-bf16.gguf: OK
+board_cpu_smoke.sh: OK
+edgedoc_cli: OK
+lib/librknnrt.so: OK
+ocr_prompt.txt: OK
+zh-notice.png: OK
+expected.md: OK
+conv_bn_rk3588.rknn: OK
+expected_l08.json: OK
+models.sha256: OK
+rknn_board_smoke: OK
+lib/librknnrt.so: OK
+lib/librkllmrt.so: OK
+run_xiaomi_npu_once.sh: OK
+vision-input.png: OK
+ocr_prompt.txt: OK
+expected.md: OK
+reference.npy: OK
+xiaomi_vision_rk3588.rknn: OK
+xiaomi_ocr_0_w8a8_rk3588.rkllm: OK
+demo: OK
+imgenc: OK
+sha256sum: rknn_board_smoke: No such file or directory
+rknn_board_smoke: FAILED open or read
+sha256sum: WARNING: 1 listed file could not be read
+mnn_image_replay: OK
+libMNN.so: OK
+llm_demo: OK
+model/cpu.json: OK
+model/llm.mnn: OK
+model/llm.mnn.weight: OK
+model/llm_config.json: OK
+model/opencl.json: OK
+model/tokenizer.mtok: OK
+request.json: OK
+archive_img_vec.bin: OK
+6221fe776e94e4abf9e1a14200489dcb41e30ac62c222b7d4ac6b6e70f50e7f6  /home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/npu/vision-input.png
+8238ac451b7addf90df9413ea929d040f1d98d32caef00d2ec91cb3509c24715  /home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/npu/ocr_prompt.txt
+938ec6517469e808590fca283ab769018001320bf9926f63a2ee7e3e9a53e079  /home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/npu/expected.md
+34c579612326eee0987d205abcfa09b643fb5a2854c8b00c2feba8385f6dddfd  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/model-replay/cpu.json
+0791ae5cc1e3106c3c46f424ebf092e1ef978bb9cfbd6692be531e54407dfb0a  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/model-replay/llm.mnn
+603a2025baa1e4c5ae23b88129f398c0fac682a4892ec78d00da960f8b73b8d9  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/model-replay/llm.mnn.weight
+aab23af608af61bef6a20ad4d88e0050789928e1cfe1db2835a3263689fc69ac  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/model-replay/llm_config.json
+16546b45ee9162af69479d565ea03381af815c55dc1addc8ac40d856b1dafd86  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/model-replay/opencl.json
+850c46eb9945e89f77aa943549222c0331dc9a5a6e84725502c23a97f9f7532f  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/model-replay/tokenizer.mtok
+a6455ee0f1bb68ad4a595eda66d9cca433bad70acdd451182c461e09cd45c28a  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/fixed-opencl/mnn_cachefile.bin

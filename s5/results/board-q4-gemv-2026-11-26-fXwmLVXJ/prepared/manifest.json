@@ -1,0 +1,14 @@
+{
+  "source_weights_sha256": "82cd9605c2304d053fa5baa1fc7b43116754ba35d86b51c83071504958bc6991",
+  "source_input_sha256": "515a189a5487e4d95d328f1eb8d8bff9782b057bf2c707b7668f91ae9eb7c31c",
+  "rows": 1,
+  "tile_outputs": 64,
+  "layout": "tile,group,chunk,output_lane,8 packed bytes; scales tile,group,lane,2 half",
+  "input_fp16_relative_l2": 0.0,
+  "files": {
+    "tile64.bin": "21d5c2beb3b0ff5cb34f8d3f5e2b6251b975a0a7c7bb4a354c8056c231893cfe",
+    "input-f32.bin": "dd425839282ac9fc454859d0d4f228413c57509145102e9016a5ad108bfba063",
+    "input-f16.bin": "e181d70f91da2301ad2c940f91c38878107f4e239d4bbbf088c8d7e98601404f",
+    "group-sum.f32": "f73f104f01b1bbffeb1ba6b929167d0eac6baaf14677eca84083f1b82abf370c"
+  }
+}

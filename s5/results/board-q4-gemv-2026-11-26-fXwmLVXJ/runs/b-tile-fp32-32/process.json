@@ -1,0 +1,19 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "4-7",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-q4-gemv-2026-11-26.fXwmLVXJ/q4_gemv_bench",
+    "tile-fp32",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-q4-gemv-2026-11-26.fXwmLVXJ/gemv.cl",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-lm-head-2026-11-26.Ue2nidO0/operands/lm_head.mnn.weight",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-q4-gemv-2026-11-26.fXwmLVXJ/prepared",
+    "32"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 1133.2484469994597,
+  "peak_process_rss_kib": 325312,
+  "minimum_board_mem_available_kib": 3231548,
+  "opened_mali_device": true
+}

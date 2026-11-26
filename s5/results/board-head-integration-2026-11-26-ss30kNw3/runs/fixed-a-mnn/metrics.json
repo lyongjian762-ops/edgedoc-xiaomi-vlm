@@ -1,0 +1,14 @@
+{
+  "backend": "opencl",
+  "decode_ms": 4110.473,
+  "decode_tokens_per_sec": 23.841538431221906,
+  "finish_reason": "eog",
+  "first_text_ms": 2034.823287,
+  "generated_tokens": 98,
+  "model_load_ms": 966.248681,
+  "prefill_ms": 2030.851,
+  "prompt_tokens": 268,
+  "request_ms": 6303.895633,
+  "sample_ms": 158.319,
+  "status": 1
+}

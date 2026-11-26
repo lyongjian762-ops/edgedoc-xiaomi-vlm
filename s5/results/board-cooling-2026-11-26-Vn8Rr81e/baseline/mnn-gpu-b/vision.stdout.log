@@ -1,0 +1,9 @@
+===the core num is 3===
+model input num: 1, output num: 1
+input tensors:
+  index=0, name=pixel, n_dims=4, dims=[1, 448, 448, 3], n_elems=602112, size=1204224, fmt=NHWC, type=FP16, qnt_type=AFFINE, zp=0, scale=1.000000
+output tensors:
+  index=0, name=image_features, n_dims=2, dims=[196, 1024, 0, 0], n_elems=200704, size=401408, fmt=UNDEFINED, type=FP16, qnt_type=AFFINE, zp=0, scale=1.000000
+model input height=448, width=448, channel=3
+main: Model loaded in   295.33 ms
+main: Encoder the image cost   748.70 ms

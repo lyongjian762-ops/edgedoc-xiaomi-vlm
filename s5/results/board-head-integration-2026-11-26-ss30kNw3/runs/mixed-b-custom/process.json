@@ -1,0 +1,19 @@
+{
+  "command": [
+    "sh",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-head-integration-2026-11-26.ss30kNw3/select-source/integration_pipeline.sh",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/npu",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-resident-2026-11-24.1YZuKC/inputs/omni-mixed-single-dev.png",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-head-integration-2026-11-26.ss30kNw3/mnn_image_replay_argmax",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-head-integration-2026-11-26.ss30kNw3/model/opencl-trunk.json",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/fixed-opencl/mnn_cachefile.bin",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-head-integration-2026-11-26.ss30kNw3/select-gemv"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "process_wall_ms": 18957.081737999943,
+  "peak_process_rss_kib": 707772,
+  "minimum_board_mem_available_kib": 2778552,
+  "opened_mali_device": true
+}

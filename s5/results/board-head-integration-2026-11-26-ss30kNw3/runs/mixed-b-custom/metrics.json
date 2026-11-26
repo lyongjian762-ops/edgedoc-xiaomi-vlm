@@ -1,0 +1,21 @@
+{
+  "backend": "opencl",
+  "custom_head_argmax": false,
+  "custom_head_calls": 327,
+  "custom_head_decode_ms": 2959.5833079999984,
+  "custom_head_load_ms": 244.332899,
+  "custom_head_prefill_ms": 22.451627,
+  "decode_ms": 13859.049307999998,
+  "decode_tokens_per_sec": 23.522536990457183,
+  "finish_reason": "eog",
+  "first_text_ms": 2017.716077,
+  "generated_tokens": 326,
+  "model_load_ms": 943.57272,
+  "prefill_ms": 2014.658627,
+  "prompt_tokens": 268,
+  "raw_mnn_decode_ms": 10899.466,
+  "raw_mnn_prefill_ms": 1992.207,
+  "request_ms": 16236.068423,
+  "sample_ms": 354.713,
+  "status": 1
+}

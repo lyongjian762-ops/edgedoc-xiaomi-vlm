@@ -1,0 +1,40 @@
+{
+  "layer": "/lm/lm_head/Linear",
+  "source": "Last hidden row of the original BF16 model's fixed OCR prefill",
+  "input_shape": [
+    268,
+    1024
+  ],
+  "measured_rows": 1,
+  "output_width": 248320,
+  "source_image_sha256": "6221fe776e94e4abf9e1a14200489dcb41e30ac62c222b7d4ac6b6e70f50e7f6",
+  "quantized_weights": {
+    "external_offset": 280332416,
+    "external_sizes": [
+      127139866,
+      15892480,
+      0,
+      0
+    ],
+    "quant": {
+      "type": 1,
+      "useInt32": false,
+      "quantScale": 1.0,
+      "scaleIn": 0.0,
+      "scaleOut": 0.0,
+      "aMaxOrBits": 4,
+      "aMin": 1,
+      "readType": 3973120,
+      "has_scaleInt": false,
+      "shapeInt32": true,
+      "weightSize": 0,
+      "scaleStorage": "FP16"
+    }
+  },
+  "files": {
+    "lm_head.mnn": "928e9bc7701a19bf72e1a10601431c3058682b916de6e94d6221b343233fac25",
+    "lm_head.mnn.weight": "82cd9605c2304d053fa5baa1fc7b43116754ba35d86b51c83071504958bc6991",
+    "input.f32": "515a189a5487e4d95d328f1eb8d8bff9782b057bf2c707b7668f91ae9eb7c31c",
+    "reference-bf16.f32": "8474d868e8d5af1050d4a051b7557da1791ab0d4137f1f1ba3fbdee6f2416221"
+  }
+}

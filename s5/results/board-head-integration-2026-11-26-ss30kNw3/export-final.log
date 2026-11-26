@@ -1,0 +1,48 @@
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.12/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.12/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+The device supports: i8sdot:0, fp16:0, i8mm: 0, sve2: 0, sme2: 0
+The device supports: i8sdot:0, fp16:0, i8mm: 0, sve2: 0, sme2: 0
+Don't has bizCode, use MNNTest for default
+Start to Convert Other Model Format To MNN Model..., target version: 3.6
+try 'pip install -U aliyun-log-python-sdk'
+try 'pip install -U aliyun-log-python-sdk'
+{"source_graph_sha256": "1b2297357edfb43f1bd58375e841bcd3febbbec1e06ee2ba3cb5a11868424a30", "trunk_sha256": "c24b26a2e47b3a7a00f3a1e844ee1c50e4fc83066eff6dac158469d73c88233b", "removed_operator": "/lm/lm_head/Linear", "head_external": [280332416, 127139866, 15892480, 0, 0], "trunk_output": "logits", "trunk_output_shape": [1, -1, 1024], "weights": "reuse original external weight file, existing offsets unchanged"}
+JsonFile /home/siersier/.cache/edgedoc-xiaomi-vlm/s5-head-integration.r6cbIoj1/trunk-final/trunk.json has convert to MNNModel /home/siersier/.cache/edgedoc-xiaomi-vlm/s5-head-integration.r6cbIoj1/trunk-final/trunk.mnn.

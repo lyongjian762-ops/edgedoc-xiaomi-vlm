@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/edgedoc-s5/edgedoc_cli",
+    "--model",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/models/Xiaomi-OCR-0.Q4_K_M.gguf",
+    "--mmproj",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/models/Xiaomi-OCR-0.mmproj-bf16.gguf",
+    "--prompt-file",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/npu/ocr_prompt.txt",
+    "--image",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/npu/vision-input.png",
+    "--max-tokens",
+    "512",
+    "--output-dir",
+    "result"
+  ],
+  "initial_soc_millicelsius": 37000,
+  "wall_seconds": 53.70337481199999,
+  "exit_status": 0,
+  "cooldown_to_45c": true,
+  "output_matches_reference": true
+}

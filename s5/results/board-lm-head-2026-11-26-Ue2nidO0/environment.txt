@@ -1,0 +1,15 @@
+Linux 5.10.160 aarch64
+PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+/dev/mmcblk0p3
+               total        used        free      shared  buff/cache   available
+Mem:            3902         540         836           6        2524        3315
+Swap:              0           0           0
+37000
+ondemand
+2304000
+ondemand
+2304000
+9e1b0e5d97691489e671dcf1f2e9f28d00b815f0815f0538a604357db86e95fa  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/libMNN.so

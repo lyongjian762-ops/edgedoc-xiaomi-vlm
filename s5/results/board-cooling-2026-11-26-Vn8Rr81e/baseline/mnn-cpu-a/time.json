@@ -1,0 +1,14 @@
+{
+  "command": [
+    "sh",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/run_pipeline.sh",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/npu",
+    "cpu"
+  ],
+  "initial_soc_millicelsius": 40692,
+  "wall_seconds": 8.773890631000029,
+  "exit_status": 0,
+  "cooldown_to_45c": true,
+  "output_matches_reference": true
+}

@@ -1,0 +1,969 @@
+{
+  "baseline_date": "2026-11-23/24",
+  "cooling_retest_date_asia_shanghai": "2026-11-26",
+  "sample_shape": [
+    448,
+    448
+  ],
+  "generated_tokens": 98,
+  "prompt_tokens": 268,
+  "backends": {
+    "cpu": {
+      "old": {
+        "wall_seconds": 51.641110125999944,
+        "vision_seconds": 37.151709525,
+        "request_seconds": 50.0912096585,
+        "start_soc_c": 43.9225,
+        "peak_temp_c": 84.5205,
+        "peak_soc_c": 79.461,
+        "max_peak_temp_c": 85.888,
+        "max_peak_soc_c": 81.307
+      },
+      "new": {
+        "wall_seconds": 52.2615736045,
+        "vision_seconds": 36.72271054450002,
+        "request_seconds": 49.47324845,
+        "start_soc_c": 38.846000000000004,
+        "peak_temp_c": 57.307,
+        "peak_soc_c": 53.1535,
+        "max_peak_temp_c": 58.23,
+        "max_peak_soc_c": 53.615
+      },
+      "wall_reduction_percent": -1.2014913641209102,
+      "wall_speedup": 0.9881277306497592,
+      "old_runs": [
+        {
+          "wall_seconds": 51.77058903500006,
+          "exit_status": 0,
+          "initial_soc_millicelsius": 43461,
+          "max_sampled_temp_millicelsius": 83153,
+          "fan_pwm_values": [
+            100,
+            150,
+            200,
+            255
+          ],
+          "request_seconds": 50.041562737,
+          "outside_request_seconds": 1.7290262980000577,
+          "vision_log_interval_seconds": 37.11735556300005,
+          "run": "cpu-a",
+          "vision_seconds": 37.11735556300005,
+          "start_soc_c": 43.461,
+          "peak_temp_c": 83.153,
+          "peak_soc_c": 77.615
+        },
+        {
+          "wall_seconds": 51.51163121699983,
+          "exit_status": 0,
+          "initial_soc_millicelsius": 44384,
+          "max_sampled_temp_millicelsius": 85888,
+          "fan_pwm_values": [
+            100,
+            150,
+            200,
+            255
+          ],
+          "request_seconds": 50.14085658,
+          "outside_request_seconds": 1.3707746369998333,
+          "vision_log_interval_seconds": 37.186063486999956,
+          "run": "cpu-b",
+          "vision_seconds": 37.186063486999956,
+          "start_soc_c": 44.384,
+          "peak_temp_c": 85.888,
+          "peak_soc_c": 81.307
+        }
+      ],
+      "runs": [
+        {
+          "run": "cpu-a",
+          "wall_seconds": 53.70337481199999,
+          "output_matches_reference": true,
+          "request_seconds": 49.521407309000004,
+          "vision_seconds": 36.71313993900003,
+          "generated_tokens": 98,
+          "prompt_tokens": 268,
+          "frequency_scope": "CPU vision log interval",
+          "peak_temp_c": 56.384,
+          "peak_soc_c": 52.692,
+          "start_soc_c": 37.923,
+          "fan_pwm_values": [
+            0,
+            100
+          ],
+          "cpu_large_core_frequency_mhz": {
+            "policy4": {
+              "min": 2304.0,
+              "median": 2304.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 72,
+              "samples": 72
+            },
+            "policy6": {
+              "min": 2304.0,
+              "median": 2304.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 72,
+              "samples": 72
+            }
+          },
+          "thermal_cooling_state_max": {
+            "cooling_thermal-cpufreq-0": 0,
+            "cooling_thermal-cpufreq-1": 0,
+            "cooling_thermal-cpufreq-2": 0,
+            "cooling_thermal-devfreq-0": 0
+          },
+          "fb000000.gpu_frequency_mhz": {
+            "min": 300.0,
+            "median": 300.0,
+            "max": 300.0
+          },
+          "fdab0000.npu_frequency_mhz": {
+            "min": 1000.0,
+            "median": 1000.0,
+            "max": 1000.0
+          },
+          "dmc_frequency_mhz": {
+            "min": 528.0,
+            "median": 528.0,
+            "max": 1848.0
+          }
+        },
+        {
+          "run": "cpu-b",
+          "wall_seconds": 50.81977239700001,
+          "output_matches_reference": true,
+          "request_seconds": 49.425089591,
+          "vision_seconds": 36.732281150000006,
+          "generated_tokens": 98,
+          "prompt_tokens": 268,
+          "frequency_scope": "CPU vision log interval",
+          "peak_temp_c": 58.23,
+          "peak_soc_c": 53.615,
+          "start_soc_c": 39.769,
+          "fan_pwm_values": [
+            0,
+            100
+          ],
+          "cpu_large_core_frequency_mhz": {
+            "policy4": {
+              "min": 2304.0,
+              "median": 2304.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 73,
+              "samples": 73
+            },
+            "policy6": {
+              "min": 2304.0,
+              "median": 2304.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 73,
+              "samples": 73
+            }
+          },
+          "thermal_cooling_state_max": {
+            "cooling_thermal-cpufreq-0": 0,
+            "cooling_thermal-cpufreq-1": 0,
+            "cooling_thermal-cpufreq-2": 0,
+            "cooling_thermal-devfreq-0": 0
+          },
+          "fb000000.gpu_frequency_mhz": {
+            "min": 300.0,
+            "median": 300.0,
+            "max": 300.0
+          },
+          "fdab0000.npu_frequency_mhz": {
+            "min": 1000.0,
+            "median": 1000.0,
+            "max": 1000.0
+          },
+          "dmc_frequency_mhz": {
+            "min": 528.0,
+            "median": 528.0,
+            "max": 528.0
+          }
+        }
+      ]
+    },
+    "npu": {
+      "old": {
+        "wall_seconds": 13.129889839999919,
+        "vision_seconds": 0.75476,
+        "prefill_seconds": 2.5804650000000002,
+        "decode_seconds": 6.2063299999999995,
+        "decode_tokens_per_second": 15.795,
+        "start_soc_c": 41.614999999999995,
+        "peak_temp_c": 56.846000000000004,
+        "peak_soc_c": 54.076499999999996,
+        "max_peak_temp_c": 61.0,
+        "max_peak_soc_c": 57.307
+      },
+      "new": {
+        "wall_seconds": 13.777052071500009,
+        "vision_seconds": 0.992095,
+        "prefill_seconds": 2.65421,
+        "decode_seconds": 6.22016,
+        "decode_tokens_per_second": 15.76,
+        "start_soc_c": 38.384,
+        "peak_temp_c": 47.615,
+        "peak_soc_c": 44.384,
+        "max_peak_temp_c": 49.923,
+        "max_peak_soc_c": 46.23
+      },
+      "wall_reduction_percent": -4.928923543048502,
+      "wall_speedup": 0.9530260734922498,
+      "old_runs": [
+        {
+          "wall_seconds": 12.89519200399991,
+          "exit_status": 0,
+          "initial_soc_millicelsius": 38846,
+          "max_sampled_temp_millicelsius": 52692,
+          "fan_pwm_values": [
+            0,
+            100
+          ],
+          "vision_encoder_seconds": 0.75559,
+          "language_load_seconds": 1.83259,
+          "vision_load_seconds": 0.35910000000000003,
+          "total_reported_load_seconds": 2.19169,
+          "prefill_seconds": 2.55062,
+          "prefill_tokens_per_second": 105.07,
+          "generate_seconds": 6.2200500000000005,
+          "generate_tokens_per_second": 15.76,
+          "run": "npu-a",
+          "vision_seconds": 0.75559,
+          "start_soc_c": 38.846,
+          "peak_temp_c": 52.692,
+          "peak_soc_c": 50.846,
+          "decode_seconds": 6.2200500000000005,
+          "decode_tokens_per_second": 15.76
+        },
+        {
+          "wall_seconds": 13.364587675999928,
+          "exit_status": 0,
+          "initial_soc_millicelsius": 44384,
+          "max_sampled_temp_millicelsius": 61000,
+          "fan_pwm_values": [
+            100,
+            150
+          ],
+          "vision_encoder_seconds": 0.75393,
+          "language_load_seconds": 2.27571,
+          "vision_load_seconds": 0.37717,
+          "total_reported_load_seconds": 2.65288,
+          "prefill_seconds": 2.61031,
+          "prefill_tokens_per_second": 102.67,
+          "generate_seconds": 6.192609999999999,
+          "generate_tokens_per_second": 15.83,
+          "run": "npu-b",
+          "vision_seconds": 0.75393,
+          "start_soc_c": 44.384,
+          "peak_temp_c": 61.0,
+          "peak_soc_c": 57.307,
+          "decode_seconds": 6.192609999999999,
+          "decode_tokens_per_second": 15.83
+        }
+      ],
+      "runs": [
+        {
+          "run": "npu-a",
+          "wall_seconds": 14.202637093000021,
+          "output_matches_reference": true,
+          "vision_seconds": 1.23133,
+          "prefill_seconds": 2.64983,
+          "decode_seconds": 6.09096,
+          "decode_tokens_per_second": 16.09,
+          "generated_tokens": 98,
+          "prompt_tokens": 268,
+          "frequency_scope": "whole process",
+          "peak_temp_c": 45.307,
+          "peak_soc_c": 42.538,
+          "start_soc_c": 36.076,
+          "fan_pwm_values": [
+            0,
+            100
+          ],
+          "cpu_large_core_frequency_mhz": {
+            "policy4": {
+              "min": 408.0,
+              "median": 1416.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 7,
+              "samples": 28
+            },
+            "policy6": {
+              "min": 408.0,
+              "median": 2112.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 12,
+              "samples": 28
+            }
+          },
+          "thermal_cooling_state_max": {
+            "cooling_thermal-cpufreq-0": 0,
+            "cooling_thermal-cpufreq-1": 0,
+            "cooling_thermal-cpufreq-2": 0,
+            "cooling_thermal-devfreq-0": 0
+          },
+          "fb000000.gpu_frequency_mhz": {
+            "min": 300.0,
+            "median": 300.0,
+            "max": 300.0
+          },
+          "fdab0000.npu_frequency_mhz": {
+            "min": 1000.0,
+            "median": 1000.0,
+            "max": 1000.0
+          },
+          "dmc_frequency_mhz": {
+            "min": 528.0,
+            "median": 1704.0,
+            "max": 1848.0
+          }
+        },
+        {
+          "run": "npu-b",
+          "wall_seconds": 13.351467049999997,
+          "output_matches_reference": true,
+          "vision_seconds": 0.75286,
+          "prefill_seconds": 2.6585900000000002,
+          "decode_seconds": 6.34936,
+          "decode_tokens_per_second": 15.43,
+          "generated_tokens": 98,
+          "prompt_tokens": 268,
+          "frequency_scope": "whole process",
+          "peak_temp_c": 49.923,
+          "peak_soc_c": 46.23,
+          "start_soc_c": 40.692,
+          "fan_pwm_values": [
+            100
+          ],
+          "cpu_large_core_frequency_mhz": {
+            "policy4": {
+              "min": 408.0,
+              "median": 1200.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 5,
+              "samples": 27
+            },
+            "policy6": {
+              "min": 408.0,
+              "median": 2208.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 12,
+              "samples": 27
+            }
+          },
+          "thermal_cooling_state_max": {
+            "cooling_thermal-cpufreq-0": 0,
+            "cooling_thermal-cpufreq-1": 0,
+            "cooling_thermal-cpufreq-2": 0,
+            "cooling_thermal-devfreq-0": 0
+          },
+          "fb000000.gpu_frequency_mhz": {
+            "min": 300.0,
+            "median": 300.0,
+            "max": 300.0
+          },
+          "fdab0000.npu_frequency_mhz": {
+            "min": 1000.0,
+            "median": 1000.0,
+            "max": 1000.0
+          },
+          "dmc_frequency_mhz": {
+            "min": 528.0,
+            "median": 1848.0,
+            "max": 1848.0
+          }
+        }
+      ]
+    },
+    "mnn-cpu": {
+      "old": {
+        "wall_seconds": 7.507173420499839,
+        "request_seconds": 4.596519399,
+        "prefill_seconds": 1.9335179999999998,
+        "decode_seconds": 2.6300955000000004,
+        "decode_tokens_per_second": 37.2720929058916,
+        "start_soc_c": 49.4615,
+        "peak_soc_c": 67.9225,
+        "max_peak_soc_c": 68.384
+      },
+      "new": {
+        "wall_seconds": 7.9765349885000205,
+        "request_seconds": 4.501007744000001,
+        "prefill_seconds": 1.9316635,
+        "decode_seconds": 2.537925,
+        "decode_tokens_per_second": 38.61460535746073,
+        "start_soc_c": 41.614999999999995,
+        "peak_temp_c": 58.23,
+        "peak_soc_c": 53.1535,
+        "max_peak_temp_c": 58.23,
+        "max_peak_soc_c": 53.615
+      },
+      "wall_reduction_percent": -6.252174309953928,
+      "wall_speedup": 0.9411572106589049,
+      "old_runs": [
+        {
+          "run": "pipeline-mnn-cpu",
+          "backend": "cpu",
+          "decode_ms": 2675.46,
+          "decode_tokens_per_sec": 36.629215163000005,
+          "finish_reason": "eog",
+          "first_text_ms": 1943.85557,
+          "generated_tokens": 98,
+          "model_load_ms": 1091.799276,
+          "prefill_ms": 1942.934,
+          "prompt_tokens": 268,
+          "request_ms": 4650.786467,
+          "status": 1,
+          "process_wall_ms": 7612.70730599972,
+          "peak_process_rss_kib": 882836,
+          "minimum_board_mem_available_kib": 2676672,
+          "opened_mali_device": false,
+          "max_sampled_gpu_load_percent": 0,
+          "wall_seconds": 7.61270730599972,
+          "request_seconds": 4.650786467,
+          "prefill_seconds": 1.942934,
+          "decode_seconds": 2.67546,
+          "decode_tokens_per_second": 36.629215163000005,
+          "start_soc_c": 49.0,
+          "peak_soc_c": 68.384,
+          "peak_gpu_frequency_mhz": 300.0
+        },
+        {
+          "run": "pipeline-mnn-cpu-2",
+          "backend": "cpu",
+          "decode_ms": 2584.731,
+          "decode_tokens_per_sec": 37.91497064878318,
+          "finish_reason": "eog",
+          "first_text_ms": 1925.009527,
+          "generated_tokens": 98,
+          "model_load_ms": 1141.33349,
+          "prefill_ms": 1924.102,
+          "prompt_tokens": 268,
+          "request_ms": 4542.252331,
+          "status": 1,
+          "process_wall_ms": 7401.639534999958,
+          "peak_process_rss_kib": 882756,
+          "minimum_board_mem_available_kib": 2531292,
+          "opened_mali_device": false,
+          "max_sampled_gpu_load_percent": 0,
+          "wall_seconds": 7.401639534999958,
+          "request_seconds": 4.542252330999999,
+          "prefill_seconds": 1.924102,
+          "decode_seconds": 2.584731,
+          "decode_tokens_per_second": 37.91497064878318,
+          "start_soc_c": 49.923,
+          "peak_soc_c": 67.461,
+          "peak_gpu_frequency_mhz": 300.0
+        }
+      ],
+      "runs": [
+        {
+          "run": "mnn-cpu-a",
+          "wall_seconds": 8.773890631000029,
+          "output_matches_reference": true,
+          "vision_seconds": null,
+          "request_seconds": 4.4659485320000005,
+          "prefill_seconds": 1.904574,
+          "decode_seconds": 2.529931,
+          "decode_tokens_per_second": 38.73623430836651,
+          "generated_tokens": 98,
+          "prompt_tokens": 268,
+          "frequency_scope": "whole process",
+          "peak_temp_c": 58.23,
+          "peak_soc_c": 53.615,
+          "start_soc_c": 40.692,
+          "fan_pwm_values": [
+            0,
+            100
+          ],
+          "cpu_large_core_frequency_mhz": {
+            "policy4": {
+              "min": 408.0,
+              "median": 2256.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 9,
+              "samples": 18
+            },
+            "policy6": {
+              "min": 408.0,
+              "median": 2304.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 10,
+              "samples": 18
+            }
+          },
+          "thermal_cooling_state_max": {
+            "cooling_thermal-cpufreq-0": 0,
+            "cooling_thermal-cpufreq-1": 0,
+            "cooling_thermal-cpufreq-2": 0,
+            "cooling_thermal-devfreq-0": 0
+          },
+          "fb000000.gpu_frequency_mhz": {
+            "min": 300.0,
+            "median": 300.0,
+            "max": 300.0
+          },
+          "fdab0000.npu_frequency_mhz": {
+            "min": 1000.0,
+            "median": 1000.0,
+            "max": 1000.0
+          },
+          "dmc_frequency_mhz": {
+            "min": 528.0,
+            "median": 528.0,
+            "max": 1848.0
+          }
+        },
+        {
+          "run": "mnn-cpu-b",
+          "wall_seconds": 7.179179346000012,
+          "output_matches_reference": true,
+          "vision_seconds": null,
+          "request_seconds": 4.536066956,
+          "prefill_seconds": 1.958753,
+          "decode_seconds": 2.545919,
+          "decode_tokens_per_second": 38.49297640655496,
+          "generated_tokens": 98,
+          "prompt_tokens": 268,
+          "frequency_scope": "whole process",
+          "peak_temp_c": 58.23,
+          "peak_soc_c": 52.692,
+          "start_soc_c": 42.538,
+          "fan_pwm_values": [
+            0,
+            100
+          ],
+          "cpu_large_core_frequency_mhz": {
+            "policy4": {
+              "min": 408.0,
+              "median": 2304.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 8,
+              "samples": 15
+            },
+            "policy6": {
+              "min": 408.0,
+              "median": 2304.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 11,
+              "samples": 15
+            }
+          },
+          "thermal_cooling_state_max": {
+            "cooling_thermal-cpufreq-0": 0,
+            "cooling_thermal-cpufreq-1": 0,
+            "cooling_thermal-cpufreq-2": 0,
+            "cooling_thermal-devfreq-0": 0
+          },
+          "fb000000.gpu_frequency_mhz": {
+            "min": 300.0,
+            "median": 300.0,
+            "max": 300.0
+          },
+          "fdab0000.npu_frequency_mhz": {
+            "min": 1000.0,
+            "median": 1000.0,
+            "max": 1000.0
+          },
+          "dmc_frequency_mhz": {
+            "min": 528.0,
+            "median": 1848.0,
+            "max": 1848.0
+          }
+        }
+      ]
+    },
+    "mnn-gpu": {
+      "old": {
+        "wall_seconds": 9.431561989500096,
+        "request_seconds": 6.570486806,
+        "prefill_seconds": 2.0083205,
+        "decode_seconds": 4.413368,
+        "decode_tokens_per_second": 22.344811163333738,
+        "start_soc_c": 51.769000000000005,
+        "peak_soc_c": 56.3845,
+        "max_peak_soc_c": 61.923
+      },
+      "new": {
+        "wall_seconds": 8.94853602400002,
+        "request_seconds": 6.137844449999999,
+        "prefill_seconds": 1.9678894999999998,
+        "decode_seconds": 4.043368,
+        "decode_tokens_per_second": 24.237583489361665,
+        "start_soc_c": 41.153499999999994,
+        "peak_temp_c": 44.384,
+        "peak_soc_c": 42.538,
+        "max_peak_temp_c": 44.384,
+        "max_peak_soc_c": 42.538
+      },
+      "wall_reduction_percent": 5.121378262029297,
+      "wall_speedup": 1.0539782109838522,
+      "old_runs": [
+        {
+          "run": "pipeline-mnn-opencl",
+          "backend": "opencl",
+          "decode_ms": 4762.141,
+          "decode_tokens_per_sec": 20.578979076847997,
+          "finish_reason": "eog",
+          "first_text_ms": 1946.52932,
+          "generated_tokens": 98,
+          "model_load_ms": 997.724808,
+          "prefill_ms": 1944.457,
+          "prompt_tokens": 268,
+          "request_ms": 6873.548607,
+          "status": 1,
+          "process_wall_ms": 9565.410502999839,
+          "peak_process_rss_kib": 687264,
+          "minimum_board_mem_available_kib": 2765104,
+          "opened_mali_device": true,
+          "max_sampled_gpu_load_percent": 100,
+          "wall_seconds": 9.565410502999839,
+          "request_seconds": 6.873548607,
+          "prefill_seconds": 1.944457,
+          "decode_seconds": 4.762141,
+          "decode_tokens_per_second": 20.578979076847997,
+          "start_soc_c": 61.923,
+          "peak_soc_c": 61.923,
+          "peak_gpu_frequency_mhz": 1000.0
+        },
+        {
+          "run": "pipeline-mnn-opencl-2",
+          "backend": "opencl",
+          "decode_ms": 4064.595,
+          "decode_tokens_per_sec": 24.11064324981948,
+          "finish_reason": "eog",
+          "first_text_ms": 2074.327917,
+          "generated_tokens": 98,
+          "model_load_ms": 1131.822781,
+          "prefill_ms": 2072.184,
+          "prompt_tokens": 268,
+          "request_ms": 6267.425005,
+          "status": 1,
+          "process_wall_ms": 9297.713476000354,
+          "peak_process_rss_kib": 687052,
+          "minimum_board_mem_available_kib": 2764136,
+          "opened_mali_device": true,
+          "max_sampled_gpu_load_percent": 100,
+          "wall_seconds": 9.297713476000354,
+          "request_seconds": 6.267425005,
+          "prefill_seconds": 2.072184,
+          "decode_seconds": 4.064595,
+          "decode_tokens_per_second": 24.11064324981948,
+          "start_soc_c": 41.615,
+          "peak_soc_c": 50.846,
+          "peak_gpu_frequency_mhz": 1000.0
+        }
+      ],
+      "runs": [
+        {
+          "run": "mnn-gpu-a",
+          "wall_seconds": 8.894818644000054,
+          "output_matches_reference": true,
+          "vision_seconds": null,
+          "request_seconds": 6.113619823,
+          "prefill_seconds": 1.9346199999999998,
+          "decode_seconds": 4.059025,
+          "decode_tokens_per_second": 24.14372909750494,
+          "generated_tokens": 98,
+          "prompt_tokens": 268,
+          "frequency_scope": "whole process",
+          "peak_temp_c": 44.384,
+          "peak_soc_c": 42.538,
+          "start_soc_c": 39.769,
+          "fan_pwm_values": [
+            0,
+            100
+          ],
+          "cpu_large_core_frequency_mhz": {
+            "policy4": {
+              "min": 408.0,
+              "median": 408.0,
+              "max": 1800.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 0,
+              "samples": 18
+            },
+            "policy6": {
+              "min": 408.0,
+              "median": 600.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 2,
+              "samples": 18
+            }
+          },
+          "thermal_cooling_state_max": {
+            "cooling_thermal-cpufreq-0": 0,
+            "cooling_thermal-cpufreq-1": 0,
+            "cooling_thermal-cpufreq-2": 0,
+            "cooling_thermal-devfreq-0": 0
+          },
+          "fb000000.gpu_frequency_mhz": {
+            "min": 300.0,
+            "median": 1000.0,
+            "max": 1000.0
+          },
+          "fdab0000.npu_frequency_mhz": {
+            "min": 1000.0,
+            "median": 1000.0,
+            "max": 1000.0
+          },
+          "dmc_frequency_mhz": {
+            "min": 528.0,
+            "median": 1848.0,
+            "max": 1848.0
+          }
+        },
+        {
+          "run": "mnn-gpu-b",
+          "wall_seconds": 9.002253403999987,
+          "output_matches_reference": true,
+          "vision_seconds": null,
+          "request_seconds": 6.162069077,
+          "prefill_seconds": 2.001159,
+          "decode_seconds": 4.027711,
+          "decode_tokens_per_second": 24.33143788121839,
+          "generated_tokens": 98,
+          "prompt_tokens": 268,
+          "frequency_scope": "whole process",
+          "peak_temp_c": 44.384,
+          "peak_soc_c": 42.538,
+          "start_soc_c": 42.538,
+          "fan_pwm_values": [
+            0,
+            100
+          ],
+          "cpu_large_core_frequency_mhz": {
+            "policy4": {
+              "min": 408.0,
+              "median": 408.0,
+              "max": 1200.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 0,
+              "samples": 18
+            },
+            "policy6": {
+              "min": 408.0,
+              "median": 816.0,
+              "max": 2304.0,
+              "minimum_policy_max": 2304.0,
+              "samples_at_2304mhz": 2,
+              "samples": 18
+            }
+          },
+          "thermal_cooling_state_max": {
+            "cooling_thermal-cpufreq-0": 0,
+            "cooling_thermal-cpufreq-1": 0,
+            "cooling_thermal-cpufreq-2": 0,
+            "cooling_thermal-devfreq-0": 0
+          },
+          "fb000000.gpu_frequency_mhz": {
+            "min": 300.0,
+            "median": 1000.0,
+            "max": 1000.0
+          },
+          "fdab0000.npu_frequency_mhz": {
+            "min": 1000.0,
+            "median": 1000.0,
+            "max": 1000.0
+          },
+          "dmc_frequency_mhz": {
+            "min": 528.0,
+            "median": 1848.0,
+            "max": 1848.0
+          }
+        }
+      ]
+    }
+  },
+  "sustained_cpu": [
+    {
+      "run": "cpu-sustained-1",
+      "wall_seconds": 50.805529812999964,
+      "output_matches_reference": true,
+      "request_seconds": 49.532654519000005,
+      "vision_seconds": 36.76473169399998,
+      "generated_tokens": 98,
+      "prompt_tokens": 268,
+      "frequency_scope": "CPU vision log interval",
+      "peak_temp_c": 57.307,
+      "peak_soc_c": 53.615,
+      "start_soc_c": 37.0,
+      "fan_pwm_values": [
+        0,
+        100
+      ],
+      "cpu_large_core_frequency_mhz": {
+        "policy4": {
+          "min": 2304.0,
+          "median": 2304.0,
+          "max": 2304.0,
+          "minimum_policy_max": 2304.0,
+          "samples_at_2304mhz": 73,
+          "samples": 73
+        },
+        "policy6": {
+          "min": 2304.0,
+          "median": 2304.0,
+          "max": 2304.0,
+          "minimum_policy_max": 2304.0,
+          "samples_at_2304mhz": 73,
+          "samples": 73
+        }
+      },
+      "thermal_cooling_state_max": {
+        "cooling_thermal-cpufreq-0": 0,
+        "cooling_thermal-cpufreq-1": 0,
+        "cooling_thermal-cpufreq-2": 0,
+        "cooling_thermal-devfreq-0": 0
+      },
+      "fb000000.gpu_frequency_mhz": {
+        "min": 300.0,
+        "median": 300.0,
+        "max": 300.0
+      },
+      "fdab0000.npu_frequency_mhz": {
+        "min": 1000.0,
+        "median": 1000.0,
+        "max": 1000.0
+      },
+      "dmc_frequency_mhz": {
+        "min": 528.0,
+        "median": 528.0,
+        "max": 1068.0
+      }
+    },
+    {
+      "run": "cpu-sustained-2",
+      "wall_seconds": 50.716071553999996,
+      "output_matches_reference": true,
+      "request_seconds": 49.525533476,
+      "vision_seconds": 36.792257155000016,
+      "generated_tokens": 98,
+      "prompt_tokens": 268,
+      "frequency_scope": "CPU vision log interval",
+      "peak_temp_c": 58.23,
+      "peak_soc_c": 53.615,
+      "start_soc_c": 49.923,
+      "fan_pwm_values": [
+        100
+      ],
+      "cpu_large_core_frequency_mhz": {
+        "policy4": {
+          "min": 2304.0,
+          "median": 2304.0,
+          "max": 2304.0,
+          "minimum_policy_max": 2304.0,
+          "samples_at_2304mhz": 73,
+          "samples": 73
+        },
+        "policy6": {
+          "min": 2304.0,
+          "median": 2304.0,
+          "max": 2304.0,
+          "minimum_policy_max": 2304.0,
+          "samples_at_2304mhz": 73,
+          "samples": 73
+        }
+      },
+      "thermal_cooling_state_max": {
+        "cooling_thermal-cpufreq-0": 0,
+        "cooling_thermal-cpufreq-1": 0,
+        "cooling_thermal-cpufreq-2": 0,
+        "cooling_thermal-devfreq-0": 0
+      },
+      "fb000000.gpu_frequency_mhz": {
+        "min": 300.0,
+        "median": 300.0,
+        "max": 300.0
+      },
+      "fdab0000.npu_frequency_mhz": {
+        "min": 1000.0,
+        "median": 1000.0,
+        "max": 1000.0
+      },
+      "dmc_frequency_mhz": {
+        "min": 528.0,
+        "median": 528.0,
+        "max": 528.0
+      }
+    },
+    {
+      "run": "cpu-sustained-3",
+      "wall_seconds": 50.80557056299995,
+      "output_matches_reference": true,
+      "request_seconds": 49.481796013,
+      "vision_seconds": 36.77264869500004,
+      "generated_tokens": 98,
+      "prompt_tokens": 268,
+      "frequency_scope": "CPU vision log interval",
+      "peak_temp_c": 58.23,
+      "peak_soc_c": 53.615,
+      "start_soc_c": 49.0,
+      "fan_pwm_values": [
+        100
+      ],
+      "cpu_large_core_frequency_mhz": {
+        "policy4": {
+          "min": 2304.0,
+          "median": 2304.0,
+          "max": 2304.0,
+          "minimum_policy_max": 2304.0,
+          "samples_at_2304mhz": 73,
+          "samples": 73
+        },
+        "policy6": {
+          "min": 2304.0,
+          "median": 2304.0,
+          "max": 2304.0,
+          "minimum_policy_max": 2304.0,
+          "samples_at_2304mhz": 73,
+          "samples": 73
+        }
+      },
+      "thermal_cooling_state_max": {
+        "cooling_thermal-cpufreq-0": 0,
+        "cooling_thermal-cpufreq-1": 0,
+        "cooling_thermal-cpufreq-2": 0,
+        "cooling_thermal-devfreq-0": 0
+      },
+      "fb000000.gpu_frequency_mhz": {
+        "min": 300.0,
+        "median": 300.0,
+        "max": 300.0
+      },
+      "fdab0000.npu_frequency_mhz": {
+        "min": 1000.0,
+        "median": 1000.0,
+        "max": 1000.0
+      },
+      "dmc_frequency_mhz": {
+        "min": 528.0,
+        "median": 528.0,
+        "max": 528.0
+      }
+    }
+  ],
+  "gpu_confirmation": {
+    "output_matches_reference": true,
+    "process_wall_seconds": 9.319635686999957,
+    "opened_mali_device": true,
+    "peak_gpu_load_percent": 100,
+    "peak_soc_c": 42.538,
+    "decode_tokens_per_second": 22.713124431302763
+  }
+}

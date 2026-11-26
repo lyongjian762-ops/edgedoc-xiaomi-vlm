@@ -1,0 +1,4083 @@
+{
+  "date_asia_shanghai": "2026-11-26",
+  "runtime_revision": "d407447ed56c4121a11ccbd266dc184ca1ead0c2",
+  "plain_runs": [
+    {
+      "backend": "cpu",
+      "decode_ms": 2796.61,
+      "decode_tokens_per_sec": 35.04242636620766,
+      "finish_reason": "eog",
+      "first_text_ms": 1954.510155,
+      "generated_tokens": 98,
+      "model_load_ms": 1140.159531,
+      "prefill_ms": 1952.887,
+      "prompt_tokens": 268,
+      "request_ms": 4783.004231,
+      "sample_ms": 31.705,
+      "status": 1,
+      "run": "plain-a",
+      "process_wall_ms": 6052.390775000049,
+      "output_matches_reference": true
+    },
+    {
+      "backend": "cpu",
+      "decode_ms": 2580.258,
+      "decode_tokens_per_sec": 37.980698054225584,
+      "finish_reason": "eog",
+      "first_text_ms": 1960.97553,
+      "generated_tokens": 98,
+      "model_load_ms": 1020.512311,
+      "prefill_ms": 1960.114,
+      "prompt_tokens": 268,
+      "request_ms": 4571.951292,
+      "sample_ms": 30.593,
+      "status": 1,
+      "run": "plain-b",
+      "process_wall_ms": 5766.843746000177,
+      "output_matches_reference": true
+    }
+  ],
+  "profile_runs": [
+    {
+      "backend": "cpu",
+      "decode_ms": 2848.706,
+      "decode_tokens_per_sec": 34.40158443868901,
+      "finish_reason": "eog",
+      "first_text_ms": 1942.99632,
+      "generated_tokens": 98,
+      "model_load_ms": 1012.043185,
+      "prefill_ms": 1942.006,
+      "prompt_tokens": 268,
+      "request_ms": 4823.264443,
+      "sample_ms": 31.379,
+      "status": 1,
+      "run": "profile-a",
+      "process_wall_ms": 6170.907578999959,
+      "output_matches_reference": true,
+      "operator_calls": 54586,
+      "min_calls_per_step": 557,
+      "max_calls_per_step": 557,
+      "forward_us": 2844792.407,
+      "named_operator_us": 2771399.234
+    },
+    {
+      "backend": "cpu",
+      "decode_ms": 3232.854,
+      "decode_tokens_per_sec": 30.313772289129048,
+      "finish_reason": "eog",
+      "first_text_ms": 1952.450696,
+      "generated_tokens": 98,
+      "model_load_ms": 998.621559,
+      "prefill_ms": 1951.58,
+      "prompt_tokens": 268,
+      "request_ms": 5218.463191,
+      "sample_ms": 32.959,
+      "status": 1,
+      "run": "profile-b",
+      "process_wall_ms": 6491.040569000006,
+      "output_matches_reference": true,
+      "operator_calls": 54586,
+      "min_calls_per_step": 557,
+      "max_calls_per_step": 557,
+      "forward_us": 3228640.944,
+      "named_operator_us": 3151633.1040000007
+    }
+  ],
+  "plain_decode_ms_per_token": 27.433,
+  "profile_decode_ms_per_token": 31.028367346938776,
+  "profile_vs_plain_percent": 13.105994047092096,
+  "profile_forward_ms_per_token": 30.986904852040816,
+  "profile_named_op_ms_per_token": 30.219552744897968,
+  "types": [
+    {
+      "type": "Convolution",
+      "calls_per_token": 193.0,
+      "ms_per_token": 25.782706739795607,
+      "percent_of_profiled_decode": 83.09398445464551
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 18.0,
+      "ms_per_token": 2.843104484693878,
+      "percent_of_profiled_decode": 9.162920023809681
+    },
+    {
+      "type": "Attention",
+      "calls_per_token": 6.0,
+      "ms_per_token": 0.689927234693878,
+      "percent_of_profiled_decode": 2.223537020106684
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 67.0,
+      "ms_per_token": 0.2737664489795929,
+      "percent_of_profiled_decode": 0.8823101967258435
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 63.0,
+      "ms_per_token": 0.19132314795918365,
+      "percent_of_profiled_decode": 0.6166072027571872
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 104.0,
+      "ms_per_token": 0.18657550510204007,
+      "percent_of_profiled_decode": 0.6013062273495592
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 80.0,
+      "ms_per_token": 0.17810149489796118,
+      "percent_of_profiled_decode": 0.5739957017607389
+    },
+    {
+      "type": "RoPE",
+      "calls_per_token": 6.0,
+      "ms_per_token": 0.05141964795918369,
+      "percent_of_profiled_decode": 0.16571818743874933
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 19.0,
+      "ms_per_token": 0.019900352040816194,
+      "percent_of_profiled_decode": 0.06413599471188271
+    },
+    {
+      "type": "While",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0027276887755102036,
+      "percent_of_profiled_decode": 0.008790951663717862
+    }
+  ],
+  "operators": [
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 7.894414515306126,
+      "percent_of_profiled_decode": 25.44257139615495,
+      "name": "/lm/lm_head/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.2159731938775511,
+      "percent_of_profiled_decode": 0.6960507830227773,
+      "name": "/layers.1/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.21347622448979592,
+      "percent_of_profiled_decode": 0.6880034070205672,
+      "name": "/layers.0/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.21053131632653066,
+      "percent_of_profiled_decode": 0.6785123882687996,
+      "name": "/layers.2/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20946878061224486,
+      "percent_of_profiled_decode": 0.675087987292734,
+      "name": "/layers.6/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.2085997551020408,
+      "percent_of_profiled_decode": 0.6722872420892008,
+      "name": "/layers.10/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20767113265306122,
+      "percent_of_profiled_decode": 0.6692944244568828,
+      "name": "/layers.22/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20695836734693876,
+      "percent_of_profiled_decode": 0.66699728359171,
+      "name": "/layers.18/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.2065253724489796,
+      "percent_of_profiled_decode": 0.6656018028269062,
+      "name": "/layers.9/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20547024489795912,
+      "percent_of_profiled_decode": 0.6622012773038495,
+      "name": "/layers.5/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20536760714285718,
+      "percent_of_profiled_decode": 0.661870490466262,
+      "name": "/layers.8/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20516966326530617,
+      "percent_of_profiled_decode": 0.6612325455968536,
+      "name": "/layers.14/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20471432142857146,
+      "percent_of_profiled_decode": 0.6597650438374365,
+      "name": "/layers.13/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20467113775510207,
+      "percent_of_profiled_decode": 0.6596258690204488,
+      "name": "/layers.4/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20281398469387762,
+      "percent_of_profiled_decode": 0.653640529732503,
+      "name": "/layers.12/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20275001020408165,
+      "percent_of_profiled_decode": 0.6534343490814858,
+      "name": "/layers.21/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20229015816326526,
+      "percent_of_profiled_decode": 0.6519523115779503,
+      "name": "/layers.17/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.2021890612244898,
+      "percent_of_profiled_decode": 0.651626490571498,
+      "name": "/layers.20/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.20028273979591835,
+      "percent_of_profiled_decode": 0.6454826886522538,
+      "name": "/layers.16/self_attn/in_proj_qkv/Linear"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15964141836734694,
+      "percent_of_profiled_decode": 0.5145015094811201,
+      "name": "/layers.16/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15908333673469388,
+      "percent_of_profiled_decode": 0.5127028920211262,
+      "name": "/layers.20/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1590059744897959,
+      "percent_of_profiled_decode": 0.5124535645459388,
+      "name": "/layers.12/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15861018367346938,
+      "percent_of_profiled_decode": 0.5111779872269614,
+      "name": "/layers.8/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15847474489795918,
+      "percent_of_profiled_decode": 0.510741487381527,
+      "name": "/layers.10/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15841369387755103,
+      "percent_of_profiled_decode": 0.5105447286551478,
+      "name": "/layers.0/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1582574591836735,
+      "percent_of_profiled_decode": 0.5100412065325345,
+      "name": "/layers.18/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1578422244897959,
+      "percent_of_profiled_decode": 0.5087029643709837,
+      "name": "/layers.1/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15774399489795918,
+      "percent_of_profiled_decode": 0.5083863844145252,
+      "name": "/layers.14/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1577172704081633,
+      "percent_of_profiled_decode": 0.5083002551976796,
+      "name": "/layers.4/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15752086224489792,
+      "percent_of_profiled_decode": 0.5076672597162569,
+      "name": "/layers.22/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15748217346938778,
+      "percent_of_profiled_decode": 0.5075425713139393,
+      "name": "/layers.13/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15748215306122448,
+      "percent_of_profiled_decode": 0.5075425055413414,
+      "name": "/layers.21/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15734528061224487,
+      "percent_of_profiled_decode": 0.50710138517091,
+      "name": "/layers.17/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1571800612244898,
+      "percent_of_profiled_decode": 0.5065689066621064,
+      "name": "/layers.9/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15712061224489798,
+      "percent_of_profiled_decode": 0.506377311084656,
+      "name": "/layers.6/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15712056122448978,
+      "percent_of_profiled_decode": 0.5063771466531612,
+      "name": "/layers.2/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "LinearAttention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.15706247959183672,
+      "percent_of_profiled_decode": 0.5061899578397648,
+      "name": "/layers.5/self_attn/FusedLinearAttention"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.14046728061224492,
+      "percent_of_profiled_decode": 0.45270599977637327,
+      "name": "/layers.0/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13762348979591832,
+      "percent_of_profiled_decode": 0.4435408678036555,
+      "name": "/layers.0/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13734971938775514,
+      "percent_of_profiled_decode": 0.4426585448470459,
+      "name": "/layers.0/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13627676020408167,
+      "percent_of_profiled_decode": 0.4392005505166438,
+      "name": "/layers.6/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13619795408163263,
+      "percent_of_profiled_decode": 0.4389465696301605,
+      "name": "/layers.1/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13523514285714286,
+      "percent_of_profiled_decode": 0.43584356645334416,
+      "name": "/layers.10/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13439282653061227,
+      "percent_of_profiled_decode": 0.43312890113720826,
+      "name": "/layers.2/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13437204081632653,
+      "percent_of_profiled_decode": 0.43306191174632824,
+      "name": "/layers.9/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1338661224489796,
+      "percent_of_profiled_decode": 0.4314314090463631,
+      "name": "/layers.5/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13372768367346935,
+      "percent_of_profiled_decode": 0.4309852406290491,
+      "name": "/layers.22/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1336563010204082,
+      "percent_of_profiled_decode": 0.4307551845250233,
+      "name": "/layers.18/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1331071530612245,
+      "percent_of_profiled_decode": 0.42898535901972523,
+      "name": "/layers.4/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13283784183673467,
+      "percent_of_profiled_decode": 0.42811740737573906,
+      "name": "/layers.6/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13280064285714288,
+      "percent_of_profiled_decode": 0.42799752037306227,
+      "name": "/layers.14/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13273666326530612,
+      "percent_of_profiled_decode": 0.42779132327889546,
+      "name": "/layers.9/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13256699999999996,
+      "percent_of_profiled_decode": 0.4272445227869164,
+      "name": "/layers.21/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1324077551020408,
+      "percent_of_profiled_decode": 0.42673129920612474,
+      "name": "/layers.17/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13233927040816326,
+      "percent_of_profiled_decode": 0.42651058281098925,
+      "name": "/layers.8/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13228274489795916,
+      "percent_of_profiled_decode": 0.4263284091581765,
+      "name": "/layers.1/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.132119112244898,
+      "percent_of_profiled_decode": 0.4258010444688535,
+      "name": "/layers.10/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13203720918367348,
+      "percent_of_profiled_decode": 0.42553708259065115,
+      "name": "/layers.6/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13194342857142854,
+      "percent_of_profiled_decode": 0.42523484106051734,
+      "name": "/layers.13/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13185267857142852,
+      "percent_of_profiled_decode": 0.4249423667611598,
+      "name": "/layers.2/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13180657142857147,
+      "percent_of_profiled_decode": 0.4247937700195345,
+      "name": "/layers.2/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13151489795918372,
+      "percent_of_profiled_decode": 0.42385374805148684,
+      "name": "/layers.1/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13107143877551017,
+      "percent_of_profiled_decode": 0.42242454238715055,
+      "name": "/layers.12/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13098215816326533,
+      "percent_of_profiled_decode": 0.42213680371483636,
+      "name": "/layers.22/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13082739285714284,
+      "percent_of_profiled_decode": 0.4216380172192662,
+      "name": "/layers.10/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1307916632653061,
+      "percent_of_profiled_decode": 0.4215228658436322,
+      "name": "/layers.16/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13068751020408162,
+      "percent_of_profiled_decode": 0.42118719539065635,
+      "name": "/layers.4/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1302396326530612,
+      "percent_of_profiled_decode": 0.4197437499588922,
+      "name": "/layers.5/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13022027040816328,
+      "percent_of_profiled_decode": 0.41968134820671016,
+      "name": "/layers.20/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.13017417857142863,
+      "percent_of_profiled_decode": 0.41953280079453314,
+      "name": "/layers.5/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12966223469387758,
+      "percent_of_profiled_decode": 0.4178828787350615,
+      "name": "/layers.22/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12964584183673467,
+      "percent_of_profiled_decode": 0.4178300468958621,
+      "name": "/layers.18/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12952530102040816,
+      "percent_of_profiled_decode": 0.41744156104683666,
+      "name": "/layers.18/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12935863265306122,
+      "percent_of_profiled_decode": 0.41690441268358774,
+      "name": "/layers.14/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1292604336734694,
+      "percent_of_profiled_decode": 0.416587931386026,
+      "name": "/layers.12/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12904313265306125,
+      "percent_of_profiled_decode": 0.41588760120758494,
+      "name": "/layers.8/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12899404081632654,
+      "percent_of_profiled_decode": 0.41572938522352815,
+      "name": "/layers.9/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1289717142857143,
+      "percent_of_profiled_decode": 0.41565743000151284,
+      "name": "/layers.17/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12896429081632654,
+      "percent_of_profiled_decode": 0.41563350521905573,
+      "name": "/layers.14/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12853868367346946,
+      "percent_of_profiled_decode": 0.414261834134663,
+      "name": "/layers.8/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1284241326530612,
+      "percent_of_profiled_decode": 0.41389265254309743,
+      "name": "/layers.7/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12826343367346943,
+      "percent_of_profiled_decode": 0.41337474266471114,
+      "name": "/layers.16/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12825595918367347,
+      "percent_of_profiled_decode": 0.41335065345075933,
+      "name": "/layers.21/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12813392857142858,
+      "percent_of_profiled_decode": 0.4129573662020929,
+      "name": "/layers.13/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12804019387755106,
+      "percent_of_profiled_decode": 0.41265527266030433,
+      "name": "/layers.21/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12791967857142855,
+      "percent_of_profiled_decode": 0.4122668690270259,
+      "name": "/layers.20/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12773955102040813,
+      "percent_of_profiled_decode": 0.41168634363551443,
+      "name": "/layers.3/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12743301020408165,
+      "percent_of_profiled_decode": 0.4106984063299549,
+      "name": "/layers.13/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12703275510204085,
+      "percent_of_profiled_decode": 0.4094084412552043,
+      "name": "/layers.12/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1270163112244898,
+      "percent_of_profiled_decode": 0.4093554449845106,
+      "name": "/layers.4/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1268750051020408,
+      "percent_of_profiled_decode": 0.4089000355172028,
+      "name": "/layers.20/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12680505612244894,
+      "percent_of_profiled_decode": 0.4086745999381736,
+      "name": "/layers.17/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12666670408163264,
+      "percent_of_profiled_decode": 0.4082287110544005,
+      "name": "/layers.11/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1265223112244898,
+      "percent_of_profiled_decode": 0.4077633534816724,
+      "name": "/layers.19/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12595239795918364,
+      "percent_of_profiled_decode": 0.40592660435809225,
+      "name": "/layers.23/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12573212755102042,
+      "percent_of_profiled_decode": 0.4052167042666684,
+      "name": "/layers.7/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12570538775510198,
+      "percent_of_profiled_decode": 0.4051305257203742,
+      "name": "/layers.15/mlp/down_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1255580663265307,
+      "percent_of_profiled_decode": 0.4046557297798593,
+      "name": "/layers.3/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12555799489795919,
+      "percent_of_profiled_decode": 0.4046554995757667,
+      "name": "/layers.16/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12440775510204087,
+      "percent_of_profiled_decode": 0.4009484408605688,
+      "name": "/layers.3/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12438247448979593,
+      "percent_of_profiled_decode": 0.40086696505501884,
+      "name": "/layers.11/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12405058163265305,
+      "percent_of_profiled_decode": 0.39979732173981675,
+      "name": "/layers.15/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12324556122448975,
+      "percent_of_profiled_decode": 0.3972028558461972,
+      "name": "/layers.19/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12323211224489795,
+      "percent_of_profiled_decode": 0.39715951170423375,
+      "name": "/layers.23/mlp/gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1226637295918367,
+      "percent_of_profiled_decode": 0.39532769552549,
+      "name": "/layers.7/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12237947448979596,
+      "percent_of_profiled_decode": 0.3944115818967503,
+      "name": "/layers.11/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12225149489795921,
+      "percent_of_profiled_decode": 0.3939991219358192,
+      "name": "/layers.23/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12188543877551021,
+      "percent_of_profiled_decode": 0.3928193752918659,
+      "name": "/layers.19/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.12125593877551023,
+      "percent_of_profiled_decode": 0.3907905866258,
+      "name": "/layers.15/mlp/up_proj/Linear"
+    },
+    {
+      "type": "Attention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.11893008163265308,
+      "percent_of_profiled_decode": 0.3832946809700143,
+      "name": "/layers.3/self_attn/FusedAttention"
+    },
+    {
+      "type": "Attention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.11515183163265308,
+      "percent_of_profiled_decode": 0.3711179204020022,
+      "name": "/layers.7/self_attn/FusedAttention"
+    },
+    {
+      "type": "Attention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.11438549489795921,
+      "percent_of_profiled_decode": 0.3686481264675512,
+      "name": "/layers.11/self_attn/FusedAttention"
+    },
+    {
+      "type": "Attention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.11438093367346938,
+      "percent_of_profiled_decode": 0.36863342629193824,
+      "name": "/layers.23/self_attn/FusedAttention"
+    },
+    {
+      "type": "Attention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.1135416785714286,
+      "percent_of_profiled_decode": 0.3659286268654754,
+      "name": "/layers.19/self_attn/FusedAttention"
+    },
+    {
+      "type": "Attention",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.11353721428571426,
+      "percent_of_profiled_decode": 0.365914239109702,
+      "name": "/layers.15/self_attn/FusedAttention"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08519796938775508,
+      "percent_of_profiled_decode": 0.27458089700668903,
+      "name": "/layers.0/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08395988265306124,
+      "percent_of_profiled_decode": 0.27059072014417357,
+      "name": "/layers.0/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08387053571428574,
+      "percent_of_profiled_decode": 0.2703027677109164,
+      "name": "/layers.2/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0835982142857143,
+      "percent_of_profiled_decode": 0.2694251146087518,
+      "name": "/layers.1/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08334076530612244,
+      "percent_of_profiled_decode": 0.2685953932872487,
+      "name": "/layers.6/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08331997959183676,
+      "percent_of_profiled_decode": 0.26852840389636873,
+      "name": "/layers.2/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08326937244897961,
+      "percent_of_profiled_decode": 0.26836530429692385,
+      "name": "/layers.1/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08324555102040818,
+      "percent_of_profiled_decode": 0.2682885312321181,
+      "name": "/layers.10/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08323660714285716,
+      "percent_of_profiled_decode": 0.2682597063911234,
+      "name": "/layers.9/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08313093367346938,
+      "percent_of_profiled_decode": 0.2679191358796098,
+      "name": "/layers.12/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08272323979591836,
+      "percent_of_profiled_decode": 0.26660519669295374,
+      "name": "/layers.9/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08272023979591836,
+      "percent_of_profiled_decode": 0.2665955281210742,
+      "name": "/layers.13/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08269200510204082,
+      "percent_of_profiled_decode": 0.26650453173198985,
+      "name": "/layers.10/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0826532551020408,
+      "percent_of_profiled_decode": 0.26637964601187847,
+      "name": "/layers.6/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08255803061224493,
+      "percent_of_profiled_decode": 0.2660727510704491,
+      "name": "/layers.5/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08195094387755103,
+      "percent_of_profiled_decode": 0.2641161971599393,
+      "name": "/layers.8/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08191963265306125,
+      "percent_of_profiled_decode": 0.26401528555173354,
+      "name": "/layers.5/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08191223979591837,
+      "percent_of_profiled_decode": 0.26399145942817304,
+      "name": "/layers.17/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08180954081632656,
+      "percent_of_profiled_decode": 0.2636604752727919,
+      "name": "/layers.8/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08179169387755102,
+      "percent_of_profiled_decode": 0.263602957135998,
+      "name": "/layers.21/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08170984183673469,
+      "percent_of_profiled_decode": 0.2633391596892902,
+      "name": "/layers.18/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0816934387755102,
+      "percent_of_profiled_decode": 0.2632862949637922,
+      "name": "/layers.4/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08167710204081632,
+      "percent_of_profiled_decode": 0.26323364399923704,
+      "name": "/layers.14/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08159675510204081,
+      "percent_of_profiled_decode": 0.26297469728161854,
+      "name": "/layers.22/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08154761734693876,
+      "percent_of_profiled_decode": 0.26281633330921667,
+      "name": "/layers.14/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08153274999999999,
+      "percent_of_profiled_decode": 0.26276841797170464,
+      "name": "/layers.22/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08122166836734694,
+      "percent_of_profiled_decode": 0.2617658462631298,
+      "name": "/layers.18/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08122025000000001,
+      "percent_of_profiled_decode": 0.26176127506758134,
+      "name": "/layers.13/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08091816836734694,
+      "percent_of_profiled_decode": 0.2607877090746453,
+      "name": "/layers.4/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08066067346938774,
+      "percent_of_profiled_decode": 0.25995783976479714,
+      "name": "/layers.12/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.08026192346938776,
+      "percent_of_profiled_decode": 0.25867272541913594,
+      "name": "/layers.17/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0801220612244898,
+      "percent_of_profiled_decode": 0.2582219693631239,
+      "name": "/layers.21/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07997767346938776,
+      "percent_of_profiled_decode": 0.2577566282335454,
+      "name": "/layers.20/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07996131632653058,
+      "percent_of_profiled_decode": 0.25770391149639227,
+      "name": "/layers.16/self_attn/in_proj_z/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07965174489795919,
+      "percent_of_profiled_decode": 0.2567062069600563,
+      "name": "/layers.16/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07921580102040818,
+      "percent_of_profiled_decode": 0.25530122205486755,
+      "name": "/layers.20/self_attn/out_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07732290816326531,
+      "percent_of_profiled_decode": 0.24920069850498885,
+      "name": "/layers.11/self_attn/o_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07730357142857143,
+      "percent_of_profiled_decode": 0.24913837896855412,
+      "name": "/layers.3/self_attn/o_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07703869897959183,
+      "percent_of_profiled_decode": 0.24828473286459396,
+      "name": "/layers.3/self_attn/q_gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07692413775510205,
+      "percent_of_profiled_decode": 0.24791551838672973,
+      "name": "/layers.7/self_attn/q_gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07684222448979591,
+      "percent_of_profiled_decode": 0.24765152362222848,
+      "name": "/layers.7/self_attn/o_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07680658673469389,
+      "percent_of_profiled_decode": 0.24753666822328482,
+      "name": "/layers.3/self_attn/q_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07661013775510203,
+      "percent_of_profiled_decode": 0.2469035411966666,
+      "name": "/layers.11/self_attn/q_gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07629612755102039,
+      "percent_of_profiled_decode": 0.2458915311203046,
+      "name": "/layers.7/self_attn/q_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07628426530612244,
+      "percent_of_profiled_decode": 0.24585330079782156,
+      "name": "/layers.23/self_attn/o_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07566069897959185,
+      "percent_of_profiled_decode": 0.24384363551457194,
+      "name": "/layers.19/self_attn/o_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07554912755102039,
+      "percent_of_profiled_decode": 0.24348405672228832,
+      "name": "/layers.15/self_attn/o_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0755059285714286,
+      "percent_of_profiled_decode": 0.24334483257585232,
+      "name": "/layers.19/self_attn/q_gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07503119897959182,
+      "percent_of_profiled_decode": 0.2418148468485059,
+      "name": "/layers.11/self_attn/q_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07471875000000001,
+      "percent_of_profiled_decode": 0.2408078683758773,
+      "name": "/layers.15/self_attn/q_gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07444191836734693,
+      "percent_of_profiled_decode": 0.23991567952959436,
+      "name": "/layers.23/self_attn/q_gate_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0738899030612245,
+      "percent_of_profiled_decode": 0.23813661297430266,
+      "name": "/layers.15/self_attn/q_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07355805102040815,
+      "percent_of_profiled_decode": 0.23706710120429625,
+      "name": "/layers.23/self_attn/q_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.07306851020408163,
+      "percent_of_profiled_decode": 0.23548938101408193,
+      "name": "/layers.19/self_attn/q_proj/Linear"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.06522023469387758,
+      "percent_of_profiled_decode": 0.21019550904702092,
+      "name": "/lm/lm_head/Linear/post_reshape_raster_0"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.02436760714285714,
+      "percent_of_profiled_decode": 0.07853332039805576,
+      "name": "/layers.3/self_attn/v_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.02432884693877551,
+      "percent_of_profiled_decode": 0.07840840179164556,
+      "name": "/layers.23/self_attn/k_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.023668142857142856,
+      "percent_of_profiled_decode": 0.0762790468235124,
+      "name": "/layers.3/self_attn/k_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.023565448979591837,
+      "percent_of_profiled_decode": 0.07594807911128067,
+      "name": "/layers.15/self_attn/v_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.023562525510204078,
+      "percent_of_profiled_decode": 0.07593865718664289,
+      "name": "/layers.19/self_attn/v_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.023529780612244908,
+      "percent_of_profiled_decode": 0.07583312505344025,
+      "name": "/layers.11/self_attn/k_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.02350301530612245,
+      "percent_of_profiled_decode": 0.07574686429139893,
+      "name": "/layers.7/self_attn/v_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.023474709183673472,
+      "percent_of_profiled_decode": 0.07565563769822217,
+      "name": "/layers.23/self_attn/v_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.023430061224489793,
+      "percent_of_profiled_decode": 0.0755117436973408,
+      "name": "/layers.19/self_attn/k_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.023400301020408156,
+      "percent_of_profiled_decode": 0.07541583080656936,
+      "name": "/layers.7/self_attn/k_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.023386887755102042,
+      "percent_of_profiled_decode": 0.07537260176665198,
+      "name": "/layers.15/self_attn/k_proj/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.02326341836734693,
+      "percent_of_profiled_decode": 0.07497467754983918,
+      "name": "/layers.11/self_attn/v_proj/Linear"
+    },
+    {
+      "type": "RoPE",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.008928545918367349,
+      "percent_of_profiled_decode": 0.028775429330632277,
+      "name": "/layers.3/self_attn/FusedRoPE"
+    },
+    {
+      "type": "RoPE",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00855504591836735,
+      "percent_of_profiled_decode": 0.027571692131624137,
+      "name": "/layers.23/self_attn/FusedRoPE"
+    },
+    {
+      "type": "RoPE",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.008552051020408164,
+      "percent_of_profiled_decode": 0.027562040002893997,
+      "name": "/layers.19/self_attn/FusedRoPE"
+    },
+    {
+      "type": "RoPE",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00851640306122449,
+      "percent_of_profiled_decode": 0.027447151717651386,
+      "name": "/layers.11/self_attn/FusedRoPE"
+    },
+    {
+      "type": "RoPE",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.008436025510204078,
+      "percent_of_profiled_decode": 0.027188106341136144,
+      "name": "/layers.7/self_attn/FusedRoPE"
+    },
+    {
+      "type": "RoPE",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.008431576530612241,
+      "percent_of_profiled_decode": 0.027173767914811322,
+      "name": "/layers.15/self_attn/FusedRoPE"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.007851178571428573,
+      "percent_of_profiled_decode": 0.025303228119101025,
+      "name": "/layers.0/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.007241066326530613,
+      "percent_of_profiled_decode": 0.023336923420964363,
+      "name": "/layers.2/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0072262193877551005,
+      "percent_of_profiled_decode": 0.023289073856050085,
+      "name": "/layers.18/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.007212770408163265,
+      "percent_of_profiled_decode": 0.023245729714086515,
+      "name": "/layers.8/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.007209795918367349,
+      "percent_of_profiled_decode": 0.023236143357954212,
+      "name": "/layers.22/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0072083112244897924,
+      "percent_of_profiled_decode": 0.023231358401462773,
+      "name": "/layers.10/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00718458163265306,
+      "percent_of_profiled_decode": 0.023154881313347232,
+      "name": "/layers.5/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.007157724489795917,
+      "percent_of_profiled_decode": 0.023068324574615717,
+      "name": "/layers.1/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.007133964285714284,
+      "percent_of_profiled_decode": 0.022991748827603437,
+      "name": "/layers.6/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.007081826530612247,
+      "percent_of_profiled_decode": 0.02282371628332205,
+      "name": "/layers.12/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006991045918367345,
+      "percent_of_profiled_decode": 0.022531143325067907,
+      "name": "/layers.16/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006976209183673468,
+      "percent_of_profiled_decode": 0.022483326646452546,
+      "name": "/layers.12/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006956811224489795,
+      "percent_of_profiled_decode": 0.022420809792224362,
+      "name": "/layers.21/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006946469387755102,
+      "percent_of_profiled_decode": 0.022387479528278926,
+      "name": "/layers.2/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006943408163265306,
+      "percent_of_profiled_decode": 0.02237761363860588,
+      "name": "/layers.10/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0069226632653061225,
+      "percent_of_profiled_decode": 0.022310755792921556,
+      "name": "/layers.4/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006913698979591837,
+      "percent_of_profiled_decode": 0.022281865179328987,
+      "name": "/layers.9/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006906229591836735,
+      "percent_of_profiled_decode": 0.02225779240852676,
+      "name": "/layers.17/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006894357142857144,
+      "percent_of_profiled_decode": 0.022219529199744806,
+      "name": "/layers.14/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006886964285714285,
+      "percent_of_profiled_decode": 0.022195703076184396,
+      "name": "/layers.13/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006854214285714284,
+      "percent_of_profiled_decode": 0.022090154499832277,
+      "name": "/layers.21/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006843719387755103,
+      "percent_of_profiled_decode": 0.022056330941403197,
+      "name": "/layers.8/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006825908163265304,
+      "percent_of_profiled_decode": 0.021998927906655523,
+      "name": "/layers.20/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006784239795918369,
+      "percent_of_profiled_decode": 0.021864636705055944,
+      "name": "/layers.17/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006761928571428572,
+      "percent_of_profiled_decode": 0.021792730812488902,
+      "name": "/layers.14/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006761918367346937,
+      "percent_of_profiled_decode": 0.021792697926189986,
+      "name": "/layers.4/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006755923469387756,
+      "percent_of_profiled_decode": 0.02177337722558028,
+      "name": "/layers.6/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00673662244897959,
+      "percent_of_profiled_decode": 0.021711172791191728,
+      "name": "/layers.0/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006736586734693878,
+      "percent_of_profiled_decode": 0.02171105768914555,
+      "name": "/layers.1/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00673214795918367,
+      "percent_of_profiled_decode": 0.02169675214911962,
+      "name": "/layers.22/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006706846938775511,
+      "percent_of_profiled_decode": 0.021615210570971925,
+      "name": "/layers.20/self_attn/in_proj_a/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006651765306122449,
+      "percent_of_profiled_decode": 0.021437690329454945,
+      "name": "/layers.9/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006648831632653063,
+      "percent_of_profiled_decode": 0.02142823551851828,
+      "name": "/layers.16/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006571443877551021,
+      "percent_of_profiled_decode": 0.021178825827583715,
+      "name": "/layers.13/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.006550663265306121,
+      "percent_of_profiled_decode": 0.021111852879853194,
+      "name": "/layers.18/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0065327806122448965,
+      "percent_of_profiled_decode": 0.021054219641013155,
+      "name": "/layers.5/self_attn/in_proj_b/Linear"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005991107142857141,
+      "percent_of_profiled_decode": 0.019308483349666856,
+      "name": "/blocks.3/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005962801020408162,
+      "percent_of_profiled_decode": 0.01921725675649011,
+      "name": "/blocks.23/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005775346938775507,
+      "percent_of_profiled_decode": 0.018613119002361227,
+      "name": "/blocks.0/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005726158163265307,
+      "percent_of_profiled_decode": 0.01845459059846487,
+      "name": "/blocks.18/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005703867346938773,
+      "percent_of_profiled_decode": 0.018382750478495642,
+      "name": "/blocks.22/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0056428469387755096,
+      "percent_of_profiled_decode": 0.018186090411012962,
+      "name": "/blocks.7/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005641372448979592,
+      "percent_of_profiled_decode": 0.01818133834082045,
+      "name": "/blocks.8/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005613096938775511,
+      "percent_of_profiled_decode": 0.01809021040654043,
+      "name": "/blocks.5/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005608642857142861,
+      "percent_of_profiled_decode": 0.018075855537066157,
+      "name": "/blocks.9/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005596729591836732,
+      "percent_of_profiled_decode": 0.018037460783088544,
+      "name": "/blocks.19/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005574397959183675,
+      "percent_of_profiled_decode": 0.017965489117923696,
+      "name": "/blocks.21/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005567010204081633,
+      "percent_of_profiled_decode": 0.017941679437512743,
+      "name": "/blocks.11/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005528249999999999,
+      "percent_of_profiled_decode": 0.017816760831102542,
+      "name": "/blocks.15/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005526816326530612,
+      "percent_of_profiled_decode": 0.01781214030610567,
+      "name": "/blocks.1/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005519377551020407,
+      "percent_of_profiled_decode": 0.017788166194200167,
+      "name": "/blocks.6/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005519311224489797,
+      "percent_of_profiled_decode": 0.017787952433257263,
+      "name": "/blocks.4/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005491076530612244,
+      "percent_of_profiled_decode": 0.017696956044172877,
+      "name": "/blocks.10/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005468760204081634,
+      "percent_of_profiled_decode": 0.017625033708456386,
+      "name": "/blocks.16/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005462785714285715,
+      "percent_of_profiled_decode": 0.017605778780444493,
+      "name": "/blocks.2/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005431566326530613,
+      "percent_of_profiled_decode": 0.017505163148928898,
+      "name": "/blocks.14/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0054076785714285746,
+      "percent_of_profiled_decode": 0.017428176323180247,
+      "name": "/blocks.17/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005367545918367348,
+      "percent_of_profiled_decode": 0.017298834509566628,
+      "name": "/blocks.20/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005348239795918367,
+      "percent_of_profiled_decode": 0.01723661363202862,
+      "name": "/blocks.13/mlp/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.005337785714285715,
+      "percent_of_profiled_decode": 0.017202921618795178,
+      "name": "/blocks.12/mlp/Mul_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004909239795918365,
+      "percent_of_profiled_decode": 0.01582177928031623,
+      "name": "/blocks.16/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004822918367346937,
+      "percent_of_profiled_decode": 0.015543577634685831,
+      "name": "/blocks.12/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004799142857142856,
+      "percent_of_profiled_decode": 0.015466952558225187,
+      "name": "/blocks.8/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004772352040816326,
+      "percent_of_profiled_decode": 0.015380609580436596,
+      "name": "/blocks.3/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004733658163265304,
+      "percent_of_profiled_decode": 0.015255904734969307,
+      "name": "/blocks.20/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004657729591836736,
+      "percent_of_profiled_decode": 0.01501119778477891,
+      "name": "/blocks.1/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004604183673469387,
+      "percent_of_profiled_decode": 0.0148386269312479,
+      "name": "/blocks.4/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004595229591836734,
+      "percent_of_profiled_decode": 0.014809769203954246,
+      "name": "/blocks.23/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004568484693877549,
+      "percent_of_profiled_decode": 0.014723574214510746,
+      "name": "/blocks.0/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004507494897959184,
+      "percent_of_profiled_decode": 0.0145270128059248,
+      "name": "/blocks.17/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004471678571428573,
+      "percent_of_profiled_decode": 0.014411581896750179,
+      "name": "/blocks.7/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0044315357142857125,
+      "percent_of_profiled_decode": 0.014282207196837647,
+      "name": "/blocks.21/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00440180102040816,
+      "percent_of_profiled_decode": 0.014186376521813471,
+      "name": "/blocks.3/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004380928571428574,
+      "percent_of_profiled_decode": 0.014119107597392783,
+      "name": "/blocks.15/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004352704081632651,
+      "percent_of_profiled_decode": 0.0140281440946073,
+      "name": "/blocks.7/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004346811224489796,
+      "percent_of_profiled_decode": 0.014009152256986691,
+      "name": "/blocks.5/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004340836734693878,
+      "percent_of_profiled_decode": 0.013989897328974802,
+      "name": "/blocks.2/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004339311224489797,
+      "percent_of_profiled_decode": 0.01398498082728774,
+      "name": "/blocks.19/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004321469387755104,
+      "percent_of_profiled_decode": 0.013927479133643346,
+      "name": "/blocks.18/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004313969387755103,
+      "percent_of_profiled_decode": 0.013903307703944386,
+      "name": "/blocks.11/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004217239795918367,
+      "percent_of_profiled_decode": 0.013591562033425634,
+      "name": "/blocks.14/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004209811224489796,
+      "percent_of_profiled_decode": 0.013567620807819047,
+      "name": "/blocks.2/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0041934336734693895,
+      "percent_of_profiled_decode": 0.013514838298068262,
+      "name": "/blocks.10/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0041606479591836725,
+      "percent_of_profiled_decode": 0.013409174619669952,
+      "name": "/blocks.22/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004151770408163265,
+      "percent_of_profiled_decode": 0.01338056353961812,
+      "name": "/blocks.6/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004123484693877548,
+      "percent_of_profiled_decode": 0.013289402719039185,
+      "name": "/blocks.15/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004122030612244897,
+      "percent_of_profiled_decode": 0.013284716421444496,
+      "name": "/blocks.0/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00412048469387755,
+      "percent_of_profiled_decode": 0.013279734147159605,
+      "name": "/blocks.9/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0041161224489795895,
+      "percent_of_profiled_decode": 0.013265675254375515,
+      "name": "/blocks.14/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004107091836734692,
+      "percent_of_profiled_decode": 0.013236570879840034,
+      "name": "/blocks.18/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0041027193877551,
+      "percent_of_profiled_decode": 0.013222479100757039,
+      "name": "/blocks.4/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0041026989795918374,
+      "percent_of_profiled_decode": 0.013222413328159224,
+      "name": "/blocks.22/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0040818877551020375,
+      "percent_of_profiled_decode": 0.013155341721531969,
+      "name": "/blocks.0/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004078877551020408,
+      "percent_of_profiled_decode": 0.013145640263353481,
+      "name": "/blocks.19/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004078862244897958,
+      "percent_of_profiled_decode": 0.013145590933905113,
+      "name": "/blocks.1/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.004055071428571427,
+      "percent_of_profiled_decode": 0.0130689165279961,
+      "name": "/blocks.13/self_attn/norm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003993999999999998,
+      "percent_of_profiled_decode": 0.012872092029018864,
+      "name": "/blocks.9/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003982137755102042,
+      "percent_of_profiled_decode": 0.012833861706535827,
+      "name": "/blocks.17/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003980673469387754,
+      "percent_of_profiled_decode": 0.012829142522642214,
+      "name": "/blocks.20/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003971719387755102,
+      "percent_of_profiled_decode": 0.012800284795348558,
+      "name": "/blocks.8/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003967214285714287,
+      "percent_of_profiled_decode": 0.012785765494379733,
+      "name": "/blocks.3/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0039538622448979585,
+      "percent_of_profiled_decode": 0.0127427337722558,
+      "name": "/blocks.11/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00395091836734694,
+      "percent_of_profiled_decode": 0.012733246075020228,
+      "name": "/blocks.10/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00395088775510204,
+      "percent_of_profiled_decode": 0.012733147416123492,
+      "name": "/blocks.22/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003941938775510203,
+      "percent_of_profiled_decode": 0.01270430613197929,
+      "name": "/blocks.16/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00393452551020408,
+      "percent_of_profiled_decode": 0.012680414235821067,
+      "name": "/blocks.5/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0039315255102040795,
+      "percent_of_profiled_decode": 0.01267074566394148,
+      "name": "/blocks.12/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003928581632653061,
+      "percent_of_profiled_decode": 0.01266125796670591,
+      "name": "/blocks.13/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003912183673469388,
+      "percent_of_profiled_decode": 0.012608409684357303,
+      "name": "/blocks.16/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003883933673469387,
+      "percent_of_profiled_decode": 0.012517363965824558,
+      "name": "/blocks.2/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0038779897959183647,
+      "percent_of_profiled_decode": 0.01249820769670939,
+      "name": "/blocks.8/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003876479591836734,
+      "percent_of_profiled_decode": 0.012493340524470693,
+      "name": "/blocks.4/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0038750204081632648,
+      "percent_of_profiled_decode": 0.012488637783726542,
+      "name": "/blocks.7/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0038675357142857135,
+      "percent_of_profiled_decode": 0.012464515683475947,
+      "name": "/blocks.10/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0038526530612244883,
+      "percent_of_profiled_decode": 0.012416551016515495,
+      "name": "/blocks.14/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00385263775510204,
+      "percent_of_profiled_decode": 0.012416501687067129,
+      "name": "/blocks.23/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0038482040816326508,
+      "percent_of_profiled_decode": 0.012402212590190668,
+      "name": "/blocks.19/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003833341836734693,
+      "percent_of_profiled_decode": 0.012354313695828041,
+      "name": "/blocks.23/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0038273673469387754,
+      "percent_of_profiled_decode": 0.012335058767816152,
+      "name": "/blocks.21/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003824469387755101,
+      "percent_of_profiled_decode": 0.012325719058925667,
+      "name": "/blocks.20/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0038199693877551018,
+      "percent_of_profiled_decode": 0.012311216201106295,
+      "name": "/blocks.5/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0038140306122448953,
+      "percent_of_profiled_decode": 0.012292076375140583,
+      "name": "/blocks.0/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003799112244897959,
+      "percent_of_profiled_decode": 0.01224399660613395,
+      "name": "/blocks.2/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0037961071428571423,
+      "percent_of_profiled_decode": 0.012234311591104913,
+      "name": "/blocks.6/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003794642857142859,
+      "percent_of_profiled_decode": 0.012229592407211312,
+      "name": "/blocks.21/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0037872040816326526,
+      "percent_of_profiled_decode": 0.012205618295305809,
+      "name": "/blocks.17/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003776821428571427,
+      "percent_of_profiled_decode": 0.012172156486164728,
+      "name": "/blocks.21/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00377080612244898,
+      "percent_of_profiled_decode": 0.012152770012957202,
+      "name": "/blocks.9/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003753005102040817,
+      "percent_of_profiled_decode": 0.012095399864508452,
+      "name": "/blocks.15/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003723178571428572,
+      "percent_of_profiled_decode": 0.01199927321279409,
+      "name": "/blocks.10/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003720244897959185,
+      "percent_of_profiled_decode": 0.011989818401857422,
+      "name": "/blocks.11/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003711295918367348,
+      "percent_of_profiled_decode": 0.011960977117713222,
+      "name": "/blocks.12/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0036517959183673464,
+      "percent_of_profiled_decode": 0.011769217108768144,
+      "name": "/blocks.1/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003633928571428572,
+      "percent_of_profiled_decode": 0.011711633199376476,
+      "name": "/blocks.13/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003633897959183673,
+      "percent_of_profiled_decode": 0.011711534540479745,
+      "name": "/blocks.1/input_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0036175765306122464,
+      "percent_of_profiled_decode": 0.011658932905372968,
+      "name": "/blocks.18/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003616066326530614,
+      "percent_of_profiled_decode": 0.011654065733134268,
+      "name": "/blocks.9/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0035699591836734707,
+      "percent_of_profiled_decode": 0.011505468991508762,
+      "name": "/blocks.5/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0035699438775510213,
+      "percent_of_profiled_decode": 0.011505419662060395,
+      "name": "/blocks.6/post_attention_layernorm/Mul_1_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0035327448979591836,
+      "percent_of_profiled_decode": 0.011385532659383447,
+      "name": "/blocks.6/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003529775510204084,
+      "percent_of_profiled_decode": 0.011375962746400603,
+      "name": "/blocks.20/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003508959183673471,
+      "percent_of_profiled_decode": 0.011308874696623897,
+      "name": "/blocks.8/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0034970357142857155,
+      "percent_of_profiled_decode": 0.011270447056347388,
+      "name": "/blocks.22/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0034850663265306135,
+      "percent_of_profiled_decode": 0.011231871427725785,
+      "name": "/blocks.18/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0034762142857142878,
+      "percent_of_profiled_decode": 0.011203342563421235,
+      "name": "/blocks.4/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003458352040816328,
+      "percent_of_profiled_decode": 0.011145775097179018,
+      "name": "/blocks.13/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003456872448979594,
+      "percent_of_profiled_decode": 0.011141006583837048,
+      "name": "/blocks.17/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00344641836734694,
+      "percent_of_profiled_decode": 0.011107314570603601,
+      "name": "/blocks.14/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003438984693877553,
+      "percent_of_profiled_decode": 0.011083356901847558,
+      "name": "/blocks.12/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003413698979591839,
+      "percent_of_profiled_decode": 0.011001864653148213,
+      "name": "/blocks.16/self_attn/norm/Mul_2_output_0"
+    },
+    {
+      "type": "LayerNorm",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.003403270408163265,
+      "percent_of_profiled_decode": 0.010968254855662033,
+      "name": "hidden_states"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002927056122448979,
+      "percent_of_profiled_decode": 0.009433484171824333,
+      "name": "/layers.16/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0028928367346938767,
+      "percent_of_profiled_decode": 0.00932319996842915,
+      "name": "/layers.6/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0028303469387755097,
+      "percent_of_profiled_decode": 0.009121804273903406,
+      "name": "/layers.12/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0028125561224489793,
+      "percent_of_profiled_decode": 0.009064467011753563,
+      "name": "/layers.8/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0028110102040816323,
+      "percent_of_profiled_decode": 0.009059484737468674,
+      "name": "/layers.18/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0028109846938775508,
+      "percent_of_profiled_decode": 0.0090594025217214,
+      "name": "/layers.10/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002778234693877552,
+      "percent_of_profiled_decode": 0.008953853945369282,
+      "name": "/layers.4/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0027559540816326526,
+      "percent_of_profiled_decode": 0.00888204671169897,
+      "name": "/layers.20/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "While",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0027276887755102036,
+      "percent_of_profiled_decode": 0.008790951663717862,
+      "name": "/rotary/Gather_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0027217193877551024,
+      "percent_of_profiled_decode": 0.008771713178855427,
+      "name": "/layers.22/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0026979642857142857,
+      "percent_of_profiled_decode": 0.008695153874992602,
+      "name": "/layers.14/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002690479591836735,
+      "percent_of_profiled_decode": 0.008671031774742008,
+      "name": "/layers.21/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002648785714285714,
+      "percent_of_profiled_decode": 0.008536658357395142,
+      "name": "/layers.9/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002634005102040817,
+      "percent_of_profiled_decode": 0.008489022553423793,
+      "name": "/layers.0/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002616122448979592,
+      "percent_of_profiled_decode": 0.008431389314583758,
+      "name": "/blocks.16/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0025818775510204083,
+      "percent_of_profiled_decode": 0.008321022895441302,
+      "name": "/blocks.12/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002569908163265306,
+      "percent_of_profiled_decode": 0.008282447266819697,
+      "name": "/layers.13/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0025684642857142855,
+      "percent_of_profiled_decode": 0.008277793855523912,
+      "name": "/blocks.4/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0025208724489795917,
+      "percent_of_profiled_decode": 0.008124412157406983,
+      "name": "/blocks.20/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002517841836734694,
+      "percent_of_profiled_decode": 0.008114644926630667,
+      "name": "/blocks.8/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002507392857142857,
+      "percent_of_profiled_decode": 0.008080969356546674,
+      "name": "/blocks.0/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0024970204081632653,
+      "percent_of_profiled_decode": 0.00804754043370451,
+      "name": "/layers.17/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0024866020408163265,
+      "percent_of_profiled_decode": 0.008013963522517249,
+      "name": "/layers.2/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002447877551020408,
+      "percent_of_profiled_decode": 0.007889160018153237,
+      "name": "/layers.1/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0024360204081632655,
+      "percent_of_profiled_decode": 0.007850946138819644,
+      "name": "/layers.5/self_attn/out_proj/Linear_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0024240561224489797,
+      "percent_of_profiled_decode": 0.007812386953347497,
+      "name": "/blocks.1/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0023973214285714283,
+      "percent_of_profiled_decode": 0.007726224850202908,
+      "name": "/rotary/Cos_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002395877551020408,
+      "percent_of_profiled_decode": 0.0077215714389071224,
+      "name": "/blocks.18/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0023779897959183677,
+      "percent_of_profiled_decode": 0.0076639217569176325,
+      "name": "/blocks.2/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0023407295918367343,
+      "percent_of_profiled_decode": 0.007543837436447227,
+      "name": "/blocks.9/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0023318214285714288,
+      "percent_of_profiled_decode": 0.007515127697498669,
+      "name": "/blocks.6/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002287188775510204,
+      "percent_of_profiled_decode": 0.007371283026065681,
+      "name": "UnaryOp27"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002239581632653061,
+      "percent_of_profiled_decode": 0.007217851998500384,
+      "name": "/blocks.17/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002215744897959184,
+      "percent_of_profiled_decode": 0.007141029604246279,
+      "name": "/blocks.13/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002214331632653061,
+      "percent_of_profiled_decode": 0.007136474851847223,
+      "name": "/blocks.22/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0022023979591836735,
+      "percent_of_profiled_decode": 0.007098014325271804,
+      "name": "/blocks.5/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0021949489795918373,
+      "percent_of_profiled_decode": 0.007074007327067397,
+      "name": "/blocks.14/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.002177066326530612,
+      "percent_of_profiled_decode": 0.007016374088227363,
+      "name": "/blocks.21/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0021458061224489794,
+      "percent_of_profiled_decode": 0.006915626911516123,
+      "name": "/blocks.10/self_attn/norm/Mul_2_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0019999540816326533,
+      "percent_of_profiled_decode": 0.006445566598043922,
+      "name": "/rotary/Mul_output_0_raster_1"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0019434132653061225,
+      "percent_of_profiled_decode": 0.006263343615782793,
+      "name": "/rotary/Sin_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0019345204081632652,
+      "percent_of_profiled_decode": 0.006234683206282598,
+      "name": "/blocks.0/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0018779489795918366,
+      "percent_of_profiled_decode": 0.006052361565124737,
+      "name": "UnaryOp129"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0018512091836734694,
+      "percent_of_profiled_decode": 0.005966183018830694,
+      "name": "/Slice_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001806505102040816,
+      "percent_of_profiled_decode": 0.005822108143305335,
+      "name": "UnaryOp942"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0017946224489795916,
+      "percent_of_profiled_decode": 0.005783812048224469,
+      "name": "UnaryOp845"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00177975,
+      "percent_of_profiled_decode": 0.005735880267562928,
+      "name": "UnaryOp1589"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001763377551020408,
+      "percent_of_profiled_decode": 0.005683114200961595,
+      "name": "UnaryOp2155"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0017455561224489797,
+      "percent_of_profiled_decode": 0.005625678279915022,
+      "name": "UnaryOp1217"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0017396020408163265,
+      "percent_of_profiled_decode": 0.00560648912450095,
+      "name": "UnaryOp1961"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001727658163265306,
+      "percent_of_profiled_decode": 0.005567995711626622,
+      "name": "UnaryOp667"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0017217500000000002,
+      "percent_of_profiled_decode": 0.005548954544557647,
+      "name": "/blocks.5/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0016875102040816328,
+      "percent_of_profiled_decode": 0.0054386045685646455,
+      "name": "UnaryOp473"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001681515306122449,
+      "percent_of_profiled_decode": 0.005419283867954932,
+      "name": "UnaryOp1314"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0016741326530612243,
+      "percent_of_profiled_decode": 0.00539549063069344,
+      "name": "UnaryOp226"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0016607704081632658,
+      "percent_of_profiled_decode": 0.005352426022270603,
+      "name": "UnaryOp2058"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001659260204081633,
+      "percent_of_profiled_decode": 0.0053475588500319,
+      "name": "UnaryOp1686"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0016458265306122449,
+      "percent_of_profiled_decode": 0.00530426403751669,
+      "name": "/blocks.8/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0016354234693877552,
+      "percent_of_profiled_decode": 0.005270736455777794,
+      "name": "/blocks.4/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0016234897959183673,
+      "percent_of_profiled_decode": 0.005232275929202376,
+      "name": "UnaryOp1783"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0016220765306122452,
+      "percent_of_profiled_decode": 0.0052277211768033205,
+      "name": "UnaryOp1039"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0016026530612244898,
+      "percent_of_profiled_decode": 0.005165122106827853,
+      "name": "/blocks.16/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0016011989795918368,
+      "percent_of_profiled_decode": 0.005160435809233157,
+      "name": "/blocks.12/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0015937755102040816,
+      "percent_of_profiled_decode": 0.005136511026776025,
+      "name": "/blocks.0/input_layernorm/Mul_1_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0015833316326530611,
+      "percent_of_profiled_decode": 0.005102851899841487,
+      "name": "/blocks.0/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0015789081632653062,
+      "percent_of_profiled_decode": 0.005088595689263939,
+      "name": "UnaryOp570"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0015744387755102043,
+      "percent_of_profiled_decode": 0.005074191490341295,
+      "name": "/blocks.10/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0015580102040816325,
+      "percent_of_profiled_decode": 0.0050212445490959556,
+      "name": "/blocks.1/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0015490867346938774,
+      "percent_of_profiled_decode": 0.0049924854806990306,
+      "name": "UnaryOp1411"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0015476428571428575,
+      "percent_of_profiled_decode": 0.004987832069403246,
+      "name": "/blocks.2/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0015342704081632655,
+      "percent_of_profiled_decode": 0.004944734574681497,
+      "name": "/blocks.4/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0015267755102040816,
+      "percent_of_profiled_decode": 0.004920579588131992,
+      "name": "/blocks.20/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001525295918367347,
+      "percent_of_profiled_decode": 0.004915811074790021,
+      "name": "/blocks.17/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0015163520408163266,
+      "percent_of_profiled_decode": 0.004886986233795276,
+      "name": "/blocks.2/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001496989795918367,
+      "percent_of_profiled_decode": 0.00482458448161327,
+      "name": "/blocks.9/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001494091836734694,
+      "percent_of_profiled_decode": 0.004815244772722789,
+      "name": "/blocks.21/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001494061224489796,
+      "percent_of_profiled_decode": 0.004815146113826058,
+      "name": "/blocks.18/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014896275510204084,
+      "percent_of_profiled_decode": 0.004800857016949599,
+      "name": "/blocks.6/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001485147959183674,
+      "percent_of_profiled_decode": 0.004786419931728045,
+      "name": "/blocks.13/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014777244897959186,
+      "percent_of_profiled_decode": 0.004762495149270911,
+      "name": "/blocks.13/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014747091836734693,
+      "percent_of_profiled_decode": 0.004752777247942962,
+      "name": "/blocks.10/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014717704081632654,
+      "percent_of_profiled_decode": 0.00474330599385684,
+      "name": "/blocks.6/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014717653061224489,
+      "percent_of_profiled_decode": 0.004743289550707385,
+      "name": "/blocks.9/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001467265306122449,
+      "percent_of_profiled_decode": 0.00472878669288801,
+      "name": "/blocks.10/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001459826530612245,
+      "percent_of_profiled_decode": 0.00470481258098251,
+      "name": "/blocks.18/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014568520408163267,
+      "percent_of_profiled_decode": 0.004695226224850203,
+      "name": "/blocks.22/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014553979591836737,
+      "percent_of_profiled_decode": 0.004690539927255507,
+      "name": "/blocks.18/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014523571428571426,
+      "percent_of_profiled_decode": 0.004680739810180282,
+      "name": "/blocks.2/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014508520408163263,
+      "percent_of_profiled_decode": 0.004675889081091036,
+      "name": "/blocks.21/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001433030612244898,
+      "percent_of_profiled_decode": 0.004618453160044463,
+      "name": "/blocks.17/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014196479591836737,
+      "percent_of_profiled_decode": 0.0045753227790238035,
+      "name": "/blocks.22/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014196122448979591,
+      "percent_of_profiled_decode": 0.004575207676977618,
+      "name": "/blocks.1/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001413714285714286,
+      "percent_of_profiled_decode": 0.004556199396207552,
+      "name": "/blocks.16/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001410704081632653,
+      "percent_of_profiled_decode": 0.004546497938029058,
+      "name": "/blocks.14/self_attn/Softplus_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014092397959183673,
+      "percent_of_profiled_decode": 0.004541778754135453,
+      "name": "/blocks.17/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001407795918367347,
+      "percent_of_profiled_decode": 0.004537125342839666,
+      "name": "/blocks.14/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014076887755102036,
+      "percent_of_profiled_decode": 0.004536780036701108,
+      "name": "/blocks.9/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014063214285714289,
+      "percent_of_profiled_decode": 0.004532373272647151,
+      "name": "/blocks.13/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014062704081632654,
+      "percent_of_profiled_decode": 0.004532208841152599,
+      "name": "/blocks.0/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0014002448979591835,
+      "percent_of_profiled_decode": 0.004512789481646157,
+      "name": "/blocks.6/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013943673469387758,
+      "percent_of_profiled_decode": 0.004493846973473912,
+      "name": "/blocks.4/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013854234693877552,
+      "percent_of_profiled_decode": 0.0044650221324791664,
+      "name": "/blocks.12/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013824438775510205,
+      "percent_of_profiled_decode": 0.004455419333197403,
+      "name": "/blocks.5/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013808826530612244,
+      "percent_of_profiled_decode": 0.00445038772946415,
+      "name": "/blocks.14/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001376545918367347,
+      "percent_of_profiled_decode": 0.004436411052427339,
+      "name": "/blocks.8/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001372040816326531,
+      "percent_of_profiled_decode": 0.004421891751458509,
+      "name": "/blocks.16/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013616479591836736,
+      "percent_of_profiled_decode": 0.004388397056018522,
+      "name": "/blocks.1/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013616377551020414,
+      "percent_of_profiled_decode": 0.004388364169719613,
+      "name": "/blocks.5/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013586377551020408,
+      "percent_of_profiled_decode": 0.004378695597840028,
+      "name": "/blocks.12/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013482602040816327,
+      "percent_of_profiled_decode": 0.004345250231848408,
+      "name": "/blocks.21/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013363367346938776,
+      "percent_of_profiled_decode": 0.0043068225915719,
+      "name": "/blocks.22/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001334795918367347,
+      "percent_of_profiled_decode": 0.004301856760436467,
+      "name": "/blocks.20/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013125459183673468,
+      "percent_of_profiled_decode": 0.004230148185662889,
+      "name": "/blocks.1/self_attn/norm/Cast_output_0_raster_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0013050255102040815,
+      "percent_of_profiled_decode": 0.004205910983366109,
+      "name": "/blocks.20/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "UnaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0012991173469387757,
+      "percent_of_profiled_decode": 0.004186869816297136,
+      "name": "/blocks.8/self_attn/Sigmoid_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0012990918367346937,
+      "percent_of_profiled_decode": 0.004186787600549858,
+      "name": "/blocks.11/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0012931581632653062,
+      "percent_of_profiled_decode": 0.004167664217733608,
+      "name": "/blocks.15/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0012812091836734692,
+      "percent_of_profiled_decode": 0.004129154361709824,
+      "name": "/blocks.7/self_attn/Mul_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0012693163265306122,
+      "percent_of_profiled_decode": 0.004090825380330046,
+      "name": "/blocks.2/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.001266387755102041,
+      "percent_of_profiled_decode": 0.004081387012542834,
+      "name": "/blocks.4/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0011963979591836735,
+      "percent_of_profiled_decode": 0.003855819888318129,
+      "name": "/blocks.19/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0011294438775510203,
+      "percent_of_profiled_decode": 0.0036400364380191922,
+      "name": "/blocks.3/self_attn/Mul_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0011026632653061224,
+      "percent_of_profiled_decode": 0.0035537263465295083,
+      "name": "/blocks.6/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0010848163265306124,
+      "percent_of_profiled_decode": 0.00349620820973566,
+      "name": "/blocks.16/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0010580510204081632,
+      "percent_of_profiled_decode": 0.003409947447694342,
+      "name": "/blocks.0/self_attn/Add_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0010565408163265306,
+      "percent_of_profiled_decode": 0.0034050802754556396,
+      "name": "/blocks.0/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0010565255102040815,
+      "percent_of_profiled_decode": 0.0034050309460072737,
+      "name": "/rotary/Mul_output_0_raster_2"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0010535918367346939,
+      "percent_of_profiled_decode": 0.003395576135070607,
+      "name": "/blocks.5/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0010520714285714287,
+      "percent_of_profiled_decode": 0.0033906760765329952,
+      "name": "/blocks.20/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0010386683673469389,
+      "percent_of_profiled_decode": 0.0033474799229145156,
+      "name": "/blocks.8/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0010223469387755104,
+      "percent_of_profiled_decode": 0.003294878287807734,
+      "name": "/blocks.12/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0010208469387755104,
+      "percent_of_profiled_decode": 0.003290044001867942,
+      "name": "/blocks.14/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.000988107142857143,
+      "percent_of_profiled_decode": 0.003184528311814732,
+      "name": "/blocks.22/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.000986622448979592,
+      "percent_of_profiled_decode": 0.0031797433553233056,
+      "name": "/blocks.10/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009821479591836735,
+      "percent_of_profiled_decode": 0.003165322713251206,
+      "name": "/blocks.23/Add_1_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009762091836734695,
+      "percent_of_profiled_decode": 0.0031461828872854994,
+      "name": "/blocks.17/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00096875,
+      "percent_of_profiled_decode": 0.0031221430027821807,
+      "name": "/blocks.13/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009627908163265306,
+      "percent_of_profiled_decode": 0.0031029374042186547,
+      "name": "/blocks.18/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009612857142857142,
+      "percent_of_profiled_decode": 0.003098086675129407,
+      "name": "/blocks.18/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009478826530612243,
+      "percent_of_profiled_decode": 0.0030548905215109275,
+      "name": "/blocks.23/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009389897959183674,
+      "percent_of_profiled_decode": 0.003026230112010734,
+      "name": "/blocks.9/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009375153061224491,
+      "percent_of_profiled_decode": 0.0030214780418182183,
+      "name": "/blocks.4/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009181275510204083,
+      "percent_of_profiled_decode": 0.002958994073888936,
+      "name": "/blocks.0/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009137193877551022,
+      "percent_of_profiled_decode": 0.0029447871927597525,
+      "name": "/blocks.21/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009122040816326532,
+      "percent_of_profiled_decode": 0.002939903577371596,
+      "name": "/blocks.14/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009121785714285713,
+      "percent_of_profiled_decode": 0.0029398213616243195,
+      "name": "/blocks.5/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009077602040816326,
+      "percent_of_profiled_decode": 0.0029255815941962257,
+      "name": "/blocks.6/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009047346938775509,
+      "percent_of_profiled_decode": 0.0029158308065693663,
+      "name": "/blocks.9/self_attn/norm/Cast_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0009032551020408164,
+      "percent_of_profiled_decode": 0.002911062293227396,
+      "name": "/blocks.2/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008943061224489795,
+      "percent_of_profiled_decode": 0.0028822210090831955,
+      "name": "/blocks.22/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008854336734693877,
+      "percent_of_profiled_decode": 0.002853626372180822,
+      "name": "/blocks.8/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008853928571428569,
+      "percent_of_profiled_decode": 0.002853494826985181,
+      "name": "/blocks.12/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008735051020408163,
+      "percent_of_profiled_decode": 0.0028151822887548593,
+      "name": "/blocks.20/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "Cast",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008705204081632653,
+      "percent_of_profiled_decode": 0.0028055630463236403,
+      "name": "/rotary/Cast_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008660969387755102,
+      "percent_of_profiled_decode": 0.0027913068357460916,
+      "name": "/blocks.10/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008645765306122448,
+      "percent_of_profiled_decode": 0.0027864067772084794,
+      "name": "/blocks.1/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008601275510204081,
+      "percent_of_profiled_decode": 0.002772068350883655,
+      "name": "/blocks.17/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008452551020408162,
+      "percent_of_profiled_decode": 0.002724136570222114,
+      "name": "/blocks.13/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008452091836734691,
+      "percent_of_profiled_decode": 0.0027239885818770176,
+      "name": "/rotary/Mul_output_0_raster_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008437653061224489,
+      "percent_of_profiled_decode": 0.0027193351705812325,
+      "name": "/blocks.21/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0008333214285714283,
+      "percent_of_profiled_decode": 0.0026856760436466953,
+      "name": "/layers.3/self_attn/FusedRoPE_raster_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0007991071428571429,
+      "percent_of_profiled_decode": 0.0025754082834009693,
+      "name": "/blocks.16/self_attn/norm/Mul_3_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006949540816326528,
+      "percent_of_profiled_decode": 0.0022397378304250875,
+      "name": "/rotary/Gather_output_0_raster_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006711071428571425,
+      "percent_of_profiled_decode": 0.0021628825498720707,
+      "name": "/blocks.10/self_attn/Add_output_0"
+    },
+    {
+      "type": "Raster",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006651734693877549,
+      "percent_of_profiled_decode": 0.0021437591670558204,
+      "name": "/layers.3/self_attn/FusedRoPE_raster_1"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.000659234693877551,
+      "percent_of_profiled_decode": 0.002124619341090115,
+      "name": "/blocks.6/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006324183673469387,
+      "percent_of_profiled_decode": 0.0020381941475542454,
+      "name": "/blocks.18/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006309999999999999,
+      "percent_of_profiled_decode": 0.0020336229520057348,
+      "name": "/blocks.22/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006250051020408161,
+      "percent_of_profiled_decode": 0.0020143022513960224,
+      "name": "/blocks.13/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006205918367346937,
+      "percent_of_profiled_decode": 0.0020000789271173835,
+      "name": "/blocks.1/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006146122448979591,
+      "percent_of_profiled_decode": 0.001980807555956037,
+      "name": "/blocks.2/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006146071428571429,
+      "percent_of_profiled_decode": 0.0019807911128065826,
+      "name": "/blocks.4/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006055867346938772,
+      "percent_of_profiled_decode": 0.0019517196245700105,
+      "name": "/blocks.12/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0006026581632653057,
+      "percent_of_profiled_decode": 0.001942281256782798,
+      "name": "/blocks.16/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005967397959183671,
+      "percent_of_profiled_decode": 0.0019232072034149124,
+      "name": "/blocks.21/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005922142857142853,
+      "percent_of_profiled_decode": 0.0019086221298482617,
+      "name": "/blocks.8/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005907755102040814,
+      "percent_of_profiled_decode": 0.0019039851617019313,
+      "name": "/blocks.1/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005699948979591838,
+      "percent_of_profiled_decode": 0.0018370122139714155,
+      "name": "/blocks.8/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005699234693877549,
+      "percent_of_profiled_decode": 0.0018367820098790432,
+      "name": "/blocks.17/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005624897959183673,
+      "percent_of_profiled_decode": 0.0018128243411230011,
+      "name": "/blocks.9/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005520663265306122,
+      "percent_of_profiled_decode": 0.0017792309867862848,
+      "name": "/blocks.5/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005491122448979592,
+      "percent_of_profiled_decode": 0.001769710403251797,
+      "name": "/blocks.0/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.000541627551020408,
+      "percent_of_profiled_decode": 0.0017455883030012033,
+      "name": "BinaryOp1219"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005357602040816327,
+      "percent_of_profiled_decode": 0.0017266786811278687,
+      "name": "BinaryOp1963"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005327295918367346,
+      "percent_of_profiled_decode": 0.0017169114503515544,
+      "name": "/rotary/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.000529739795918367,
+      "percent_of_profiled_decode": 0.0017072757647708802,
+      "name": "/blocks.5/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005297091836734691,
+      "percent_of_profiled_decode": 0.00170717710587415,
+      "name": "/blocks.18/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005268163265306123,
+      "percent_of_profiled_decode": 0.0016978538401331237,
+      "name": "/blocks.20/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005267653061224488,
+      "percent_of_profiled_decode": 0.0016976894086385725,
+      "name": "/blocks.13/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005267551020408161,
+      "percent_of_profiled_decode": 0.0016976565223396623,
+      "name": "BinaryOp1591"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005237499999999998,
+      "percent_of_profiled_decode": 0.0016879715073106235,
+      "name": "/blocks.14/self_attn/Add_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0005104081632653062,
+      "percent_of_profiled_decode": 0.0016449726714856056,
+      "name": "BinaryOp847"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004985306122448981,
+      "percent_of_profiled_decode": 0.0016066930195541937,
+      "name": "BinaryOp29"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.000498438775510204,
+      "percent_of_profiled_decode": 0.001606397042864002,
+      "name": "BinaryOp1688"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.000495561224489796,
+      "percent_of_profiled_decode": 0.0015971231065713405,
+      "name": "BinaryOp475"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004925714285714286,
+      "percent_of_profiled_decode": 0.001587487420990667,
+      "name": "/blocks.16/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004895459183673471,
+      "percent_of_profiled_decode": 0.0015777366333638084,
+      "name": "BinaryOp1316"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004732500000000002,
+      "percent_of_profiled_decode": 0.0015252172140043023,
+      "name": "BinaryOp2060"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004642551020408164,
+      "percent_of_profiled_decode": 0.0014962279415150063,
+      "name": "/blocks.20/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004612602040816327,
+      "percent_of_profiled_decode": 0.0014865758127848778,
+      "name": "BinaryOp669"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004569081632653064,
+      "percent_of_profiled_decode": 0.0014725498062997003,
+      "name": "BinaryOp572"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00045385714285714295,
+      "percent_of_profiled_decode": 0.0014627168029255654,
+      "name": "/blocks.10/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004508571428571428,
+      "percent_of_profiled_decode": 0.0014530482310459816,
+      "name": "/blocks.21/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00045084693877551015,
+      "percent_of_profiled_decode": 0.0014530153447470712,
+      "name": "BinaryOp131"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00044351020408163293,
+      "percent_of_profiled_decode": 0.0014293700958306758,
+      "name": "BinaryOp1041"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004418979591836733,
+      "percent_of_profiled_decode": 0.001424174060602871,
+      "name": "BinaryOp944"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004404795918367348,
+      "percent_of_profiled_decode": 0.0014196028650543613,
+      "name": "BinaryOp1785"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00043600510204081644,
+      "percent_of_profiled_decode": 0.0014051822229822616,
+      "name": "BinaryOp1413"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004345102040816329,
+      "percent_of_profiled_decode": 0.0014003643801919253,
+      "name": "/blocks.2/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004271224489795921,
+      "percent_of_profiled_decode": 0.0013765546997809783,
+      "name": "/blocks.17/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004256071428571432,
+      "percent_of_profiled_decode": 0.0013716710843928214,
+      "name": "/blocks.6/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0004047857142857146,
+      "percent_of_profiled_decode": 0.0013045665914666643,
+      "name": "/blocks.12/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00040182142857142874,
+      "percent_of_profiled_decode": 0.0012950131216332658,
+      "name": "BinaryOp2157"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00039727040816326547,
+      "percent_of_profiled_decode": 0.0012803458323193398,
+      "name": "BinaryOp228"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0003928469387755106,
+      "percent_of_profiled_decode": 0.001266089621741791,
+      "name": "/blocks.14/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00037949489795918414,
+      "percent_of_profiled_decode": 0.0012230578996178627,
+      "name": "/blocks.22/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.00037197959183673477,
+      "percent_of_profiled_decode": 0.0011988371404705375,
+      "name": "/blocks.4/self_attn/Mul_output_0"
+    },
+    {
+      "type": "BinaryOp",
+      "calls_per_token": 1.0,
+      "ms_per_token": 0.0003392551020408169,
+      "percent_of_profiled_decode": 0.0010933707798656941,
+      "name": "/blocks.9/self_attn/Mul_output_0"
+    }
+  ],
+  "lm_head": {
+    "name": "/lm/lm_head/Linear",
+    "input_count": 1024,
+    "output_count": 248320,
+    "kernel": [
+      1,
+      1
+    ],
+    "group": 1,
+    "quant_bits": 4,
+    "scale_storage": "FP16",
+    "external": [
+      280332416,
+      127139866,
+      15892480,
+      0,
+      0
+    ],
+    "timing": {
+      "type": "Convolution",
+      "calls_per_token": 1.0,
+      "ms_per_token": 7.894414515306126,
+      "percent_of_profiled_decode": 25.44257139615495,
+      "name": "/lm/lm_head/Linear"
+    },
+    "macs_per_token": 254279680,
+    "serialized_weight_and_scale_bytes": 143032346
+  },
+  "boundary_test_passed": true
+}

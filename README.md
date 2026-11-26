@@ -1,6 +1,6 @@
 # EdgeDoc Cam · Xiaomi-OCR-0
 
-在鲁班猫 4（RK3588S）上部署单页文档 OCR，使用 C++ 串接推理库，实测 CPU、NPU 和 Mali-G610 GPU。覆盖 PC 功能基线、板端推理、模型常驻、GPU 预处理和算子对照。
+在鲁班猫 4（RK3588S）上部署单页文档 OCR，使用 C++ 串接推理库，实测 CPU、NPU 和 Mali-G610 GPU。覆盖 PC 功能基线、板端推理、模型常驻、GPU 预处理、Decode 剖析、自定义 Q4 OpenCL 算子和整模型接入。
 
 [示例输入](s0/samples/zh-notice.png) · [OCR 输出](s1/results/pc-cpu-acceptance/single/page-1.md) · [C++ 入门讲解](docs/reading-the-cpp-pipeline.md) · [板端实验](s5/README.md)
 
@@ -15,6 +15,9 @@
 | OpenCV 与 Mali OpenCL 预处理 | **5.106 → 4.434 ms，1.15×** | 缩放和颜色转换，GPU 含数据交接。两路共用 CPU 解码。[数据](s5/results/board-gpu-preprocess-2026-11-24-6FnYRe/summary.json) |
 | RKNN 视觉接 MNN 语言 | CPU **37.27**，Mali **22.34 Token/s** | 生成阶段。两种 MNN 后端输入相同，输出均与参考正文一致。[数据](s5/results/board-npu-mnn-2026-11-24-eAgvzp/summary.json) |
 | 四比特语言投影 | 单行 CPU **0.086 ms**，Mali **0.976 ms** | 同一层、同一权重，计到主机可读结果。Mali 一次处理 128 行时，均摊约 **0.066 ms/行**。[数据](s5/results/board-mnn-linear-2026-11-24-CQVuiW/summary.json) |
+| 散热验证 | CPU 峰值温度 **85.9 → 58.2 °C** | 散热复测；连续三页耗时约 50.7–50.8 秒。[数据](s5/results/board-cooling-2026-11-26-Vn8Rr81e/summary.json) |
+| 自定义 Q4 Mali lm_head | MNN OpenCL **10.402 → 8.648 ms（−16.9%）** | 独立矩阵向量算子，CPU 本轮 6.539 ms；数值参考校验通过。[数据](s5/results/board-q4-gemv-2026-11-26-fXwmLVXJ/summary.json) |
+| 自定义算子接入完整 OCR | 混排页墙钟 **20.237 → 18.828 秒** | 两轮中位数，Decode 13.828 → 13.757 秒，未证明稳定的 Decode 提速；两版原始 MNN 输出存在差异。[数据](s5/results/board-head-integration-2026-11-26-ss30kNw3/summary.json) |
 
 结果对应固定样本与上述配置。各实验说明记录了计时边界、逐轮数据和输出校验。多页结果来自小型开发集，保留组和文档正文 CER 留待后续评测。
 
@@ -35,6 +38,8 @@
 | 同一进程连续识别多页 | [NPU 常驻](s5/npu-resident/README.md) |
 | GPU 缩放和视觉矩阵乘法 | [预处理](s5/gpu-preprocess/README.md) · [QKV 对照](s5/gpu-matmul/README.md) |
 | NPU 视觉特征接 MNN 与生成性能 | [MNN 混合链路](s5/mnn-hybrid/README.md) · [四比特单层](s5/mnn-linear/README.md) |
+| Decode 计算与内存带宽 | [逐算子剖析](s5/decode-profile/README.md) · [单行 lm_head](s5/lm-head/README.md) · [批量与带宽](s5/batch-bandwidth/README.md) |
+| 自定义 Mali 算子及整模型替换 | [Q4 GEMV](s5/lm-head-opencl/README.md) · [完整接入与验证](s5/lm-head-opencl/integration.md) |
 
 ## 在 PC 上跑第一张图
 
@@ -63,4 +68,4 @@ cmake --build build --target edgedoc_cli -j 4
 
 ## 文件与来源
 
-随仓库提供实验源码、三张自制文档、选取的原始计时、汇总与复现说明。模型及运行库按上游说明获取。第三方评测样本可按索引在数据集原处定位。[测试集索引](data/ocr-eval-mini/README.md) · [小米模型](https://github.com/xiaomi-research/Xiaomi-OCR-0) · [GGUF 转换](https://huggingface.co/prithivMLmods/Xiaomi-OCR-0-GGUF) · [RKNN](https://github.com/airockchip/rknn-toolkit2) · [RKLLM](https://github.com/airockchip/rknn-llm) · [MNN](https://github.com/alibaba/MNN)
+随仓库提供实验源码、三张自制文档、选取的原始计时、汇总与复现说明。模型及运行库按上游说明获取；公开结果不含模型权重、板端二进制、浮点操作数或第三方评测正文。第三方评测样本可按索引在数据集原处定位。[测试集索引](data/ocr-eval-mini/README.md) · [小米模型](https://github.com/xiaomi-research/Xiaomi-OCR-0) · [GGUF 转换](https://huggingface.co/prithivMLmods/Xiaomi-OCR-0-GGUF) · [RKNN](https://github.com/airockchip/rknn-toolkit2) · [RKLLM](https://github.com/airockchip/rknn-llm) · [MNN](https://github.com/alibaba/MNN)

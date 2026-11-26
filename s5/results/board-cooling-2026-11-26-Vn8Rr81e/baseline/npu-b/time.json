@@ -1,0 +1,11 @@
+{
+  "command": [
+    "sh",
+    "/home/cat/ai/edgedoc-xiaomi-vlm/s5-emmc-2026-11-23.ZcXVOr/npu/run_xiaomi_npu_once.sh"
+  ],
+  "initial_soc_millicelsius": 40692,
+  "wall_seconds": 13.351467049999997,
+  "exit_status": 0,
+  "cooldown_to_45c": true,
+  "output_matches_reference": true
+}

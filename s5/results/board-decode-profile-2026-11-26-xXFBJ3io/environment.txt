@@ -1,0 +1,20 @@
+Linux 5.10.160 aarch64
+PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+BUILD_INFO="root@dev120.embedfire.local Sat Oct 10 11:26:51 CST 2026"
+/dev/mmcblk0p3
+CPU clocks (kHz)\nondemand
+2304000
+ondemand
+2304000
+SoC millidegrees\n37000
+               total        used        free      shared  buff/cache   available
+Mem:            3902         544         972           6        2385        3294
+Swap:              0           0           0

@@ -1,0 +1,6 @@
+START cpu-sustained-1 soc_millic=37000
+DONE cpu-sustained-1 50.806s output_ok=True
+START cpu-sustained-2 soc_millic=49923
+DONE cpu-sustained-2 50.716s output_ok=True
+START cpu-sustained-3 soc_millic=49000
+DONE cpu-sustained-3 50.806s output_ok=True

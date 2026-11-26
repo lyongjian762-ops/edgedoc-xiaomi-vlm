@@ -1,0 +1,6 @@
+2c72e6024f4bf15361ef576c24dd08d9ddca0056f0448199f880906e069e5036  mnn_image_replay_profile
+68639808fc62751a1bed5cf6a95ae984fb2534c804f2fa2ee1b65b5ffd4bc75a  replay.cpp
+9e1b0e5d97691489e671dcf1f2e9f28d00b815f0815f0538a604357db86e95fa  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/libMNN.so
+ca2f8fc844c2a5cbcec5d6a79735cac5db43a9f5e56db4547d2f4f0cbcf49009  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/request.json
+a55427cedd4084e61b0912955d795e41be09017b0172516c468ccca999f72b47  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/archive_img_vec.bin
+34c579612326eee0987d205abcfa09b643fb5a2854c8b00c2feba8385f6dddfd  /home/cat/ai/edgedoc-xiaomi-vlm/s5-npu-mnn-2026-11-24.eAgvzp/model-replay/cpu.json

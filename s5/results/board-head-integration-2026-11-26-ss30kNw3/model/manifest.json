@@ -1,0 +1,19 @@
+{
+  "source_graph_sha256": "1b2297357edfb43f1bd58375e841bcd3febbbec1e06ee2ba3cb5a11868424a30",
+  "trunk_sha256": "c24b26a2e47b3a7a00f3a1e844ee1c50e4fc83066eff6dac158469d73c88233b",
+  "removed_operator": "/lm/lm_head/Linear",
+  "head_external": [
+    280332416,
+    127139866,
+    15892480,
+    0,
+    0
+  ],
+  "trunk_output": "logits",
+  "trunk_output_shape": [
+    1,
+    -1,
+    1024
+  ],
+  "weights": "reuse original external weight file, existing offsets unchanged"
+}

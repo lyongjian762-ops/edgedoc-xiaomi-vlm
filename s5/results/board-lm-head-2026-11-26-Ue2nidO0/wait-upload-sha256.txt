@@ -1,0 +1,2 @@
+eb8e1f8e88f027f13dfdade55864bf0ce855919cec0c01a0e206d22e4a402012  mnn_lm_head_wait_bench
+2804bbc8daa0e1248bef1c1a39fa8099520463a27d0ca6d14b271684c0b3461b  bench-wait.cpp

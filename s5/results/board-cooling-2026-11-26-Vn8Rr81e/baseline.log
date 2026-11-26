@@ -1,0 +1,16 @@
+START npu-a soc_millic=35153
+DONE npu-a 14.203s output_ok=True
+START cpu-a soc_millic=37000
+DONE cpu-a 53.703s output_ok=True
+START cpu-b soc_millic=39769
+DONE cpu-b 50.820s output_ok=True
+START npu-b soc_millic=40692
+DONE npu-b 13.351s output_ok=True
+START mnn-cpu-a soc_millic=40692
+DONE mnn-cpu-a 8.774s output_ok=True
+START mnn-gpu-a soc_millic=38846
+DONE mnn-gpu-a 8.895s output_ok=True
+START mnn-gpu-b soc_millic=42538
+DONE mnn-gpu-b 9.002s output_ok=True
+START mnn-cpu-b soc_millic=42538
+DONE mnn-cpu-b 7.179s output_ok=True

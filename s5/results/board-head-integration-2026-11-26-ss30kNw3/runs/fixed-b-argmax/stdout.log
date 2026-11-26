@@ -1,0 +1,5 @@
+CPU Group: [ 0  1  2  3 ], 408000 - 1800000
+CPU Group: [ 6  7 ], 408000 - 2304000
+CPU Group: [ 4  5 ], 408000 - 2304000
+The device supports: i8sdot:1, fp16:1, i8mm: 0, sve2: 0, sme2: 0
+arm_release_ver: g13p0-01eac0, rk_so_ver: 6

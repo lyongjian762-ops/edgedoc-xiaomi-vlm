@@ -80,6 +80,26 @@ CPU 识别请求中位数为 50.09 秒，视觉阶段约占 74%。CPU 的视觉�
 
 用第一层语言四比特投影比较 1、8、32、128、268 行。Mali 每行的合并中位数从 976.4 µs 降到 65.2 µs，四大核 CPU 在这些形状的总耗时都更短。单行使用更重的 OpenCL 调优没有观察到稳定提速。[算子对照与复跑](mnn-linear/README.md) · [原始数据](results/board-mnn-linear-2026-11-24-CQVuiW/summary.json)
 
+## 2026-11-26 散热改进复测
+
+安装新散热后，复跑相同固定图片的四条路径。纯 CPU 全部热区最高采样温度从 85.9°C 降到 58.2°C。连续三页耗时 50.806、50.716、50.806 秒，视觉阶段大核频率组均采样为 2.304 GHz，热冷却设备状态均采样为 0。两轮 Mali 同图进程中位数从 9.43 降到 8.95 秒，另一次核验为 9.32 秒，暂未得到稳定的大幅延迟收益。全部十二次 OCR 正文与原参考一致。[前后对照、代码和持续负载数据](cooling/README.md) · [汇总](results/board-cooling-2026-11-26-Vn8Rr81e/summary.json)
+
+## 2026-11-26 MNN CPU Decode 算子剖析
+
+沿用固定 NPU 图像特征和 MNN 四大核语言路径。普通两轮每 Token Decode 中位数 27.43 ms，两轮剖析合并约 31.03 ms，每次前向均记录 557 条命名算子。1×1 Convolution 形式的语言线性投影累计 25.78 ms/Token，约占剖析 Decode 的 83.1%。最大单个 `lm_head` 为 `[1,1024] × [1024,248320]`，四比特权重和量化参数序列化约 136.4 MiB，平均 7.89 ms/Token。四份 OCR 正文逐字节一致。源码与计时范围、剖析开关和复跑命令见 [Decode 实验](decode-profile/README.md)，逐算子记录见 [数据汇总](results/board-decode-profile-2026-11-26-xXFBJ3io/summary.json)。
+
+进一步独立测真实 `lm_head` 的一行输入。四大核 CPU 中位数 6.99 ms，Mali 10.53 ms。另两轮 Mali 显式等待中，队列完成等待的合并中位数约 11.66 ms，之后的主机结果访问约 2.33 ms。六轮的输出均通过四比特参考校验。[单层复跑、计时与数据](lm-head/README.md) · [汇总](results/board-lm-head-2026-11-26-Ue2nidO0/summary.json)
+
+补测 `lm_head` 一、二、四、八行输入及独立的 128 MiB 顺序读取。八行的总耗时中位数为 CPU 18.53 ms、Mali 38.70 ms。有效顺序读取带宽为 CPU 26.71 GB/s、Mali 设备端 21.05 GB/s，真实权重访存量和算子饱和程度尚待测。所有批量结果均通过逐行 Q4 参考校验。[批量与带宽实验](batch-bandwidth/README.md) · [汇总](results/board-batch-bandwidth-2026-11-26-HejYdFnl/summary.json)
+
+自定义四比特 `lm_head` OpenCL 核函数将反量化和乘加融合，验证了 64 输出通道的权重重排。FP32、64 工作项的完整耗时中位数从自定义原排列 10.55 ms 降至 8.65 ms，相对同轮 MNN OpenCL 的 10.40 ms 降低 16.9%，核函数 7.67 ms。MNN CPU 本轮 6.54 ms。18 轮独立算子核验通过。[源码、原理和实验结果](lm-head-opencl/README.md) · [统计](results/board-q4-gemv-2026-11-26-fXwmLVXJ/summary.json)
+
+进一步把自定义 `lm_head` 接入真实 OCR Token 循环，保留 RKNN 视觉与 MNN OpenCL 主干，并试验 greedy 分组最大值（回读字节降低 96.875%）。三种开发样本共 18 次整页运行自然结束。混排页两轮墙钟中位数由 20.24 s 降至 18.86 s（完整 logits）或 18.83 s（分组最大值），但校正后的 Decode 分别为 13.83、13.81、13.76 s，未证明 Decode 明显加速。通知单和票据输出一致；混排页原 MNN 两版测试程序的输出不同，原因待查，不能声称整组 OCR 质量完全等价。[接入流程、源代码与实测分析](lm-head-opencl/integration.md) · [统计与验证](results/board-head-integration-2026-11-26-ss30kNw3/summary.json)
+
+## 2026-11-26 公开归档说明
+
+本次公开版保留新实验的源码、运行配置、逐轮数值、逐 Token 算子计时和合成固定页输出。每个新结果目录的 PUBLIC_SHA256SUMS 用于核验实际公开文件。完整本地归档中的运行库、模型、权重、输入/输出浮点数组、视觉向量、二进制程序和第三方评测正文未公开；需要相应素材的复现或统计命令须先按上游说明准备这些依赖。
+
 ## PC 归档与离板复盘
 
 同图对照目录保留了固定图片、原提示词、参考输出、四次运行的原始日志及温度采样。另存了 S1 和瑞芯微示例的关键入口源码快照。完整依赖源码仍在 `output/xiaomi_ocr_setup`，llama.cpp 固定到 `8642541b255bfb5dc39cd351a178be09013a55d6`，rknn-llm 固定到 `f7390530443bf84f0394255a449d7cbe81e69d1c`。[固定图片](results/board-comparison-2026-11-23-ow5SEL/input/vision-input.png) · [C++ CPU 入口](results/board-comparison-2026-11-23-ow5SEL/code/edgedoc/edgedoc_cli.cpp) · [瑞芯微 NPU 示例](https://github.com/airockchip/rknn-llm/tree/f7390530443bf84f0394255a449d7cbe81e69d1c/examples/multimodal_model_demo) · [同图对照脚本](results/board-comparison-2026-11-23-ow5SEL/compare.py)

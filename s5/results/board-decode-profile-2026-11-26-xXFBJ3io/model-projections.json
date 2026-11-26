@@ -1,0 +1,3673 @@
+{
+  "exported_graph_sha256": "1b2297357edfb43f1bd58375e841bcd3febbbec1e06ee2ba3cb5a11868424a30",
+  "graph_operator_count": 1143,
+  "convolutions": [
+    {
+      "name": "/layers.0/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        8192,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.0/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        3547158,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.0/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        3556396,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.0/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        3566658,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.0/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        4746328,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.0/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        5934190,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.0/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        7998596,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.0/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        10063002,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.1/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        12135600,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.1/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        15674566,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.1/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        15683804,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.1/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        15694066,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.1/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        16873736,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.1/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        18061598,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.1/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        20126004,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.1/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        22190410,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.2/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        24263008,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.2/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        27801974,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.2/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        27811212,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.2/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        27821474,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.2/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        29001144,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.2/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        30189006,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.2/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        32253412,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.2/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        34317818,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.3/self_attn/q_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        36390416,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.3/self_attn/k_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        37570086,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.3/self_attn/v_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        37865020,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.3/self_attn/q_gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        38159954,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.3/self_attn/o_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        39339624,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.3/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        40527486,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.3/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        42591892,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.3/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        44656298,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.4/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        46728896,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.4/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        50267862,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.4/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        50277100,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.4/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        50287362,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.4/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        51467032,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.4/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        52654894,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.4/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        54719300,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.4/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        56783706,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.5/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        58856304,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.5/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        62395270,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.5/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        62404508,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.5/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        62414770,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.5/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        63594440,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.5/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        64782302,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.5/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        66846708,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.5/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        68911114,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.6/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        70983712,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.6/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        74522678,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.6/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        74531916,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.6/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        74542178,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.6/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        75721848,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.6/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        76909710,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.6/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        78974116,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.6/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        81038522,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.7/self_attn/q_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        83111120,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.7/self_attn/k_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        84290790,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.7/self_attn/v_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        84585724,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.7/self_attn/q_gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        84880658,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.7/self_attn/o_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        86060328,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.7/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        87248190,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.7/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        89312596,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.7/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        91377002,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.8/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        93449600,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.8/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        96988566,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.8/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        96997804,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.8/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        97008066,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.8/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        98187736,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.8/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        99375598,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.8/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        101440004,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.8/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        103504410,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.9/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        105577008,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.9/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        109115974,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.9/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        109125212,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.9/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        109135474,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.9/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        110315144,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.9/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        111503006,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.9/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        113567412,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.9/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        115631818,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.10/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        117704416,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.10/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        121243382,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.10/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        121252620,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.10/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        121262882,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.10/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        122442552,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.10/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        123630414,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.10/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        125694820,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.10/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        127759226,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.11/self_attn/q_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        129831824,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.11/self_attn/k_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        131011494,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.11/self_attn/v_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        131306428,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.11/self_attn/q_gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        131601362,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.11/self_attn/o_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        132781032,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.11/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        133968894,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.11/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        136033300,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.11/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        138097706,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.12/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        140170304,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.12/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        143709270,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.12/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        143718508,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.12/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        143728770,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.12/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        144908440,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.12/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        146096302,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.12/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        148160708,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.12/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        150225114,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.13/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        152297712,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.13/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        155836678,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.13/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        155845916,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.13/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        155856178,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.13/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        157035848,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.13/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        158223710,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.13/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        160288116,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.13/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        162352522,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.14/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        164425120,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.14/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        167964086,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.14/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        167973324,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.14/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        167983586,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.14/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        169163256,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.14/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        170351118,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.14/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        172415524,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.14/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        174479930,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.15/self_attn/q_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        176552528,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.15/self_attn/k_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        177732198,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.15/self_attn/v_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        178027132,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.15/self_attn/q_gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        178322066,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.15/self_attn/o_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        179501736,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.15/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        180689598,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.15/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        182754004,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.15/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        184818410,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.16/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        186891008,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.16/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        190429974,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.16/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        190439212,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.16/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        190449474,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.16/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        191629144,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.16/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        192817006,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.16/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        194881412,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.16/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        196945818,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.17/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        199018416,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.17/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        202557382,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.17/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        202566620,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.17/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        202576882,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.17/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        203756552,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.17/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        204944414,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.17/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        207008820,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.17/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        209073226,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.18/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        211145824,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.18/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        214684790,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.18/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        214694028,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.18/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        214704290,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.18/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        215883960,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.18/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        217071822,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.18/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        219136228,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.18/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        221200634,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.19/self_attn/q_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        223273232,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.19/self_attn/k_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        224452902,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.19/self_attn/v_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        224747836,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.19/self_attn/q_gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        225042770,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.19/self_attn/o_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        226222440,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.19/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        227410302,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.19/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        229474708,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.19/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        231539114,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.20/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        233611712,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.20/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        237150678,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.20/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        237159916,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.20/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        237170178,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.20/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        238349848,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.20/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        239537710,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.20/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        241602116,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.20/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        243666522,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.21/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        245739120,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.21/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        249278086,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.21/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        249287324,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.21/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        249297586,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.21/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        250477256,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.21/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        251665118,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.21/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        253729524,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.21/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        255793930,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.22/self_attn/in_proj_qkv/Linear",
+      "input_count": 1024,
+      "output_count": 6144,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        257866528,
+        3145750,
+        393216,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.22/self_attn/in_proj_a/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        261405494,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.22/self_attn/in_proj_b/Linear",
+      "input_count": 1024,
+      "output_count": 16,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        261414732,
+        8214,
+        1024,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.22/self_attn/in_proj_z/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        261424994,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.22/self_attn/out_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        262604664,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.22/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        263792526,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.22/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        265856932,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.22/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        267921338,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.23/self_attn/q_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        269993936,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.23/self_attn/k_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        271173606,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.23/self_attn/v_proj/Linear",
+      "input_count": 1024,
+      "output_count": 512,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        271468540,
+        262166,
+        32768,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.23/self_attn/q_gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 2048,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        271763474,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.23/self_attn/o_proj/Linear",
+      "input_count": 2048,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        272943144,
+        1048598,
+        131072,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.23/mlp/gate_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        274131006,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.23/mlp/up_proj/Linear",
+      "input_count": 1024,
+      "output_count": 3584,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        276195412,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/layers.23/mlp/down_proj/Linear",
+      "input_count": 3584,
+      "output_count": 1024,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        278259818,
+        1835030,
+        229376,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "/lm/lm_head/Linear",
+      "input_count": 1024,
+      "output_count": 248320,
+      "kernel": [
+        1,
+        1
+      ],
+      "group": 1,
+      "quant_bits": 4,
+      "scale_storage": "FP16",
+      "external": [
+        280332416,
+        127139866,
+        15892480,
+        0,
+        0
+      ]
+    }
+  ]
+}

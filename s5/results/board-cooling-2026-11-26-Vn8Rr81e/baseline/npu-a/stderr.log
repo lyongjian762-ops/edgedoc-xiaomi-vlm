@@ -1,0 +1,2 @@
+[Warning] Using img_start/img_end/img_content: <|vision_start|> , <|vision_end|> , <|image_pad|>. Please customize these values according to your model, otherwise the output may be incorrect.
+[Warning] Using audio_start/audio_end/audio_content: <|audio> , <audio|> , <|audio|>. Please customize these values according to your model, otherwise the output may be incorrect.
